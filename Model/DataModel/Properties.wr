@@ -1,24 +1,30 @@
 <DataModel xmlns:gr="http://www.webratio.com/2006/WebML/Graph">
-  <Entity id="User" name="User" duration="persistent" gr:x="20" gr:y="158" gr:hideAttributes="false" attributeOrder="userOID userName password email">
+  <Entity id="User" name="User" duration="persistent" gr:x="535" gr:y="230" gr:hideAttributes="false" attributeOrder="userOID userName password email User#att32 User#att33 User#att34 User#att35 User#att36 User#att37">
     <Attribute name="oid" id="userOID" type="integer" key="true"/>
-    <Attribute name="userName" id="userName" type="string"/>
+    <Attribute name="username" id="userName" type="string"/>
     <Attribute name="password" id="password" type="password"/>
     <Attribute name="email" id="email" type="string"/>
+    <Attribute id="User#att32" name="descripcion_usuario" type="string"/>
+    <Attribute id="User#att33" name="edad" type="integer"/>
+    <Attribute id="User#att34" name="es_hombre" type="boolean"/>
+    <Attribute id="User#att35" name="fecha_alta" type="timestamp"/>
+    <Attribute id="User#att36" name="foto_perfil" type="string"/>
+    <Attribute id="User#att37" name="telefono" type="string"/>
   </Entity>
-  <Entity id="Group" name="Group" duration="persistent" gr:x="250" gr:y="178" gr:hideAttributes="false" attributeOrder="groupOID groupName">
+  <Entity id="Group" name="Group" duration="persistent" gr:x="420" gr:y="5" gr:hideAttributes="false" attributeOrder="groupOID groupName">
     <Attribute name="oid" id="groupOID" type="integer" key="true"/>
     <Attribute name="groupName" id="groupName" type="string"/>
   </Entity>
-  <Entity id="Module" name="Module" duration="persistent" gr:x="472" gr:y="167" gr:hideAttributes="false" attributeOrder="moduleOID moduleID moduleName">
+  <Entity id="Module" name="Module" duration="persistent" gr:x="780" gr:y="0" gr:hideAttributes="false" attributeOrder="moduleOID moduleID moduleName">
     <Attribute name="oid" id="moduleOID" type="integer" key="true"/>
     <Attribute name="moduleID" id="moduleID" type="string"/>
     <Attribute name="moduleName" id="moduleName" type="string"/>
   </Entity>
-  <Relationship id="User2Group_Group2User" name="User_Group" sourceEntity="User" targetEntity="Group">
+  <Relationship id="User2Group_Group2User" name="User_Group" sourceEntity="User" targetEntity="Group" gr:bendpoints="-64,-109,-59,91">
     <RelationshipRole1 id="User2Group" name="groups" maxCard="N"/>
     <RelationshipRole2 id="Group2User" name="users" maxCard="N"/>
   </Relationship>
-  <Relationship id="User2DefaultGroup_DefaultGroup2User" name="User_DefaultGroup" sourceEntity="User" targetEntity="Group" gr:bendpoints="113,42,-112,44">
+  <Relationship id="User2DefaultGroup_DefaultGroup2User" name="User_DefaultGroup" sourceEntity="User" targetEntity="Group" gr:bendpoints="-60,-116,80,114">
     <RelationshipRole1 id="User2DefaultGroup" name="defaultGroup" maxCard="1"/>
     <RelationshipRole2 id="DefaultGroup2User" name="defaultUsers" maxCard="N"/>
   </Relationship>
@@ -26,8 +32,103 @@
     <RelationshipRole1 id="Group2DefaultModule" name="defaultModule" maxCard="1"/>
     <RelationshipRole2 id="DefaultModule2Group" name="defaultGroups" maxCard="N"/>
   </Relationship>
-  <Relationship id="Group2Module_Module2Group" name="Group_Module" sourceEntity="Group" targetEntity="Module" gr:bendpoints="110,41,-115,41">
+  <Relationship id="Group2Module_Module2Group" name="Group_Module" sourceEntity="Group" targetEntity="Module" gr:bendpoints="163,48,-167,43">
     <RelationshipRole1 id="Group2Module" name="modules" maxCard="N"/>
     <RelationshipRole2 id="Module2Group" name="groups" maxCard="N"/>
+  </Relationship>
+  <Entity gr:x="75" gr:y="435" id="ent2" name="Reserva" duration="persistent" attributeOrder="ent2#att2 ent2#att12 ent2#att13 ent2#att26">
+    <Attribute id="ent2#att2" key="true" name="oid" type="integer"/>
+    <Attribute id="ent2#att12" name="hora_inicio" type="timestamp"/>
+    <Attribute id="ent2#att13" name="estado_reserva" type="integer"/>
+    <Attribute id="ent2#att26" name="precio" type="float"/>
+  </Entity>
+  <Entity id="ent3" name="Torneo" duration="persistent" gr:x="1010" gr:y="185" attributeOrder="ent3#att3 ent3#att22 ent3#att23 ent3#att27 ent3#att28 ent3#att29 ent3#att30 ent3#att31">
+    <Attribute id="ent3#att3" name="oid" key="true" type="integer"/>
+    <Attribute id="ent3#att22" name="numero_plazas" type="integer"/>
+    <Attribute id="ent3#att23" name="fecha_inicio" type="timestamp"/>
+    <Attribute id="ent3#att27" name="nombre_torneo" type="string"/>
+    <Attribute id="ent3#att28" name="descripcion_torneo" type="string"/>
+    <Attribute id="ent3#att29" name="fecha_fin" type="timestamp"/>
+    <Attribute id="ent3#att30" name="premio" type="float"/>
+    <Attribute id="ent3#att31" name="precio_inscripcion" type="float"/>
+  </Entity>
+  <Entity gr:x="365" gr:y="605" id="ent4" name="Pista" duration="persistent" attributeOrder="ent4#att4 ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att19 ent4#att39">
+    <Attribute id="ent4#att4" key="true" name="oid" type="integer"/>
+    <Attribute id="ent4#att14" name="nombre_pista" type="string"/>
+    <Attribute id="ent4#att15" name="deporte_asociado" type="string"/>
+    <Attribute id="ent4#att16" name="hora_apertura" type="timestamp"/>
+    <Attribute id="ent4#att17" name="hora_cierre" type="timestamp"/>
+    <Attribute id="ent4#att18" name="capacidad" type="integer"/>
+    <Attribute id="ent4#att19" name="es_disponible" type="boolean"/>
+    <Attribute id="ent4#att39" name="ubicacion" type="string"/>
+  </Entity>
+  <Entity gr:x="140" gr:y="155" id="ent5" name="Incidencia" duration="persistent" attributeOrder="ent5#att5 ent5#att8 ent5#att9 ent5#att10 ent5#att11">
+    <Attribute id="ent5#att5" key="true" name="oid" type="integer"/>
+    <Attribute id="ent5#att8" name="descripcion" type="string"/>
+    <Attribute id="ent5#att9" name="titulo" type="string"/>
+    <Attribute id="ent5#att10" name="nivel_gravedad" type="integer"/>
+    <Attribute id="ent5#att11" name="estado_incidencia" type="integer"/>
+  </Entity>
+  <Entity gr:x="790" gr:y="525" id="ent6" name="Valoracion" duration="persistent" attributeOrder="ent6#att6 ent6#att21 ent6#att20 ent6#att24">
+    <Attribute id="ent6#att6" key="true" name="oid" type="integer"/>
+    <Attribute id="ent6#att20" name="descripcion_valoracion" type="string"/>
+    <Attribute id="ent6#att21" name="puntuacion" type="integer"/>
+    <Attribute id="ent6#att24" name="fecha_valoracion" type="timestamp"/>
+  </Entity>
+  <Relationship id="rel3" name="reporta" sourceEntity="User" targetEntity="ent5" gr:bendpoints="-211,-20,189,104">
+    <RelationshipRole1 id="rel3#role5" name="UserToIncidencia" maxCard="1"/>
+    <RelationshipRole2 id="rel3#role6" name="IncidenciaToUser" maxCard="N"/>
+  </Relationship>
+  <Relationship id="rel4" name="participa" sourceEntity="User" targetEntity="ent3">
+    <RelationshipRole1 id="rel4#role7" name="UserToTorneo" maxCard="N"/>
+    <RelationshipRole2 id="rel4#role8" name="TorneoToUser" maxCard="N"/>
+  </Relationship>
+  <Relationship id="rel6" name="guarda como fav" sourceEntity="User" targetEntity="ent4" gr:bendpoints="-36,212,139,-144">
+    <RelationshipRole1 id="rel6#role11" name="UserToPista" maxCard="N"/>
+    <RelationshipRole2 id="rel6#role12" name="PistaToUser" maxCard="N"/>
+  </Relationship>
+  <Relationship id="rel7" name="realiza" sourceEntity="User" targetEntity="ent2">
+    <RelationshipRole1 id="rel7#role13" name="UserToReserva" maxCard="1"/>
+    <RelationshipRole2 id="rel7#role14" name="ReservaToUser" maxCard="N"/>
+  </Relationship>
+  <Relationship id="rel8" name="escribe" sourceEntity="User" targetEntity="ent6">
+    <RelationshipRole1 id="rel8#role15" name="UserToComentario" maxCard="1"/>
+    <RelationshipRole2 id="rel8#role16" name="ComentarioToUser" maxCard="N"/>
+  </Relationship>
+  <Relationship id="rel9" name="se juega en" sourceEntity="ent3" targetEntity="ent4" gr:bendpoints="59,381,599,17">
+    <RelationshipRole1 id="rel9#role17" name="TorneoToPista" maxCard="N"/>
+    <RelationshipRole2 id="rel9#role18" name="PistaToTorneo" maxCard="1"/>
+  </Relationship>
+  <Relationship id="rel10" name="se refiere a" sourceEntity="ent2" targetEntity="ent4">
+    <RelationshipRole1 id="rel10#role19" name="ReservaToPista" maxCard="N"/>
+    <RelationshipRole2 id="rel10#role20" name="PistaToReserva" maxCard="1"/>
+  </Relationship>
+  <Relationship id="rel11" name="Incidencia_Reserva" sourceEntity="ent5" targetEntity="ent2">
+    <RelationshipRole1 id="rel11#role21" name="IncidenciaToReserva" maxCard="1"/>
+    <RelationshipRole2 id="rel11#role22" name="ReservaToIncidencia" maxCard="1"/>
+  </Relationship>
+  <Relationship id="rel12" name="Valoracion_Pista" sourceEntity="ent6" targetEntity="ent4">
+    <RelationshipRole1 id="rel12#role23" name="ValoracionToPista" maxCard="N"/>
+    <RelationshipRole2 id="rel12#role24" name="PistaToValoracion" maxCard="1"/>
+  </Relationship>
+  <Relationship id="rel13" name="organiza" sourceEntity="User" targetEntity="ent3" gr:bendpoints="238,-98,-232,-34">
+    <RelationshipRole1 id="rel13#role25" name="UserToTorneo_2" maxCard="1"/>
+    <RelationshipRole2 id="rel13#role26" name="TorneoToUser_2" maxCard="N"/>
+  </Relationship>
+  <Relationship id="rel14" name="gestiona" sourceEntity="User" targetEntity="ent4" gr:bendpoints="-154,189,21,-167">
+    <RelationshipRole1 id="rel14#role27" name="UserToPista_2" maxCard="1"/>
+    <RelationshipRole2 id="rel14#role28" name="PistaToUser_2" maxCard="N"/>
+  </Relationship>
+  <Relationship id="rel16" name="User_Valoracion" sourceEntity="User" targetEntity="ent6" gr:bendpoints="286,94,21,-142">
+    <RelationshipRole1 id="rel16#role31" name="UserToValoracion" maxCard="1"/>
+    <RelationshipRole2 id="rel16#role32" name="ValoracionToUser" maxCard="N"/>
+  </Relationship>
+  <Relationship id="rel17" name="User_Incidencia" sourceEntity="User" targetEntity="ent5" gr:bendpoints="-200,-122,200,2">
+    <RelationshipRole1 id="rel17#role33" name="UserToIncidencia_2" maxCard="1"/>
+    <RelationshipRole2 id="rel17#role34" name="IncidenciaToUser_2" maxCard="N"/>
+  </Relationship>
+  <Relationship id="rel18" name="User_User" sourceEntity="User" targetEntity="User" gr:bendpoints="6,-130,6,-130;29,-187,29,-187;120,-180,120,-180">
+    <RelationshipRole1 id="rel18#role35" name="UserToUser1" maxCard="1"/>
+    <RelationshipRole2 id="rel18#role36" name="UserToUser2" maxCard="N"/>
   </Relationship>
 </DataModel>
