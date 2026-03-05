@@ -1,4 +1,4 @@
-<DataModel xmlns:gr="http://www.webratio.com/2006/WebML/Graph">
+<DataModel xmlns:db="http://www.webratio.com/2006/WebML/Database" xmlns:gr="http://www.webratio.com/2006/WebML/Graph">
   <Entity id="User" name="User" duration="persistent" gr:x="535" gr:y="230" gr:hideAttributes="false" attributeOrder="userOID userName password email User#att32 User#att33 User#att34 User#att35 User#att36 User#att37">
     <Attribute name="oid" id="userOID" type="integer" key="true"/>
     <Attribute name="username" id="userName" type="string"/>
@@ -131,4 +131,6 @@
     <RelationshipRole1 id="rel18#role35" name="UserToUser1" maxCard="1"/>
     <RelationshipRole2 id="rel18#role36" name="UserToUser2" maxCard="N"/>
   </Relationship>
+  <db:Database id="db1" name="PisteaDB" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/Pistea" username="admin" cryptedPassword="true" password="YWRtaW4=">
+  </db:Database>
 </DataModel>
