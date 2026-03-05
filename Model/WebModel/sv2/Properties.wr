@@ -1,0 +1,3 @@
+<SiteView id="sv2" name="cliente" protected="true" homePage="sv2#page2">
+  <OperationUnits/>
+</SiteView>

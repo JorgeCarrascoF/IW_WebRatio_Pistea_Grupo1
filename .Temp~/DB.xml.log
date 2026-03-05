@@ -1,20 +1,20 @@
-[05 mar 2026 15:12:16] Building database metadata model
-[05 mar 2026 15:12:16] Properties: {partialRefresh=false, processColumnsUsingSelect=, includePrimaryKeys=true, eventSocketClient=com.webratio.commons.net.EventSocketClient@1ed6ecc2, includeTables=true, username=admin, outputLogPath=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\IW_WebRatio_Pistea_Grupo1\.Temp~\DB.xml.log, readIndexes=null, driverClass=org.postgresql.Driver, includeSynonyms=true, metaDataProviderClass=com.webratio.commons.db.metadata.PostgreSQLMetaDataProvider, outputPath=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\IW_WebRatio_Pistea_Grupo1\.Temp~\DB.xml, schemaRegex=null, readProcedures=null, includeViews=true, derby.system.home=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby, url=jdbc:postgresql://localhost:5432/Pistea, tableRegex=null, readSQLDefinitions=true, includeForeignKeys=false, retrieveAllNames=false, tablesToRefresh=, eventSocketPort=54179}
-[05 mar 2026 15:12:16] URL: jdbc:postgresql://localhost:5432/Pistea
-[05 mar 2026 15:12:16] Product name: PostgreSQL
-[05 mar 2026 15:12:16] Product version: 9.6.24
-[05 mar 2026 15:12:16] Driver name: PostgreSQL Native Driver
-[05 mar 2026 15:12:16] Driver version: PostgreSQL 9.1 JDBC3g (build 903)
-[05 mar 2026 15:12:16] Driver major version: 9
-[05 mar 2026 15:12:16] Driver minor version: 1
-[05 mar 2026 15:12:16] Identifier quote string: 1
-[05 mar 2026 15:12:16] Retrieving schemas
-[05 mar 2026 15:12:16]   Found schema: information_schema
-[05 mar 2026 15:12:16]   Found schema: pg_catalog
-[05 mar 2026 15:12:16]   Found schema: public
-[05 mar 2026 15:12:16] Retrieving sequences
-[05 mar 2026 15:12:16] Retrieving [TABLE, VIEW, SYNONYM] for schema 'information_schema'
-[05 mar 2026 15:12:16] Retrieving [TABLE, VIEW, SYNONYM] for schema 'pg_catalog'
-[05 mar 2026 15:12:16] Retrieving [TABLE, VIEW, SYNONYM] for schema 'public'
-[05 mar 2026 15:12:16] Database metadata retrieved (51 ms)
-[05 mar 2026 15:12:16] Database connection closed
+[05 mar 2026 16:54:22] Building database metadata model
+[05 mar 2026 16:54:22] Properties: {partialRefresh=false, processColumnsUsingSelect=, includePrimaryKeys=true, eventSocketClient=com.webratio.commons.net.EventSocketClient@7f261b7d, includeTables=true, username=admin, outputLogPath=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\IW_WebRatio_Pistea_Grupo1\.Temp~\DB.xml.log, readIndexes=null, driverClass=org.postgresql.Driver, includeSynonyms=true, metaDataProviderClass=com.webratio.commons.db.metadata.PostgreSQLMetaDataProvider, outputPath=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\IW_WebRatio_Pistea_Grupo1\.Temp~\DB.xml, schemaRegex=null, readProcedures=null, includeViews=true, derby.system.home=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby, url=jdbc:postgresql://localhost:5432/Pistea, tableRegex=null, readSQLDefinitions=true, includeForeignKeys=false, retrieveAllNames=false, tablesToRefresh=, eventSocketPort=55343}
+[05 mar 2026 16:54:22] URL: jdbc:postgresql://localhost:5432/Pistea
+[05 mar 2026 16:54:22] Product name: PostgreSQL
+[05 mar 2026 16:54:22] Product version: 9.6.24
+[05 mar 2026 16:54:22] Driver name: PostgreSQL Native Driver
+[05 mar 2026 16:54:22] Driver version: PostgreSQL 9.1 JDBC3g (build 903)
+[05 mar 2026 16:54:22] Driver major version: 9
+[05 mar 2026 16:54:22] Driver minor version: 1
+[05 mar 2026 16:54:22] Identifier quote string: 1
+[05 mar 2026 16:54:22] Retrieving schemas
+[05 mar 2026 16:54:22]   Found schema: information_schema
+[05 mar 2026 16:54:22]   Found schema: pg_catalog
+[05 mar 2026 16:54:22]   Found schema: public
+[05 mar 2026 16:54:22] Retrieving sequences
+[05 mar 2026 16:54:22] Retrieving [TABLE, VIEW, SYNONYM] for schema 'information_schema'
+[05 mar 2026 16:54:22] Retrieving [TABLE, VIEW, SYNONYM] for schema 'pg_catalog'
+[05 mar 2026 16:54:22] Retrieving [TABLE, VIEW, SYNONYM] for schema 'public'
+[05 mar 2026 16:54:22] Database metadata retrieved (51 ms)
+[05 mar 2026 16:54:22] Database connection closed
