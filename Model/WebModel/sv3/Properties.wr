@@ -1,3 +1,8 @@
-<SiteView id="sv3" name="gerente" protected="true" homePage="sv3#page4">
-  <OperationUnits/>
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3" name="gerente" protected="false" homePage="sv3#page4" landmarks="sv3#page4 sv3#page5 sv3#page6 sv3#page7">
+  <OperationUnits>
+    <GetUnit gr:x="50" gr:y="260" id="sv3#gtu1" name="Get1" contextParameters="UserCtxParam" linkOrder="sv3#gtu1#ln1 sv3#gtu1#ln2">
+      <Link id="sv3#gtu1#ln1" name="Flow1" to="sv3#page6#inu1" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv3#gtu1#ln2" name="Flow2" to="sv3#page5#inu2" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
+  </OperationUnits>
 </SiteView>
