@@ -1,0 +1,84 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="465" gr:y="100" id="sv1#page56" name="Registro" landmark="true">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv1#page56#enu8" name="Nuevo usuario" entity="User" linkOrder="sv1#page56#enu8#ln76">
+      <Field id="sv1#page56#enu8#fld34" name="username" type="string" modifiable="true" attribute="userName"/>
+      <Field id="sv1#page56#enu8#fld35" name="password" type="password" modifiable="true" attribute="password"/>
+      <Field id="sv1#page56#enu8#fld36" name="email" type="string" modifiable="true" attribute="email"/>
+      <Field id="sv1#page56#enu8#fld37" name="descripcion_usuario" type="string" modifiable="true" attribute="User#att32"/>
+      <Field id="sv1#page56#enu8#fld38" name="edad" type="integer" modifiable="true" attribute="User#att33"/>
+      <Field id="sv1#page56#enu8#fld39" name="es_hombre" type="boolean" modifiable="true" attribute="User#att34"/>
+      <Field id="sv1#page56#enu8#fld40" name="fecha_alta" type="timestamp" modifiable="true" attribute="User#att35"/>
+      <Field id="sv1#page56#enu8#fld41" name="foto_perfil" type="string" modifiable="true" attribute="User#att36"/>
+      <Field id="sv1#page56#enu8#fld42" name="telefono" type="string" modifiable="true" attribute="User#att37"/>
+      <Field id="sv1#page56#enu8#fld43" name="es_activo" type="boolean" modifiable="true" attribute="User#att1"/>
+      <SelectionField id="sv1#page56#enu8#sfld1" name="defaultGroup" type="string" role="User2DefaultGroup"/>
+      <Link id="sv1#page56#enu8#ln76" name="Crear usuario" to="sv1#cru1" type="normal" validate="true" gr:bendpoints="77,121,47,-134">
+        <LinkParameter id="sv1#page56#enu8#ln76#par141" name="descripcion_usuario_descripcion_usuario" source="sv1#page56#enu8#fld37" target="sv1#cru1.User#att32"/>
+        <LinkParameter id="sv1#page56#enu8#ln76#par142" name="edad_edad" source="sv1#page56#enu8#fld38" target="sv1#cru1.User#att33"/>
+        <LinkParameter id="sv1#page56#enu8#ln76#par143" name="email_email" source="sv1#page56#enu8#fld36" target="sv1#cru1.email"/>
+        <LinkParameter id="sv1#page56#enu8#ln76#par144" name="es_activo_es_activo" source="sv1#page56#enu8#fld43" target="sv1#cru1.User#att1"/>
+        <LinkParameter id="sv1#page56#enu8#ln76#par145" name="es_hombre_es_hombre" source="sv1#page56#enu8#fld39" target="sv1#cru1.User#att34"/>
+        <LinkParameter id="sv1#page56#enu8#ln76#par150" name="fecha_alta_fecha_alta" source="sv1#page56#enu8#fld40" target="sv1#cru1.User#att35"/>
+        <LinkParameter id="sv1#page56#enu8#ln76#par151" name="foto_perfil_foto_perfil" source="sv1#page56#enu8#fld41" target="sv1#cru1.User#att36"/>
+        <LinkParameter id="sv1#page56#enu8#ln76#par152" name="defaultGroup_Group.oid(defaultGroup)" source="sv1#page56#enu8#sfld1" target="sv1#cru1.User2DefaultGroup.groupOID"/>
+        <LinkParameter id="sv1#page56#enu8#ln76#par155" name="Key [oid]_oid" source="key.userOID" target="sv1#cru1.userOID"/>
+        <LinkParameter id="sv1#page56#enu8#ln76#par157" name="password_password" source="sv1#page56#enu8#fld35" target="sv1#cru1.password"/>
+        <LinkParameter id="sv1#page56#enu8#ln76#par159" name="telefono_telefono" source="sv1#page56#enu8#fld42" target="sv1#cru1.User#att37"/>
+        <LinkParameter id="sv1#page56#enu8#ln76#par170" name="User Object_User Object" source="entityBean" target="sv1#cru1.entityBeans"/>
+        <LinkParameter id="sv1#page56#enu8#ln76#par173" name="Key [oid]_User.oid(UserToUser2)" source="key.userOID" target="sv1#cru1.rel18#role36.userOID"/>
+        <LinkParameter id="sv1#page56#enu8#ln76#par174" name="username_username" source="sv1#page56#enu8#fld34" target="sv1#cru1.userName"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit gr:x="5" gr:y="120" id="sv1#page56#seu1" name="Grupos" entity="Group">
+      <Link id="sv1#page56#seu1#ln72" name="Flow72" to="sv1#page56#enu8" type="transport" validate="true">
+        <LinkParameter id="sv1#page56#seu1#ln72#par119" name="groupName_defaultGroup [label]" source="groupNameArray" target="sv1#page56#enu8#sfld1_label"/>
+        <LinkParameter id="sv1#page56#seu1#ln72#par138" name="oid_defaultGroup [output]" source="groupOIDArray" target="sv1#page56#enu8#sfld1_output"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page56#enu8">
+          <layout:Field field="sv1#page56#enu8#fld34"/>
+          <layout:Field field="sv1#page56#enu8#fld35"/>
+          <layout:Field field="sv1#page56#enu8#fld36"/>
+          <layout:Field field="sv1#page56#enu8#fld37"/>
+          <layout:Field field="sv1#page56#enu8#fld38"/>
+          <layout:Field field="sv1#page56#enu8#fld39"/>
+          <layout:Field field="sv1#page56#enu8#fld40"/>
+          <layout:Field field="sv1#page56#enu8#fld41"/>
+          <layout:Field field="sv1#page56#enu8#fld42"/>
+          <layout:Field field="sv1#page56#enu8#fld43"/>
+          <layout:Field field="sv1#page56#enu8#sfld1"/>
+          <layout:Link link="sv1#page56#enu8#ln76"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

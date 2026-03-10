@@ -1,3 +1,12 @@
-<SiteView id="sv1" name="public" homePage="sv1#page1">
-  <OperationUnits/>
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="public" homePage="sv1#page1" landmarks="sv1#page56">
+  <OperationUnits>
+    <LoginUnit gr:x="160" gr:y="330" id="sv1#lgu1" name="Login1">
+      <KOLink id="sv1#lgu1#kln1" name="KOFlow1" to="sv1#page1#mssu21" gr:bendpoints="88,-53,8,97">
+        <LinkParameter id="sv1#lgu1#kln1#par115" name="Error en Username/Password_Shown Messages" sourceValue="Error en Username/Password" target="sv1#page1#mssu21.shownMessages"/>
+      </KOLink>
+    </LoginUnit>
+    <CreateUnit gr:x="675" gr:y="265" id="sv1#cru1" name="Crear usuario" entity="User">
+      <OKLink id="sv1#cru1#oln29" name="OKFlow29" to="sv1#page56" automaticCoupling="true" gr:bendpoints="-82,-14,83,46"/>
+    </CreateUnit>
+  </OperationUnits>
 </SiteView>

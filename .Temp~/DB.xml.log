@@ -1,137 +1,139 @@
-[06 mar 2026 11:41:40] Building database metadata model
-[06 mar 2026 11:41:40] Properties: {partialRefresh=false, processColumnsUsingSelect=, includePrimaryKeys=true, eventSocketClient=com.webratio.commons.net.EventSocketClient@7f261b7d, includeTables=true, username=admin, outputLogPath=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\IW_WebRatio_Pistea_Grupo1\.Temp~\DB.xml.log, readIndexes=null, driverClass=org.postgresql.Driver, includeSynonyms=true, metaDataProviderClass=com.webratio.commons.db.metadata.PostgreSQLMetaDataProvider, outputPath=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\IW_WebRatio_Pistea_Grupo1\.Temp~\DB.xml, schemaRegex=null, readProcedures=null, includeViews=true, derby.system.home=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby, url=jdbc:postgresql://localhost:5432/Pistea, tableRegex=null, readSQLDefinitions=true, includeForeignKeys=false, retrieveAllNames=false, tablesToRefresh=, eventSocketPort=60851}
-[06 mar 2026 11:41:40] URL: jdbc:postgresql://localhost:5432/Pistea
-[06 mar 2026 11:41:40] Product name: PostgreSQL
-[06 mar 2026 11:41:40] Product version: 9.6.24
-[06 mar 2026 11:41:40] Driver name: PostgreSQL Native Driver
-[06 mar 2026 11:41:40] Driver version: PostgreSQL 9.1 JDBC3g (build 903)
-[06 mar 2026 11:41:40] Driver major version: 9
-[06 mar 2026 11:41:40] Driver minor version: 1
-[06 mar 2026 11:41:40] Identifier quote string: 1
-[06 mar 2026 11:41:40] Retrieving schemas
-[06 mar 2026 11:41:40]   Found schema: information_schema
-[06 mar 2026 11:41:40]   Found schema: pg_catalog
-[06 mar 2026 11:41:40]   Found schema: public
-[06 mar 2026 11:41:40] Retrieving sequences
-[06 mar 2026 11:41:40] Retrieving [TABLE, VIEW, SYNONYM] for schema 'information_schema'
-[06 mar 2026 11:41:40] Retrieving [TABLE, VIEW, SYNONYM] for schema 'pg_catalog'
-[06 mar 2026 11:41:40] Retrieving [TABLE, VIEW, SYNONYM] for schema 'public'
-[06 mar 2026 11:41:40]   Found 'public.group' [type = TABLE]
-[06 mar 2026 11:41:40]   Found 'public.group_module' [type = TABLE]
-[06 mar 2026 11:41:40]   Found 'public.guarda_como_fav' [type = TABLE]
-[06 mar 2026 11:41:40]   Found 'public.incidencia' [type = TABLE]
-[06 mar 2026 11:41:40]   Found 'public.module' [type = TABLE]
-[06 mar 2026 11:41:40]   Found 'public.participa' [type = TABLE]
-[06 mar 2026 11:41:40]   Found 'public.pista' [type = TABLE]
-[06 mar 2026 11:41:40]   Found 'public.reserva' [type = TABLE]
-[06 mar 2026 11:41:40]   Found 'public.torneo' [type = TABLE]
-[06 mar 2026 11:41:40]   Found 'public.user' [type = TABLE]
-[06 mar 2026 11:41:40]   Found 'public.user_group' [type = TABLE]
-[06 mar 2026 11:41:40]   Found 'public.valoracion' [type = TABLE]
-[06 mar 2026 11:41:40] Retrieving columns for 'public.group' [type = TABLE]
-[06 mar 2026 11:41:40]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: groupname [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: module_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40] Retrieving primary keys for 'public.group' [type = TABLE]
-[06 mar 2026 11:41:40]   Found primary key column: oid
-[06 mar 2026 11:41:40] Retrieving columns for 'public.group_module' [type = TABLE]
-[06 mar 2026 11:41:40]   Found column: group_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: module_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40] Retrieving primary keys for 'public.group_module' [type = TABLE]
-[06 mar 2026 11:41:40]   Found primary key column: group_oid
-[06 mar 2026 11:41:40]   Found primary key column: module_oid
-[06 mar 2026 11:41:40] Retrieving columns for 'public.guarda_como_fav' [type = TABLE]
-[06 mar 2026 11:41:40]   Found column: user_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: pista_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40] Retrieving primary keys for 'public.guarda_como_fav' [type = TABLE]
-[06 mar 2026 11:41:40]   Found primary key column: user_oid
-[06 mar 2026 11:41:40]   Found primary key column: pista_oid
-[06 mar 2026 11:41:40] Retrieving columns for 'public.incidencia' [type = TABLE]
-[06 mar 2026 11:41:40]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: descripcion [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: titulo [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: nivel_gravedad [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: estado_incidencia [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: user_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: user_oid_2 [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40] Retrieving primary keys for 'public.incidencia' [type = TABLE]
-[06 mar 2026 11:41:40]   Found primary key column: oid
-[06 mar 2026 11:41:40] Retrieving columns for 'public.module' [type = TABLE]
-[06 mar 2026 11:41:40]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: moduleid [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: modulename [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[06 mar 2026 11:41:40] Retrieving primary keys for 'public.module' [type = TABLE]
-[06 mar 2026 11:41:40]   Found primary key column: oid
-[06 mar 2026 11:41:40] Retrieving columns for 'public.participa' [type = TABLE]
-[06 mar 2026 11:41:40]   Found column: user_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: torneo_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40] Retrieving primary keys for 'public.participa' [type = TABLE]
-[06 mar 2026 11:41:40]   Found primary key column: user_oid
-[06 mar 2026 11:41:40]   Found primary key column: torneo_oid
-[06 mar 2026 11:41:40] Retrieving columns for 'public.pista' [type = TABLE]
-[06 mar 2026 11:41:40]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: nombre_pista [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: deporte_asociado [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: hora_apertura [type = timestamp][SQL/XOPEN type = 93][size = 29][dec. digits = 6]
-[06 mar 2026 11:41:40]   Found column: hora_cierre [type = timestamp][SQL/XOPEN type = 93][size = 29][dec. digits = 6]
-[06 mar 2026 11:41:40]   Found column: capacidad [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: es_disponible [type = bool][SQL/XOPEN type = -7][size = 1][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: ubicacion [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: user_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40] Retrieving primary keys for 'public.pista' [type = TABLE]
-[06 mar 2026 11:41:40]   Found primary key column: oid
-[06 mar 2026 11:41:40] Retrieving columns for 'public.reserva' [type = TABLE]
-[06 mar 2026 11:41:40]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: hora_inicio [type = timestamp][SQL/XOPEN type = 93][size = 29][dec. digits = 6]
-[06 mar 2026 11:41:40]   Found column: estado_reserva [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: precio [type = float8][SQL/XOPEN type = 8][size = 17][dec. digits = 17]
-[06 mar 2026 11:41:40]   Found column: pista_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: incidencia_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: user_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40] Retrieving primary keys for 'public.reserva' [type = TABLE]
-[06 mar 2026 11:41:40]   Found primary key column: oid
-[06 mar 2026 11:41:40] Retrieving columns for 'public.torneo' [type = TABLE]
-[06 mar 2026 11:41:40]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: numero_plazas [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: fecha_inicio [type = timestamp][SQL/XOPEN type = 93][size = 29][dec. digits = 6]
-[06 mar 2026 11:41:40]   Found column: nombre_torneo [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: descripcion_torneo [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: fecha_fin [type = timestamp][SQL/XOPEN type = 93][size = 29][dec. digits = 6]
-[06 mar 2026 11:41:40]   Found column: premio [type = float8][SQL/XOPEN type = 8][size = 17][dec. digits = 17]
-[06 mar 2026 11:41:40]   Found column: precio_inscripcion [type = float8][SQL/XOPEN type = 8][size = 17][dec. digits = 17]
-[06 mar 2026 11:41:40]   Found column: user_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: pista_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40] Retrieving primary keys for 'public.torneo' [type = TABLE]
-[06 mar 2026 11:41:40]   Found primary key column: oid
-[06 mar 2026 11:41:40] Retrieving columns for 'public.user' [type = TABLE]
-[06 mar 2026 11:41:40]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: username [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: password [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: email [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: descripcion_usuario [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: edad [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: es_hombre [type = bool][SQL/XOPEN type = -7][size = 1][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: fecha_alta [type = timestamp][SQL/XOPEN type = 93][size = 29][dec. digits = 6]
-[06 mar 2026 11:41:40]   Found column: foto_perfil [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: telefono [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: group_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: user_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40] Retrieving primary keys for 'public.user' [type = TABLE]
-[06 mar 2026 11:41:40]   Found primary key column: oid
-[06 mar 2026 11:41:40] Retrieving columns for 'public.user_group' [type = TABLE]
-[06 mar 2026 11:41:40]   Found column: user_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: group_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40] Retrieving primary keys for 'public.user_group' [type = TABLE]
-[06 mar 2026 11:41:40]   Found primary key column: user_oid
-[06 mar 2026 11:41:40]   Found primary key column: group_oid
-[06 mar 2026 11:41:40] Retrieving columns for 'public.valoracion' [type = TABLE]
-[06 mar 2026 11:41:40]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: descripcion_valoracion [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: puntuacion [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: fecha_valoracion [type = timestamp][SQL/XOPEN type = 93][size = 29][dec. digits = 6]
-[06 mar 2026 11:41:40]   Found column: pista_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40]   Found column: user_oid_2 [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[06 mar 2026 11:41:40] Retrieving primary keys for 'public.valoracion' [type = TABLE]
-[06 mar 2026 11:41:40]   Found primary key column: oid
-[06 mar 2026 11:41:40] Database metadata retrieved (80 ms)
-[06 mar 2026 11:41:40] Database connection closed
+[10 mar 2026 19:17:14] Building database metadata model
+[10 mar 2026 19:17:14] Properties: {partialRefresh=false, processColumnsUsingSelect=, includePrimaryKeys=true, eventSocketClient=com.webratio.commons.net.EventSocketClient@6ea079d0, includeTables=true, username=admin, outputLogPath=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\IW_WebRatio_Pistea_Grupo1\.Temp~\DB.xml.log, readIndexes=null, driverClass=org.postgresql.Driver, includeSynonyms=true, metaDataProviderClass=com.webratio.commons.db.metadata.PostgreSQLMetaDataProvider, outputPath=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\IW_WebRatio_Pistea_Grupo1\.Temp~\DB.xml, schemaRegex=null, readProcedures=null, includeViews=true, derby.system.home=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby, url=jdbc:postgresql://localhost:5432/Pistea, tableRegex=null, readSQLDefinitions=true, includeForeignKeys=false, retrieveAllNames=false, tablesToRefresh=, eventSocketPort=53403}
+[10 mar 2026 19:17:14] URL: jdbc:postgresql://localhost:5432/Pistea
+[10 mar 2026 19:17:14] Product name: PostgreSQL
+[10 mar 2026 19:17:14] Product version: 9.6.24
+[10 mar 2026 19:17:14] Driver name: PostgreSQL Native Driver
+[10 mar 2026 19:17:14] Driver version: PostgreSQL 9.1 JDBC3g (build 903)
+[10 mar 2026 19:17:14] Driver major version: 9
+[10 mar 2026 19:17:14] Driver minor version: 1
+[10 mar 2026 19:17:14] Identifier quote string: 1
+[10 mar 2026 19:17:14] Retrieving schemas
+[10 mar 2026 19:17:14]   Found schema: information_schema
+[10 mar 2026 19:17:14]   Found schema: pg_catalog
+[10 mar 2026 19:17:14]   Found schema: public
+[10 mar 2026 19:17:14] Retrieving sequences
+[10 mar 2026 19:17:14] Retrieving [TABLE, VIEW, SYNONYM] for schema 'information_schema'
+[10 mar 2026 19:17:14] Retrieving [TABLE, VIEW, SYNONYM] for schema 'pg_catalog'
+[10 mar 2026 19:17:14] Retrieving [TABLE, VIEW, SYNONYM] for schema 'public'
+[10 mar 2026 19:17:14]   Found 'public.group' [type = TABLE]
+[10 mar 2026 19:17:14]   Found 'public.group_module' [type = TABLE]
+[10 mar 2026 19:17:14]   Found 'public.guarda_como_fav' [type = TABLE]
+[10 mar 2026 19:17:14]   Found 'public.incidencia' [type = TABLE]
+[10 mar 2026 19:17:14]   Found 'public.module' [type = TABLE]
+[10 mar 2026 19:17:14]   Found 'public.participa' [type = TABLE]
+[10 mar 2026 19:17:14]   Found 'public.pista' [type = TABLE]
+[10 mar 2026 19:17:14]   Found 'public.reserva' [type = TABLE]
+[10 mar 2026 19:17:14]   Found 'public.torneo' [type = TABLE]
+[10 mar 2026 19:17:14]   Found 'public.user' [type = TABLE]
+[10 mar 2026 19:17:14]   Found 'public.user_group' [type = TABLE]
+[10 mar 2026 19:17:14]   Found 'public.valoracion' [type = TABLE]
+[10 mar 2026 19:17:14] Retrieving columns for 'public.group' [type = TABLE]
+[10 mar 2026 19:17:14]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: groupname [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: module_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14] Retrieving primary keys for 'public.group' [type = TABLE]
+[10 mar 2026 19:17:14]   Found primary key column: oid
+[10 mar 2026 19:17:14] Retrieving columns for 'public.group_module' [type = TABLE]
+[10 mar 2026 19:17:14]   Found column: group_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: module_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14] Retrieving primary keys for 'public.group_module' [type = TABLE]
+[10 mar 2026 19:17:14]   Found primary key column: group_oid
+[10 mar 2026 19:17:14]   Found primary key column: module_oid
+[10 mar 2026 19:17:14] Retrieving columns for 'public.guarda_como_fav' [type = TABLE]
+[10 mar 2026 19:17:14]   Found column: user_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: pista_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14] Retrieving primary keys for 'public.guarda_como_fav' [type = TABLE]
+[10 mar 2026 19:17:14]   Found primary key column: user_oid
+[10 mar 2026 19:17:14]   Found primary key column: pista_oid
+[10 mar 2026 19:17:14] Retrieving columns for 'public.incidencia' [type = TABLE]
+[10 mar 2026 19:17:14]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: descripcion [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: titulo [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: nivel_gravedad [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: estado_incidencia [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: user_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: user_oid_2 [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14] Retrieving primary keys for 'public.incidencia' [type = TABLE]
+[10 mar 2026 19:17:14]   Found primary key column: oid
+[10 mar 2026 19:17:14] Retrieving columns for 'public.module' [type = TABLE]
+[10 mar 2026 19:17:14]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: moduleid [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: modulename [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[10 mar 2026 19:17:14] Retrieving primary keys for 'public.module' [type = TABLE]
+[10 mar 2026 19:17:14]   Found primary key column: oid
+[10 mar 2026 19:17:14] Retrieving columns for 'public.participa' [type = TABLE]
+[10 mar 2026 19:17:14]   Found column: user_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: torneo_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14] Retrieving primary keys for 'public.participa' [type = TABLE]
+[10 mar 2026 19:17:14]   Found primary key column: user_oid
+[10 mar 2026 19:17:14]   Found primary key column: torneo_oid
+[10 mar 2026 19:17:14] Retrieving columns for 'public.pista' [type = TABLE]
+[10 mar 2026 19:17:14]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: nombre_pista [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: deporte_asociado [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: hora_apertura [type = timestamp][SQL/XOPEN type = 93][size = 29][dec. digits = 6]
+[10 mar 2026 19:17:14]   Found column: hora_cierre [type = timestamp][SQL/XOPEN type = 93][size = 29][dec. digits = 6]
+[10 mar 2026 19:17:14]   Found column: capacidad [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: es_disponible [type = bool][SQL/XOPEN type = -7][size = 1][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: ubicacion [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: user_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: foto_pista [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[10 mar 2026 19:17:14] Retrieving primary keys for 'public.pista' [type = TABLE]
+[10 mar 2026 19:17:14]   Found primary key column: oid
+[10 mar 2026 19:17:14] Retrieving columns for 'public.reserva' [type = TABLE]
+[10 mar 2026 19:17:14]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: hora_inicio [type = timestamp][SQL/XOPEN type = 93][size = 29][dec. digits = 6]
+[10 mar 2026 19:17:14]   Found column: estado_reserva [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: precio [type = float8][SQL/XOPEN type = 8][size = 17][dec. digits = 17]
+[10 mar 2026 19:17:14]   Found column: pista_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: incidencia_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: user_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14] Retrieving primary keys for 'public.reserva' [type = TABLE]
+[10 mar 2026 19:17:14]   Found primary key column: oid
+[10 mar 2026 19:17:14] Retrieving columns for 'public.torneo' [type = TABLE]
+[10 mar 2026 19:17:14]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: numero_plazas [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: fecha_inicio [type = timestamp][SQL/XOPEN type = 93][size = 29][dec. digits = 6]
+[10 mar 2026 19:17:14]   Found column: nombre_torneo [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: descripcion_torneo [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: fecha_fin [type = timestamp][SQL/XOPEN type = 93][size = 29][dec. digits = 6]
+[10 mar 2026 19:17:14]   Found column: premio [type = float8][SQL/XOPEN type = 8][size = 17][dec. digits = 17]
+[10 mar 2026 19:17:14]   Found column: precio_inscripcion [type = float8][SQL/XOPEN type = 8][size = 17][dec. digits = 17]
+[10 mar 2026 19:17:14]   Found column: user_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: pista_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14] Retrieving primary keys for 'public.torneo' [type = TABLE]
+[10 mar 2026 19:17:14]   Found primary key column: oid
+[10 mar 2026 19:17:14] Retrieving columns for 'public.user' [type = TABLE]
+[10 mar 2026 19:17:14]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: username [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: password [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: email [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: descripcion_usuario [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: edad [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: es_hombre [type = bool][SQL/XOPEN type = -7][size = 1][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: fecha_alta [type = timestamp][SQL/XOPEN type = 93][size = 29][dec. digits = 6]
+[10 mar 2026 19:17:14]   Found column: foto_perfil [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: telefono [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: group_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: user_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: es_activo [type = bool][SQL/XOPEN type = -7][size = 1][dec. digits = 0]
+[10 mar 2026 19:17:14] Retrieving primary keys for 'public.user' [type = TABLE]
+[10 mar 2026 19:17:14]   Found primary key column: oid
+[10 mar 2026 19:17:14] Retrieving columns for 'public.user_group' [type = TABLE]
+[10 mar 2026 19:17:14]   Found column: user_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: group_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14] Retrieving primary keys for 'public.user_group' [type = TABLE]
+[10 mar 2026 19:17:14]   Found primary key column: user_oid
+[10 mar 2026 19:17:14]   Found primary key column: group_oid
+[10 mar 2026 19:17:14] Retrieving columns for 'public.valoracion' [type = TABLE]
+[10 mar 2026 19:17:14]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: descripcion_valoracion [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: puntuacion [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: fecha_valoracion [type = timestamp][SQL/XOPEN type = 93][size = 29][dec. digits = 6]
+[10 mar 2026 19:17:14]   Found column: pista_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14]   Found column: user_oid_2 [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[10 mar 2026 19:17:14] Retrieving primary keys for 'public.valoracion' [type = TABLE]
+[10 mar 2026 19:17:14]   Found primary key column: oid
+[10 mar 2026 19:17:14] Database metadata retrieved (219 ms)
+[10 mar 2026 19:17:15] Database connection closed
