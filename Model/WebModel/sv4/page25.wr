@@ -1,0 +1,40 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1315" gr:y="575" id="sv4#page25" name="Editar Incidencia" landmark="false">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv4#page25#enu4" name="Formulario Editar Incidencia" entity="ent5" linkOrder="sv4#page25#enu4#ln45 sv4#page25#enu4#ln52" fieldOrder="sv4#page25#enu4#fld18 sv4#page25#enu4#fld20">
+      <Link id="sv4#page25#enu4#ln45" name="Actualizar incidencia" to="sv4#mfu6" type="normal" validate="true">
+        <LinkParameter id="sv4#page25#enu4#ln45#par94" name="Estado incidencia_estado_incidencia" target="sv4#mfu6.ent5#att11" sourceLinkParameter="sv4#page23#pwu6#ln43#par104"/>
+        <LinkParameter id="sv4#page25#enu4#ln45#par95" name="Incidencia Object_Incidencia Object" source="entityBean" target="sv4#mfu6.entityBeans"/>
+        <LinkParameter id="sv4#page25#enu4#ln45#par96" name="Key [oid]_KeyCondition13 [oid]" source="key.ent5#att5" target="sv4#mfu6#su19#kcond13.ent5#att5"/>
+        <LinkParameter id="sv4#page25#enu4#ln45#par97" name="Nivel gravedad_nivel_gravedad" target="sv4#mfu6.ent5#att10" sourceLinkParameter="sv4#page23#pwu6#ln43#par105"/>
+        <LinkParameter id="sv4#page25#enu4#ln45#par1" name="estado_incidencia_PASSING" sourceLinkParameter="sv4#page23#pwu6#ln43#par104" passing="true"/>
+        <LinkParameter id="sv4#page25#enu4#ln45#par9" name="nivel_gravedad_PASSING" sourceLinkParameter="sv4#page23#pwu6#ln43#par105" passing="true"/>
+      </Link>
+      <Link id="sv4#page25#enu4#ln52" name="Volver atr&#225;s" to="sv4#page23" automaticCoupling="true" type="normal" validate="true"/>
+      <Field id="sv4#page25#enu4#fld18" name="Estado incidencia (0 - Pendiente, 1 - En proceso, 2 - Resuelta)" type="integer" modifiable="true" attribute="ent5#att11" preloaded="true"/>
+      <Field id="sv4#page25#enu4#fld20" name="Nivel gravedad (1 - baja, 2 - media, 3 - alta)" type="string" modifiable="true" preloaded="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page25#enu4">
+          <layout:Link link="sv4#page25#enu4#ln45"/>
+          <layout:Link link="sv4#page25#enu4#ln52"/>
+          <layout:Field field="sv4#page25#enu4#fld18"/>
+          <layout:Field field="sv4#page25#enu4#fld20"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

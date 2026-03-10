@@ -1,8 +1,15 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="230" gr:y="120" id="sv4#page3" name="Page 3">
-  <ContentUnits/>
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="3070" gr:y="-75" id="sv4#page3" name="Home Admin">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page3#mssu19" name="Bienvenida">
+      <Placeholder id="sv4#page3#mssu19#ph1" name="Placeholder1"/>
+      <Message xml:space="preserve">Bienvenido al panel de administraci&#243;n, {Placeholder1}. Gestiona usuarios, pistas, incidencias y mucho m&#225;s desde aqu&#237;.</Message>
+    </MultiMessageUnit>
+  </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
-      <layout:Cell colspan="12"/>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page3#mssu19"/>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

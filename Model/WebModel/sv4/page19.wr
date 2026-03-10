@@ -1,0 +1,56 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="580" gr:y="805" id="sv4#page19" name="Editar Pista">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv4#page19#enu1" name="Formulario Editar Pista" entity="ent4" linkOrder="sv4#page19#enu1#ln34 sv4#page19#enu1#ln36">
+      <Field id="sv4#page19#enu1#fld1" name="Nombre pista" type="string" modifiable="true" preloaded="true" attribute="ent4#att14"/>
+      <Field id="sv4#page19#enu1#fld2" name="Deporte asociado" type="string" modifiable="true" attribute="ent4#att15" preloaded="true"/>
+      <Field id="sv4#page19#enu1#fld3" name="Hora apertura" type="timestamp" modifiable="true" attribute="ent4#att16" preloaded="true"/>
+      <Field id="sv4#page19#enu1#fld4" name="Hora cierre" type="timestamp" modifiable="true" attribute="ent4#att17" preloaded="true"/>
+      <Field id="sv4#page19#enu1#fld5" name="Ubicacion" type="string" modifiable="true" attribute="ent4#att39" preloaded="true"/>
+      <Field id="sv4#page19#enu1#fld6" name="Capacidad" type="integer" modifiable="true" attribute="ent4#att18" preloaded="true"/>
+      <Link id="sv4#page19#enu1#ln34" name="Actualizar pista" to="sv4#mfu4" type="normal" validate="true">
+        <LinkParameter id="sv4#page19#enu1#ln34#par73" name="Capacidad_capacidad" source="sv4#page19#enu1#fld6" target="sv4#mfu4.ent4#att18"/>
+        <LinkParameter id="sv4#page19#enu1#ln34#par74" name="Deporte asociado_deporte_asociado" source="sv4#page19#enu1#fld2" target="sv4#mfu4.ent4#att15"/>
+        <LinkParameter id="sv4#page19#enu1#ln34#par75" name="Hora apertura_hora_apertura" source="sv4#page19#enu1#fld3" target="sv4#mfu4.ent4#att16"/>
+        <LinkParameter id="sv4#page19#enu1#ln34#par76" name="Hora cierre_hora_cierre" source="sv4#page19#enu1#fld4" target="sv4#mfu4.ent4#att17"/>
+        <LinkParameter id="sv4#page19#enu1#ln34#par77" name="Key [oid]_KeyCondition8 [oid]" target="sv4#mfu4#su14#kcond8.ent4#att4" sourceLinkParameter="sv4#page18#pwu5#ln33#par86"/>
+        <LinkParameter id="sv4#page19#enu1#ln34#par78" name="Nombre pista_nombre_pista" source="sv4#page19#enu1#fld1" target="sv4#mfu4.ent4#att14"/>
+        <LinkParameter id="sv4#page19#enu1#ln34#par79" name="Pista Object_Pista Object" source="entityBean" target="sv4#mfu4.entityBeans"/>
+        <LinkParameter id="sv4#page19#enu1#ln34#par80" name="Ubicacion_ubicacion" source="sv4#page19#enu1#fld5" target="sv4#mfu4.ent4#att39"/>
+        <LinkParameter id="sv4#page19#enu1#ln34#par89" name="&#191;Est&#225; disponible?_es_disponible" source="sv4#page19#enu1#fld19" target="sv4#mfu4.ent4#att19"/>
+        <LinkParameter id="sv4#page19#enu1#ln34#par132" name="Foto pista_foto_pista" source="sv4#page19#enu1#fld29" target="sv4#mfu4.ent4#att38"/>
+      </Link>
+      <Link id="sv4#page19#enu1#ln36" name="Volver atr&#225;s" to="sv4#page18#pwu5" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-176,-18,149,-27"/>
+      <Field id="sv4#page19#enu1#fld19" name="&#191;Est&#225; disponible?" type="boolean" modifiable="true" attribute="ent4#att19" preloaded="true"/>
+      <Field id="sv4#page19#enu1#fld29" name="Foto pista" type="string" modifiable="true" attribute="ent4#att38" preloaded="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page19#enu1">
+          <layout:Link link="sv4#page19#enu1#ln34"/>
+          <layout:Link link="sv4#page19#enu1#ln36"/>
+          <layout:Field field="sv4#page19#enu1#fld1"/>
+          <layout:Field field="sv4#page19#enu1#fld2"/>
+          <layout:Field field="sv4#page19#enu1#fld3"/>
+          <layout:Field field="sv4#page19#enu1#fld4"/>
+          <layout:Field field="sv4#page19#enu1#fld5"/>
+          <layout:Field field="sv4#page19#enu1#fld6"/>
+          <layout:Field field="sv4#page19#enu1#fld19"/>
+          <layout:Field field="sv4#page19#enu1#fld29"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

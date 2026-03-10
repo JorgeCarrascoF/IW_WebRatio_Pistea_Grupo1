@@ -1,0 +1,38 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="2140" gr:y="-280" id="sv4#page42" name="Confirmar Ascender Gerente">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv4#page42#dau8" name="Usuario a ascender" entity="User" displayAttributes="userName email" linkOrder="sv4#page42#dau8#ln67 sv4#page42#dau8#ln68">
+      <Selector id="sv4#page42#dau8#su35" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#page42#dau8#su35#kcond26" name="KeyCondition26" predicate="in" implied="false"/>
+        <AttributesCondition id="sv4#page42#dau8#su35#acond19" name="AttCondition19" predicate="eq" booleanOperator="or" implied="false" attributes="User#att1" value="true"/>
+      </Selector>
+      <Link id="sv4#page42#dau8#ln67" name="Ascender a gerente" to="sv4#dlu3" type="normal" validate="true">
+        <LinkParameter id="sv4#page42#dau8#ln67#par34" name="oid_RoleCondition3 [oid]" target="sv4#dlu3#su1#rcond3.userOID" sourceLinkParameter="sv4#page41#pwu8#ln66#par54"/>
+        <LinkParameter id="sv4#page42#dau8#ln67#par36" name="oid_PASSING" source="data.userOID" passing="true"/>
+      </Link>
+      <Link id="sv4#page42#dau8#ln68" name="Cancelar ascenso" to="sv4#page41" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="80,88,50,-218"/>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page42#dau8">
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Link link="sv4#page42#dau8#ln67"/>
+          <layout:Link link="sv4#page42#dau8#ln68"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

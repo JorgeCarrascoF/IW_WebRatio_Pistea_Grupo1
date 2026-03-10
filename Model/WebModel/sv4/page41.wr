@@ -1,0 +1,104 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="2170" gr:y="-80" id="sv4#page41" name="Gestionar Roles" landmark="true">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="15" gr:y="0" id="sv4#page41#pwu8" name="Lista de clientes" sortable="true" checkable="false" useCountQuery="false" entity="User" displayAttributes="userName email User#att32 User#att37" linkOrder="sv4#page41#pwu8#ln66 sv4#page41#pwu8#ln9">
+      <Selector id="sv4#page41#pwu8#su29" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv4#page41#pwu8#su29#acond10" name="AttCondition10" predicate="eq" booleanOperator="or" implied="false" attributes="User#att1" value="true"/>
+        <AttributesCondition id="sv4#page41#pwu8#su29#acond11" name="AttCondition11" predicate="eq" booleanOperator="or" implied="false" attributes="User2DefaultGroup.groupOID" value="3"/>
+      </Selector>
+      <Link id="sv4#page41#pwu8#ln66" name="Ascender a gerente" to="sv4#page42#dau8" type="normal" validate="true">
+        <LinkParameter id="sv4#page41#pwu8#ln66#par49" name="oid_KeyCondition26 [oid]" source="data[].userOID" target="sv4#page42#dau8#su35#kcond26.userOID"/>
+        <LinkParameter id="sv4#page41#pwu8#ln66#par54" name="oid_PASSING" source="data[].userOID" passing="true"/>
+      </Link>
+      <Link id="sv4#page41#pwu8#ln9" name="Ascender a administrador" to="sv4#page31#dau5" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-220,-20,100,126"/>
+    </PowerIndexUnit>
+    <PowerIndexUnit gr:x="20" gr:y="255" id="sv4#page41#pwu9" name="Lista de gerentes" sortable="true" checkable="false" useCountQuery="false" entity="User" displayAttributes="userName email User#att32 User#att37" linkOrder="sv4#page41#pwu9#ln74 sv4#page41#pwu9#ln81">
+      <Selector id="sv4#page41#pwu9#su30" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv4#page41#pwu9#su30#acond12" name="AttCondition12" predicate="eq" booleanOperator="or" implied="false" attributes="User#att1" value="true"/>
+        <AttributesCondition id="sv4#page41#pwu9#su30#acond13" name="AttCondition13" predicate="eq" booleanOperator="or" implied="false" attributes="User2DefaultGroup.groupOID" value="2"/>
+      </Selector>
+      <Link id="sv4#page41#pwu9#ln74" name="Ascender a administrador" to="sv4#page45#dau12" type="normal" validate="true" gr:bendpoints="-210,122,-160,-168;-207,280,-157,-10">
+        <LinkParameter id="sv4#page41#pwu9#ln74#par153" name="oid_KeyCondition34 [oid]" source="data[].userOID" target="sv4#page45#dau12#su43#kcond34.userOID"/>
+        <LinkParameter id="sv4#page41#pwu9#ln74#par154" name="oid_PASSING" source="data[].userOID" passing="true"/>
+      </Link>
+      <Link id="sv4#page41#pwu9#ln81" name="Degradar a cliente" to="sv4#page47#dau13" type="normal" validate="true">
+        <LinkParameter id="sv4#page41#pwu9#ln81#par164" name="oid_KeyCondition37 [oid]" source="data[].userOID" target="sv4#page47#dau13#su46#kcond37.userOID"/>
+        <LinkParameter id="sv4#page41#pwu9#ln81#par165" name="oid_PASSING" source="data[].userOID" passing="true"/>
+      </Link>
+    </PowerIndexUnit>
+    <PowerIndexUnit gr:x="0" gr:y="125" id="sv4#page41#pwu10" name="Lista de administrdores" sortable="true" checkable="false" useCountQuery="false" entity="User" displayAttributes="userName email User#att32 User#att37">
+      <Selector id="sv4#page41#pwu10#su31" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv4#page41#pwu10#su31#acond14" name="AttCondition14" predicate="eq" booleanOperator="or" implied="false" attributes="User#att1" value="true"/>
+        <AttributesCondition id="sv4#page41#pwu10#su31#acond15" name="AttCondition15" predicate="eq" booleanOperator="or" implied="false" attributes="User2DefaultGroup.groupOID" value="1"/>
+      </Selector>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page41#pwu8">
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Attribute attribute="User#att32"/>
+          <layout:Attribute attribute="User#att37"/>
+          <layout:Link link="sv4#page41#pwu8#ln66"/>
+          <layout:Link link="sv4#page41#pwu8#ln9"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page41#pwu9">
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Attribute attribute="User#att32"/>
+          <layout:Attribute attribute="User#att37"/>
+          <layout:Link link="sv4#page41#pwu9#ln74"/>
+          <layout:Link link="sv4#page41#pwu9#ln81"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page41#pwu10">
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Attribute attribute="User#att32"/>
+          <layout:Attribute attribute="User#att37"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

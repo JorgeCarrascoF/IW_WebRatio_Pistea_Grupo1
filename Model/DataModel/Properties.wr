@@ -1,5 +1,5 @@
 <DataModel xmlns:db="http://www.webratio.com/2006/WebML/Database" xmlns:gr="http://www.webratio.com/2006/WebML/Graph">
-  <Entity id="User" name="User" duration="persistent" gr:x="535" gr:y="230" gr:hideAttributes="false" attributeOrder="userOID userName password email User#att32 User#att33 User#att34 User#att35 User#att36 User#att37" db:database="db1" db:table="user">
+  <Entity id="User" name="User" duration="persistent" gr:x="535" gr:y="230" gr:hideAttributes="false" attributeOrder="userOID userName password email User#att32 User#att33 User#att34 User#att35 User#att36 User#att37 User#att1" db:database="db1" db:table="user">
     <Attribute name="oid" id="userOID" type="integer" key="true" db:column="oid"/>
     <Attribute name="username" id="userName" type="string" db:column="username"/>
     <Attribute name="password" id="password" type="password" db:column="password"/>
@@ -10,6 +10,7 @@
     <Attribute id="User#att35" name="fecha_alta" type="timestamp" db:column="fecha_alta"/>
     <Attribute id="User#att36" name="foto_perfil" type="string" db:column="foto_perfil"/>
     <Attribute id="User#att37" name="telefono" type="string" db:column="telefono"/>
+    <Attribute id="User#att1" name="es_activo" type="boolean" db:column="es_activo"/>
   </Entity>
   <Entity id="Group" name="Group" duration="persistent" gr:x="420" gr:y="5" gr:hideAttributes="false" attributeOrder="groupOID groupName" db:database="db1" db:table="group">
     <Attribute name="oid" id="groupOID" type="integer" key="true" db:column="oid"/>
@@ -68,7 +69,7 @@
     <Attribute id="ent3#att30" name="premio" type="float" db:column="premio"/>
     <Attribute id="ent3#att31" name="precio_inscripcion" type="float" db:column="precio_inscripcion"/>
   </Entity>
-  <Entity gr:x="365" gr:y="605" id="ent4" name="Pista" duration="persistent" attributeOrder="ent4#att4 ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att19 ent4#att39" db:database="db1" db:table="pista">
+  <Entity gr:x="220" gr:y="655" id="ent4" name="Pista" duration="persistent" attributeOrder="ent4#att4 ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att19 ent4#att39 ent4#att38" db:database="db1" db:table="pista">
     <Attribute id="ent4#att4" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent4#att14" name="nombre_pista" type="string" db:column="nombre_pista"/>
     <Attribute id="ent4#att15" name="deporte_asociado" type="string" db:column="deporte_asociado"/>
@@ -77,6 +78,7 @@
     <Attribute id="ent4#att18" name="capacidad" type="integer" db:column="capacidad"/>
     <Attribute id="ent4#att19" name="es_disponible" type="boolean" db:column="es_disponible"/>
     <Attribute id="ent4#att39" name="ubicacion" type="string" db:column="ubicacion"/>
+    <Attribute id="ent4#att38" name="foto_pista" type="string" db:column="foto_pista"/>
   </Entity>
   <Entity gr:x="140" gr:y="155" id="ent5" name="Incidencia" duration="persistent" attributeOrder="ent5#att5 ent5#att8 ent5#att9 ent5#att10 ent5#att11" db:database="db1" db:table="incidencia">
     <Attribute id="ent5#att5" key="true" name="oid" type="integer" db:column="oid"/>
@@ -85,7 +87,7 @@
     <Attribute id="ent5#att10" name="nivel_gravedad" type="integer" db:column="nivel_gravedad"/>
     <Attribute id="ent5#att11" name="estado_incidencia" type="integer" db:column="estado_incidencia"/>
   </Entity>
-  <Entity gr:x="790" gr:y="525" id="ent6" name="Valoracion" duration="persistent" attributeOrder="ent6#att6 ent6#att21 ent6#att20 ent6#att24" db:database="db1" db:table="valoracion">
+  <Entity gr:x="770" gr:y="585" id="ent6" name="Valoracion" duration="persistent" attributeOrder="ent6#att6 ent6#att21 ent6#att20 ent6#att24" db:database="db1" db:table="valoracion">
     <Attribute id="ent6#att6" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent6#att20" name="descripcion_valoracion" type="string" db:column="descripcion_valoracion"/>
     <Attribute id="ent6#att21" name="puntuacion" type="integer" db:column="puntuacion"/>
@@ -105,14 +107,6 @@
     </RelationshipRole1>
     <RelationshipRole2 id="rel4#role8" name="TorneoToUser" maxCard="N">
       <db:JoinColumn attribute="ent3#att3" name="torneo_oid"/>
-    </RelationshipRole2>
-  </Relationship>
-  <Relationship id="rel6" name="guarda como fav" sourceEntity="User" targetEntity="ent4" gr:bendpoints="-36,212,139,-144" db:database="db1" db:table="guarda_como_fav">
-    <RelationshipRole1 id="rel6#role11" name="UserToPista" maxCard="N">
-      <db:JoinColumn attribute="userOID" name="user_oid"/>
-    </RelationshipRole1>
-    <RelationshipRole2 id="rel6#role12" name="PistaToUser" maxCard="N">
-      <db:JoinColumn attribute="ent4#att4" name="pista_oid"/>
     </RelationshipRole2>
   </Relationship>
   <Relationship id="rel7" name="realiza" sourceEntity="User" targetEntity="ent2" db:database="db1" db:table="reserva">
@@ -196,4 +190,12 @@
     </RelationshipRole2>
   </Relationship>
   <db:Database id="db1" name="PisteaDB" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/Pistea" username="admin" cryptedPassword="true" password="YWRtaW4=" schema="public"/>
+  <Relationship id="rel2" name="guarda_como_fav" sourceEntity="ent4" targetEntity="User" gr:bendpoints="295,-167,-25,238" db:database="db1" db:table="guarda_como_fav">
+    <RelationshipRole1 id="rel2#role3" name="PistaToUser" maxCard="N">
+      <db:JoinColumn attribute="ent4#att4" name="pista_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel2#role4" name="UserToPista" maxCard="N">
+      <db:JoinColumn attribute="userOID" name="user_oid"/>
+    </RelationshipRole2>
+  </Relationship>
 </DataModel>

@@ -1,0 +1,48 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="45" gr:y="65" id="sv4#page13" name="Contactar Usuario">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv4#page13#enu3" name="Formulario de Contacto" linkOrder="sv4#page13#enu3#ln12 sv4#page13#enu3#ln7" entity="User" fieldOrder="sv4#page13#enu3#fld16 sv4#page13#enu3#fld14 sv4#page13#enu3#fld15 sv4#page13#enu3#fld17">
+      <Field id="sv4#page13#enu3#fld14" name="asunto" type="string" modifiable="true" contentType="text/plain" preloaded="true"/>
+      <Field id="sv4#page13#enu3#fld15" name="mensaje" type="text" modifiable="true" contentType="text/plain" preloaded="true"/>
+      <Link id="sv4#page13#enu3#ln12" name="Enviar correo" to="sv4#mlu1" type="normal" validate="true">
+        <LinkParameter id="sv4#page13#enu3#ln12#par40" name="mensaje_Mail - Body" source="sv4#page13#enu3#fld15" target="sv4#mlu1.body"/>
+        <LinkParameter id="sv4#page13#enu3#ln12#par41" name="asunto_Mail - Subject" source="sv4#page13#enu3#fld14" target="sv4#mlu1.subject"/>
+        <LinkParameter id="sv4#page13#enu3#ln12#par43" name="smtp.gmail.com_SMTP Server - Host" sourceValue="smtp.gmail.com" target="sv4#mlu1.serverHost"/>
+        <LinkParameter id="sv4#page13#enu3#ln12#par44" name="lacontrase&#241;aquesea_SMTP Server - Password" sourceValue="lacontrase&#241;aquesea" target="sv4#mlu1.serverPassword"/>
+        <LinkParameter id="sv4#page13#enu3#ln12#par45" name="587_SMTP Server - Port" sourceValue="587" target="sv4#mlu1.serverPort"/>
+        <LinkParameter id="sv4#page13#enu3#ln12#par46" name="TLS_SMTP Server - Protocol" sourceValue="TLS" target="sv4#mlu1.serverProtocol"/>
+        <LinkParameter id="sv4#page13#enu3#ln12#par47" name="false_SMTP Server - Use SSL" sourceValue="false" target="sv4#mlu1.serverUseSsl"/>
+        <LinkParameter id="sv4#page13#enu3#ln12#par48" name="tuemail@gmail.com_SMTP Server - Username" target="sv4#mlu1.serverUsername" sourceValue="tuemail@gmail.com"/>
+        <LinkParameter id="sv4#page13#enu3#ln12#par52" name="emailOrigen_Mail - From" target="sv4#mlu1.from" source="sv4#page13#enu3#fld17"/>
+        <LinkParameter id="sv4#page13#enu3#ln12#par191" name="emailDestino_Mail - To" source="sv4#page13#enu3#fld16" target="sv4#mlu1.to"/>
+      </Link>
+      <Field id="sv4#page13#enu3#fld16" name="emailDestino" type="string" modifiable="false" attribute="email" preloaded="true"/>
+      <Field id="sv4#page13#enu3#fld17" name="emailOrigen" type="string" modifiable="false" preloaded="true" hidden="false"/>
+      <Link id="sv4#page13#enu3#ln7" name="Volver atr&#225;s" to="sv4#page9#pwu2" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="163,38,-142,38"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page13#enu3">
+          <layout:Link link="sv4#page13#enu3#ln12"/>
+          <layout:Link link="sv4#page13#enu3#ln7"/>
+          <layout:Field field="sv4#page13#enu3#fld16"/>
+          <layout:Field field="sv4#page13#enu3#fld14"/>
+          <layout:Field field="sv4#page13#enu3#fld15"/>
+          <layout:Field field="sv4#page13#enu3#fld17"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

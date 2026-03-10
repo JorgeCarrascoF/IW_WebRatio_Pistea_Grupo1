@@ -1,0 +1,64 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="275" gr:y="305" id="sv4#page10" name="Editar Usuario">
+  <ContentUnits>
+    <EntryUnit id="sv4#page10#enu2" name="Formulario Editar Usuario" gr:x="0" gr:y="0" entity="User" linkOrder="sv4#page10#enu2#ln8 sv4#page10#enu2#ln30">
+      <Field id="sv4#page10#enu2#fld7" name="username" type="string" modifiable="true" attribute="userName" preloaded="true"/>
+      <Field id="sv4#page10#enu2#fld8" name="email" type="string" modifiable="true" attribute="email" preloaded="true"/>
+      <Field id="sv4#page10#enu2#fld9" name="descripcion_usuario" type="string" modifiable="true" attribute="User#att32" preloaded="true"/>
+      <Field id="sv4#page10#enu2#fld10" name="edad" type="integer" modifiable="true" attribute="User#att33" preloaded="true"/>
+      <Field id="sv4#page10#enu2#fld11" name="telefono" type="string" modifiable="true" attribute="User#att37" preloaded="true"/>
+      <Field id="sv4#page10#enu2#fld12" name="foto_perfil" type="string" modifiable="true" attribute="User#att36" preloaded="true"/>
+      <Link id="sv4#page10#enu2#ln8" name="Editar Usuario" to="sv4#mfu1" type="normal" validate="true">
+        <LinkParameter id="sv4#page10#enu2#ln8#par3" name="edad_edad" source="sv4#page10#enu2#fld10" target="sv4#mfu1.User#att33"/>
+        <LinkParameter id="sv4#page10#enu2#ln8#par4" name="email_email" source="sv4#page10#enu2#fld8" target="sv4#mfu1.email"/>
+        <LinkParameter id="sv4#page10#enu2#ln8#par5" name="foto_perfil_foto_perfil" source="sv4#page10#enu2#fld12" target="sv4#mfu1.User#att36"/>
+        <LinkParameter id="sv4#page10#enu2#ln8#par6" name="Key [oid]_KeyCondition2 [oid]" target="sv4#mfu1#su4#kcond2.userOID" sourceLinkParameter="sv4#page9#pwu2#ln5#par16"/>
+        <LinkParameter id="sv4#page10#enu2#ln8#par7" name="telefono_telefono" source="sv4#page10#enu2#fld11" target="sv4#mfu1.User#att37"/>
+        <LinkParameter id="sv4#page10#enu2#ln8#par8" name="username_username" source="sv4#page10#enu2#fld7" target="sv4#mfu1.userName"/>
+        <LinkParameter id="sv4#page10#enu2#ln8#par38" name="descripcion_usuario_descripcion_usuario" source="sv4#page10#enu2#fld9" target="sv4#mfu1.User#att32"/>
+      </Link>
+      <Field id="sv4#page10#enu2#fld13" name="oid" type="integer" modifiable="false" attribute="userOID" hidden="true" preloaded="true"/>
+      <Link id="sv4#page10#enu2#ln30" name="Volver atr&#225;s" to="sv4#page9#pwu2" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="51,-137,21,183"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page10#enu2">
+          <layout:Field field="sv4#page10#enu2#fld7"/>
+          <layout:Field field="sv4#page10#enu2#fld8"/>
+          <layout:Field field="sv4#page10#enu2#fld9"/>
+          <layout:Field field="sv4#page10#enu2#fld10"/>
+          <layout:Field field="sv4#page10#enu2#fld11"/>
+          <layout:Field field="sv4#page10#enu2#fld12"/>
+          <layout:Link link="sv4#page10#enu2#ln8"/>
+          <layout:Link link="sv4#page10#enu2#ln30"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

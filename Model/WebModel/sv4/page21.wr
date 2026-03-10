@@ -1,0 +1,39 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-55" gr:y="565" id="sv4#page21" name="Confirmar Eliminar Pista">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv4#page21#dau4" name="Pista a borrar" entity="ent4" linkOrder="sv4#page21#dau4#ln38 sv4#page21#dau4#ln39" displayAttributes="ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att19 ent4#att39">
+      <Selector id="sv4#page21#dau4#su17" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#page21#dau4#su17#kcond11" name="KeyCondition11" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv4#page21#dau4#ln38" name="Cancelar borrado" to="sv4#page18#pwu5" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="51,112,-264,-57"/>
+      <Link id="sv4#page21#dau4#ln39" name="Confirmar borrado" to="sv4#dlu1" automaticCoupling="true" type="normal" validate="true"/>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page21#dau4">
+          <layout:Link link="sv4#page21#dau4#ln38"/>
+          <layout:Link link="sv4#page21#dau4#ln39"/>
+          <layout:Attribute attribute="ent4#att14"/>
+          <layout:Attribute attribute="ent4#att15"/>
+          <layout:Attribute attribute="ent4#att16"/>
+          <layout:Attribute attribute="ent4#att17"/>
+          <layout:Attribute attribute="ent4#att18"/>
+          <layout:Attribute attribute="ent4#att19"/>
+          <layout:Attribute attribute="ent4#att39"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

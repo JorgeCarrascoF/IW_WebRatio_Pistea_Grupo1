@@ -1,0 +1,85 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="2095" gr:y="380" id="sv4#page45" name="Confirmar Ascender Admin">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page45#mssu15" name="Aviso Borrado Cascada">
+      <Message xml:space="preserve">Sus pistas y torneos ser&#225;n eliminados.</Message>
+    </MultiMessageUnit>
+    <DataUnit gr:x="30" gr:y="85" id="sv4#page45#dau12" name="Gerente a ascender" entity="User" displayAttributes="userName email" linkOrder="sv4#page45#dau12#ln77 sv4#page45#dau12#ln79">
+      <Selector id="sv4#page45#dau12#su43" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#page45#dau12#su43#kcond34" name="KeyCondition34" predicate="in" implied="false"/>
+        <AttributesCondition id="sv4#page45#dau12#su43#acond21" name="AttCondition21" predicate="eq" booleanOperator="or" implied="false" attributes="User#att1" value="true"/>
+      </Selector>
+      <Link id="sv4#page45#dau12#ln77" name="Confirmar ascenso" to="sv4#dlu10" type="normal" validate="true">
+        <LinkParameter id="sv4#page45#dau12#ln77#par158" name="oid_PASSING" source="data.userOID" passing="true"/>
+        <LinkParameter id="sv4#page45#dau12#ln77#par160" name="oid_PASSING_RoleCondition11 [oid]" sourceLinkParameter="sv4#page41#pwu9#ln74#par154" target="sv4#dlu10#su45#rcond11.userOID"/>
+      </Link>
+      <Link id="sv4#page45#dau12#ln79" name="Cancelar ascenso" to="sv4#page41" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="96,-62,46,363"/>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page45#mssu15"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page45#dau12">
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Link link="sv4#page45#dau12#ln77"/>
+          <layout:Link link="sv4#page45#dau12#ln79"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

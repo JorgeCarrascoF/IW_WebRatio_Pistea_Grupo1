@@ -1,0 +1,53 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1180" gr:y="-270" id="sv4#page32" name="Editar Torneo">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv4#page32#enu5" name="Formulario Editar Torneo" entity="ent3" linkOrder="sv4#page32#enu5#ln32 sv4#page32#enu5#ln44">
+      <Field id="sv4#page32#enu5#fld21" name="Nombre torneo" type="string" modifiable="true" attribute="ent3#att27" preloaded="true"/>
+      <Field id="sv4#page32#enu5#fld22" name="Descripci&#243;n torneo" type="string" modifiable="true" attribute="ent3#att28" preloaded="true"/>
+      <Field id="sv4#page32#enu5#fld23" name="N&#250;mero plazas" type="integer" modifiable="true" attribute="ent3#att22" preloaded="true"/>
+      <Field id="sv4#page32#enu5#fld24" name="Fecha inicio" type="timestamp" modifiable="true" attribute="ent3#att23" preloaded="true"/>
+      <Field id="sv4#page32#enu5#fld25" name="Fecha fin" type="timestamp" modifiable="true" attribute="ent3#att29" preloaded="true"/>
+      <Field id="sv4#page32#enu5#fld26" name="Precio inscripci&#243;n" type="float" modifiable="true" attribute="ent3#att31" preloaded="true"/>
+      <Field id="sv4#page32#enu5#fld27" name="Premio" type="float" modifiable="true" attribute="ent3#att30" preloaded="true"/>
+      <Link id="sv4#page32#enu5#ln32" name="Editar torneo" to="sv4#mfu5" type="normal" validate="true">
+        <LinkParameter id="sv4#page32#enu5#ln32#par100" name="Key [oid]_KeyCondition17 [oid]" target="sv4#mfu5#su23#kcond17.ent3#att3" sourceLinkParameter="sv4#page29#pwu1#ln31#par102"/>
+        <LinkParameter id="sv4#page32#enu5#ln32#par101" name="Key [oid]_PASSING" source="key.ent3#att3" passing="true"/>
+        <LinkParameter id="sv4#page32#enu5#ln32#par103" name="Descripci&#243;n torneo_descripcion_torneo" source="sv4#page32#enu5#fld22" target="sv4#mfu5.ent3#att28"/>
+        <LinkParameter id="sv4#page32#enu5#ln32#par108" name="Fecha fin_fecha_fin" source="sv4#page32#enu5#fld25" target="sv4#mfu5.ent3#att29"/>
+        <LinkParameter id="sv4#page32#enu5#ln32#par109" name="Fecha inicio_fecha_inicio" source="sv4#page32#enu5#fld24" target="sv4#mfu5.ent3#att23"/>
+        <LinkParameter id="sv4#page32#enu5#ln32#par110" name="Nombre torneo_nombre_torneo" source="sv4#page32#enu5#fld21" target="sv4#mfu5.ent3#att27"/>
+        <LinkParameter id="sv4#page32#enu5#ln32#par111" name="N&#250;mero plazas_numero_plazas" source="sv4#page32#enu5#fld23" target="sv4#mfu5.ent3#att22"/>
+        <LinkParameter id="sv4#page32#enu5#ln32#par112" name="Precio inscripci&#243;n_precio_inscripcion" source="sv4#page32#enu5#fld26" target="sv4#mfu5.ent3#att31"/>
+        <LinkParameter id="sv4#page32#enu5#ln32#par113" name="Premio_premio" source="sv4#page32#enu5#fld27" target="sv4#mfu5.ent3#att30"/>
+      </Link>
+      <Link id="sv4#page32#enu5#ln44" name="Volver atr&#225;s" to="sv4#page29" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-72,100,-81,-116"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page32#enu5">
+          <layout:Field field="sv4#page32#enu5#fld21"/>
+          <layout:Field field="sv4#page32#enu5#fld22"/>
+          <layout:Field field="sv4#page32#enu5#fld23"/>
+          <layout:Field field="sv4#page32#enu5#fld24"/>
+          <layout:Field field="sv4#page32#enu5#fld25"/>
+          <layout:Field field="sv4#page32#enu5#fld26"/>
+          <layout:Field field="sv4#page32#enu5#fld27"/>
+          <layout:Link link="sv4#page32#enu5#ln32"/>
+          <layout:Link link="sv4#page32#enu5#ln44"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

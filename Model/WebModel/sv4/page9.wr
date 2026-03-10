@@ -1,0 +1,102 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="345" gr:y="-65" id="sv4#page9" name="Gestionar Usuarios" landmark="true">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="5" gr:y="120" id="sv4#page9#pwu2" name="Lista de Usuarios Activos" sortable="true" checkable="false" useCountQuery="false" entity="User" displayAttributes="userName email User#att33 User#att34 User#att35 User#att37 User#att32 User#att36" linkOrder="sv4#page9#pwu2#ln5 sv4#page9#pwu2#ln13 sv4#page9#pwu2#ln16">
+      <Link id="sv4#page9#pwu2#ln5" name="Editar Usuario" to="sv4#page10#enu2" type="normal" validate="true" gr:bendpoints="-61,120,14,-104">
+        <LinkParameter id="sv4#page9#pwu2#ln5#par2" name="oid_Key Condition [oid]" source="data[].userOID" target="sv4#page10#enu2.userOID"/>
+        <LinkParameter id="sv4#page9#pwu2#ln5#par16" name="oid_PASSING" source="data[].userOID" passing="true"/>
+        <LinkParameter id="sv4#page9#pwu2#ln5#par18" name="descripcion_usuario_descripcion_usuario" source="data[].User#att32" target="sv4#page10#enu2#fld9_slot"/>
+        <LinkParameter id="sv4#page9#pwu2#ln5#par19" name="edad_edad" source="data[].User#att33" target="sv4#page10#enu2#fld10_slot"/>
+        <LinkParameter id="sv4#page9#pwu2#ln5#par20" name="email_email" source="data[].email" target="sv4#page10#enu2#fld8_slot"/>
+        <LinkParameter id="sv4#page9#pwu2#ln5#par21" name="foto_perfil_foto_perfil" source="data[].User#att36" target="sv4#page10#enu2#fld12_slot"/>
+        <LinkParameter id="sv4#page9#pwu2#ln5#par22" name="oid_oid" source="data[].userOID" target="sv4#page10#enu2#fld13_slot"/>
+        <LinkParameter id="sv4#page9#pwu2#ln5#par23" name="telefono_telefono" source="data[].User#att37" target="sv4#page10#enu2#fld11_slot"/>
+        <LinkParameter id="sv4#page9#pwu2#ln5#par24" name="username_username" source="data[].userName" target="sv4#page10#enu2#fld7_slot"/>
+        <LinkParameter id="sv4#page9#pwu2#ln5#par25" name="descripcion_usuario_PASSING" source="data[].User#att32" passing="true"/>
+        <LinkParameter id="sv4#page9#pwu2#ln5#par26" name="edad_PASSING" source="data[].User#att33" passing="true"/>
+        <LinkParameter id="sv4#page9#pwu2#ln5#par27" name="email_PASSING" source="data[].email" passing="true"/>
+        <LinkParameter id="sv4#page9#pwu2#ln5#par28" name="foto_perfil_PASSING" source="data[].User#att36" passing="true"/>
+        <LinkParameter id="sv4#page9#pwu2#ln5#par29" name="telefono_PASSING" source="data[].User#att37" passing="true"/>
+        <LinkParameter id="sv4#page9#pwu2#ln5#par30" name="username_PASSING" source="data[].userName" passing="true"/>
+      </Link>
+      <Link id="sv4#page9#pwu2#ln13" name="Contactar Usuario" to="sv4#page13#enu3" type="normal" validate="true" gr:bendpoints="-144,-25,161,-25">
+        <LinkParameter id="sv4#page9#pwu2#ln13#par39" name="oid_Key Condition [oid]" source="data[].userOID" target="sv4#page13#enu3.userOID"/>
+        <LinkParameter id="sv4#page9#pwu2#ln13#par186" name="email_emailDestino" source="data[].email" target="sv4#page13#enu3#fld16_slot"/>
+      </Link>
+      <Link id="sv4#page9#pwu2#ln16" name="Dar de Baja Usuario" to="sv4#page16#dau2" type="normal" validate="true">
+        <LinkParameter id="sv4#page9#pwu2#ln16#par37" name="oid_KeyCondition6 [oid]" source="data[].userOID" target="sv4#page16#dau2#su8#kcond6.userOID"/>
+      </Link>
+      <Selector id="sv4#page9#pwu2#su9" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv4#page9#pwu2#su9#acond1" name="AttCondition1" predicate="eq" booleanOperator="or" implied="false" attributes="User#att1" value="true"/>
+      </Selector>
+    </PowerIndexUnit>
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv4#page9#pwu3" name="Lista de Usuarios Inactivos" sortable="true" checkable="false" useCountQuery="false" entity="User" displayAttributes="userName email User#att33 User#att34 User#att35 User#att37 User#att32 User#att36" linkOrder="sv4#page9#pwu3#ln14 sv4#page9#pwu3#ln17">
+      <Selector id="sv4#page9#pwu3#su7" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv4#page9#pwu3#su7#acond7" name="AttCondition7" predicate="eq" booleanOperator="or" implied="false" attributes="User#att1" value="false"/>
+      </Selector>
+      <Link id="sv4#page9#pwu3#ln14" name="Contactar Usuario" to="sv4#page13#enu3" type="normal" validate="true" gr:bendpoints="-233,-1,77,-112">
+        <LinkParameter id="sv4#page9#pwu3#ln14#par12" name="oid_Key Condition [oid]" source="data[].userOID" target="sv4#page13#enu3.userOID"/>
+        <LinkParameter id="sv4#page9#pwu3#ln14#par185" name="email_emailDestino" source="data[].email" target="sv4#page13#enu3#fld16_slot"/>
+      </Link>
+      <Link id="sv4#page9#pwu3#ln17" name="Reactivar Usuario" to="sv4#page14#dau1" type="normal" validate="true">
+        <LinkParameter id="sv4#page9#pwu3#ln17#par13" name="oid_KeyCondition5 [oid]" source="data[].userOID" target="sv4#page14#dau1#su10#kcond5.userOID"/>
+      </Link>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page9#pwu2">
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Attribute attribute="User#att33"/>
+          <layout:Attribute attribute="User#att34"/>
+          <layout:Attribute attribute="User#att35"/>
+          <layout:Attribute attribute="User#att37"/>
+          <layout:Attribute attribute="User#att32"/>
+          <layout:Attribute attribute="User#att36"/>
+          <layout:Link link="sv4#page9#pwu2#ln5"/>
+          <layout:Link link="sv4#page9#pwu2#ln13"/>
+          <layout:Link link="sv4#page9#pwu2#ln16"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page9#pwu3">
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Attribute attribute="User#att33"/>
+          <layout:Attribute attribute="User#att34"/>
+          <layout:Attribute attribute="User#att35"/>
+          <layout:Attribute attribute="User#att37"/>
+          <layout:Attribute attribute="User#att32"/>
+          <layout:Attribute attribute="User#att36"/>
+          <layout:Link link="sv4#page9#pwu3#ln14"/>
+          <layout:Link link="sv4#page9#pwu3#ln17"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

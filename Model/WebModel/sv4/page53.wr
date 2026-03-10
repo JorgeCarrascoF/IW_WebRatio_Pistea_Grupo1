@@ -1,0 +1,35 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="3015" gr:y="785" id="sv4#page53" name="Ver detalle comentario">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv4#page53#dau10" name="Comentario" entity="ent6" displayAttributes="rel8#role16.userName rel12#role23.ent4#att14 ent6#att20 ent6#att21 ent6#att24" linkOrder="sv4#page53#dau10#ln6">
+      <Selector id="sv4#page53#dau10#su40" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#page53#dau10#su40#kcond3" name="KeyCondition3" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv4#page53#dau10#ln6" name="Volver atr&#225;s" to="sv4#page52" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-160,56,206,60"/>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page53#dau10">
+          <layout:Attribute attribute="rel8#role16.userName"/>
+          <layout:Attribute attribute="rel12#role23.ent4#att14"/>
+          <layout:Attribute attribute="ent6#att20"/>
+          <layout:Attribute attribute="ent6#att21"/>
+          <layout:Attribute attribute="ent6#att24"/>
+          <layout:Link link="sv4#page53#dau10#ln6"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

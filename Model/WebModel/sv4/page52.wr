@@ -1,0 +1,38 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="2560" gr:y="795" id="sv4#page52" name="Moderar Comentarios" landmark="true">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv4#page52#pwu13" name="Lista de valoraciones" sortable="true" checkable="false" useCountQuery="false" entity="ent6" displayAttributes="rel8#role16.userName ent6#att20 ent6#att21 ent6#att24" linkOrder="sv4#page52#pwu13#ln4 sv4#page52#pwu13#ln29">
+      <Link id="sv4#page52#pwu13#ln4" name="Ver detalles" to="sv4#page53#dau10" type="normal" validate="true" gr:bendpoints="60,-12,-320,-6;202,-40,-178,-34">
+        <LinkParameter id="sv4#page52#pwu13#ln4#par14" name="oid_KeyCondition3 [oid]" source="data[].ent6#att6" target="sv4#page53#dau10#su40#kcond3.ent6#att6"/>
+      </Link>
+      <Link id="sv4#page52#pwu13#ln29" name="Eliminar comentario" to="sv4#page54#dau11" type="normal" validate="true">
+        <LinkParameter id="sv4#page52#pwu13#ln29#par17" name="oid_KeyCondition27 [oid]" source="data[].ent6#att6" target="sv4#page54#dau11#su41#kcond27.ent6#att6"/>
+        <LinkParameter id="sv4#page52#pwu13#ln29#par32" name="oid_PASSING" source="data[].ent6#att6" passing="true"/>
+      </Link>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page52#pwu13">
+          <layout:Attribute attribute="rel8#role16.userName"/>
+          <layout:Attribute attribute="ent6#att20"/>
+          <layout:Attribute attribute="ent6#att21"/>
+          <layout:Attribute attribute="ent6#att24"/>
+          <layout:Link link="sv4#page52#pwu13#ln4"/>
+          <layout:Link link="sv4#page52#pwu13#ln29"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

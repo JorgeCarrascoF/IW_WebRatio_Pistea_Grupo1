@@ -1,0 +1,28 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="650" gr:y="280" id="sv4#page11" name="Confirmaci&#243;n de &#233;xito">
+  <ContentUnits>
+    <MultiMessageUnit id="sv4#page11#mssu2" name="&#201;xito al borrar usuario" gr:x="0" gr:y="0" linkOrder="sv4#page11#mssu2#ln10">
+      <Message xml:space="preserve">Usuario borrado exitosamente.</Message>
+      <Link id="sv4#page11#mssu2#ln10" name="Continuar moderando" to="sv4#page9" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-114,-6,102,199"/>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page11#mssu2">
+          <layout:Link link="sv4#page11#mssu2#ln10"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

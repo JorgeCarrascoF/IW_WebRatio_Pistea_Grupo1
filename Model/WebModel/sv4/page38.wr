@@ -1,0 +1,40 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1790" gr:y="405" id="sv4#page38" name="Editar Reserva">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv4#page38#enu6" name="Formulario estado reserva" entity="ent2" linkOrder="sv4#page38#enu6#ln58 sv4#page38#enu6#ln59">
+      <Field id="sv4#page38#enu6#fld28" name="Estado reserva (0 - Pendiente, 1 - Confirmada, 2 - Cancelada)" type="string" modifiable="true" preloaded="true"/>
+      <Link id="sv4#page38#enu6#ln58" name="Actualizar estado reserva" to="sv4#mfu7" type="normal" validate="true">
+        <LinkParameter id="sv4#page38#enu6#ln58#par125" name="Key [oid]_PASSING" source="key.ent2#att2" passing="true"/>
+        <LinkParameter id="sv4#page38#enu6#ln58#par135" name="Estado reserva (0 - Pendiente, 1 - Confirmada, 2 - Cancelada)_estado_reserva" source="sv4#page38#enu6#fld28" target="sv4#mfu7.ent2#att13"/>
+        <LinkParameter id="sv4#page38#enu6#ln58#par136" name="oid_PASSING_KeyCondition20 [oid]" sourceLinkParameter="sv4#page36#pwu7#ln57#par126" target="sv4#mfu7#su26#kcond20.ent2#att2"/>
+        <LinkParameter id="sv4#page38#enu6#ln58#par137" name="Reserva Object_Reserva Object" source="entityBean" target="sv4#mfu7.entityBeans"/>
+        <LinkParameter id="sv4#page38#enu6#ln58#par139" name="ReservaToPista.oid_PASSING_Pista.oid(ReservaToPista)" sourceLinkParameter="sv4#page36#pwu7#ln57#par127" target="sv4#mfu7.rel10#role19.ent4#att4"/>
+        <LinkParameter id="sv4#page38#enu6#ln58#par140" name="ReservaToUser.oid_PASSING_User.oid(ReservaToUser)" sourceLinkParameter="sv4#page36#pwu7#ln57#par128" target="sv4#mfu7.rel7#role14.userOID"/>
+      </Link>
+      <Link id="sv4#page38#enu6#ln59" name="Volver atr&#225;s" to="sv4#page36" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-30,135,134,-75"/>
+      <Field id="sv4#page38#enu6#fld31" name="Usuario reserva" type="string" modifiable="true" preloaded="true" hidden="true"/>
+      <Field id="sv4#page38#enu6#fld32" name="Nombre pista" type="string" modifiable="true" preloaded="true" hidden="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page38#enu6">
+          <layout:Link link="sv4#page38#enu6#ln58"/>
+          <layout:Link link="sv4#page38#enu6#ln59"/>
+          <layout:Field field="sv4#page38#enu6#fld28"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

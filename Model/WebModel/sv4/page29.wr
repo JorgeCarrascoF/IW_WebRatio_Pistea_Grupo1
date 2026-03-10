@@ -1,0 +1,53 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1195" gr:y="-45" id="sv4#page29" name="Gestionar Torneos" landmark="true">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv4#page29#pwu1" name="Lista de torneos" sortable="true" checkable="false" useCountQuery="false" entity="ent3" displayAttributes="ent3#att27 ent3#att28 ent3#att22 ent3#att23 ent3#att29 ent3#att30 ent3#att31 rel13#role26.userName rel9#role17.ent4#att14" linkOrder="sv4#page29#pwu1#ln25 sv4#page29#pwu1#ln31 sv4#page29#pwu1#ln53">
+      <Link id="sv4#page29#pwu1#ln25" name="Ver participantes" to="sv4#page30#pwu4" type="normal" validate="true">
+        <LinkParameter id="sv4#page29#pwu1#ln25#par56" name="oid_RoleCondition6 [oid]" source="data[].ent3#att3" target="sv4#page30#pwu4#su22#rcond6.ent3#att3"/>
+        <LinkParameter id="sv4#page29#pwu1#ln25#par59" name="oid_PASSING" source="data[].ent3#att3" passing="true"/>
+      </Link>
+      <Link id="sv4#page29#pwu1#ln31" name="Editar Torneo" to="sv4#page32#enu5" type="normal" validate="true" gr:bendpoints="65,-121,54,104">
+        <LinkParameter id="sv4#page29#pwu1#ln31#par61" name="descripcion_torneo_Descripci&#243;n torneo" source="data[].ent3#att28" target="sv4#page32#enu5#fld22_slot"/>
+        <LinkParameter id="sv4#page29#pwu1#ln31#par62" name="fecha_fin_Fecha fin" source="data[].ent3#att29" target="sv4#page32#enu5#fld25_slot"/>
+        <LinkParameter id="sv4#page29#pwu1#ln31#par63" name="fecha_inicio_Fecha inicio" source="data[].ent3#att23" target="sv4#page32#enu5#fld24_slot"/>
+        <LinkParameter id="sv4#page29#pwu1#ln31#par64" name="oid_Key Condition [oid]" source="data[].ent3#att3" target="sv4#page32#enu5.ent3#att3"/>
+        <LinkParameter id="sv4#page29#pwu1#ln31#par65" name="nombre_torneo_Nombre torneo" source="data[].ent3#att27" target="sv4#page32#enu5#fld21_slot"/>
+        <LinkParameter id="sv4#page29#pwu1#ln31#par92" name="numero_plazas_N&#250;mero plazas" source="data[].ent3#att22" target="sv4#page32#enu5#fld23_slot"/>
+        <LinkParameter id="sv4#page29#pwu1#ln31#par98" name="precio_inscripcion_Precio inscripci&#243;n" source="data[].ent3#att31" target="sv4#page32#enu5#fld26_slot"/>
+        <LinkParameter id="sv4#page29#pwu1#ln31#par99" name="premio_Premio" source="data[].ent3#att30" target="sv4#page32#enu5#fld27_slot"/>
+        <LinkParameter id="sv4#page29#pwu1#ln31#par102" name="oid_PASSING" source="data[].ent3#att3" passing="true"/>
+      </Link>
+      <Link id="sv4#page29#pwu1#ln53" name="Eliminar torneo" to="sv4#page34#dau3" automaticCoupling="true" type="normal" validate="true"/>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page29#pwu1">
+          <layout:Link link="sv4#page29#pwu1#ln25"/>
+          <layout:Link link="sv4#page29#pwu1#ln31"/>
+          <layout:Link link="sv4#page29#pwu1#ln53"/>
+          <layout:Attribute attribute="ent3#att27"/>
+          <layout:Attribute attribute="ent3#att28"/>
+          <layout:Attribute attribute="ent3#att22"/>
+          <layout:Attribute attribute="ent3#att23"/>
+          <layout:Attribute attribute="ent3#att29"/>
+          <layout:Attribute attribute="ent3#att30"/>
+          <layout:Attribute attribute="ent3#att31"/>
+          <layout:Attribute attribute="rel13#role26.userName"/>
+          <layout:Attribute attribute="rel9#role17.ent4#att14"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

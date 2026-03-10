@@ -1,0 +1,42 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1660" gr:y="665" id="sv4#page36" name="Gestionar Reservas" landmark="true">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv4#page36#pwu7" name="Lista de reservas" sortable="true" checkable="false" useCountQuery="false" entity="ent2" displayAttributes="rel7#role14.userName rel10#role19.ent4#att14 ent2#att12 ent2#att26 ent2#att13" linkOrder="sv4#page36#pwu7#ln57 sv4#page36#pwu7#ln61">
+      <Link id="sv4#page36#pwu7#ln57" name="Actualizar estado reserva" to="sv4#page38#enu6" type="normal" validate="true">
+        <LinkParameter id="sv4#page36#pwu7#ln57#par117" name="oid_Key Condition [oid]" source="data[].ent2#att2" target="sv4#page38#enu6.ent2#att2"/>
+        <LinkParameter id="sv4#page36#pwu7#ln57#par118" name="estado_reserva_Estado reserva (0 - Pendiente, 1 - Confirmada, 2 - Cancelada)" source="data[].ent2#att13" target="sv4#page38#enu6#fld28_slot"/>
+        <LinkParameter id="sv4#page36#pwu7#ln57#par126" name="oid_PASSING" source="data[].ent2#att2" passing="true"/>
+        <LinkParameter id="sv4#page36#pwu7#ln57#par127" name="ReservaToPista.oid_PASSING" source="data[].rel10#role19_ent4#att4" passing="true"/>
+        <LinkParameter id="sv4#page36#pwu7#ln57#par128" name="ReservaToUser.oid_PASSING" source="data[].rel7#role14_userOID" passing="true"/>
+        <LinkParameter id="sv4#page36#pwu7#ln57#par133" name="ReservaToPista.nombre_pista_Nombre pista" source="data[].rel10#role19$ent4#att14" target="sv4#page38#enu6#fld32_slot"/>
+        <LinkParameter id="sv4#page36#pwu7#ln57#par134" name="ReservaToUser.username_Usuario reserva" source="data[].rel7#role14$userName" target="sv4#page38#enu6#fld31_slot"/>
+      </Link>
+      <Link id="sv4#page36#pwu7#ln61" name="Eliminar Reserva" to="sv4#page39#dau7" automaticCoupling="true" type="normal" validate="true"/>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page36#pwu7">
+          <layout:Attribute attribute="rel7#role14.userName"/>
+          <layout:Attribute attribute="rel10#role19.ent4#att14"/>
+          <layout:Attribute attribute="ent2#att12"/>
+          <layout:Attribute attribute="ent2#att26"/>
+          <layout:Attribute attribute="ent2#att13"/>
+          <layout:Link link="sv4#page36#pwu7#ln57"/>
+          <layout:Link link="sv4#page36#pwu7#ln61"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

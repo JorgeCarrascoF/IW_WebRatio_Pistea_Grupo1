@@ -1,0 +1,55 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="280" gr:y="815" id="sv4#page18" name="Gestionar Pistas" landmark="true">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv4#page18#pwu5" name="Lista de Pistas" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att39 ent4#att19 ent4#att38" linkOrder="sv4#page18#pwu5#ln33 sv4#page18#pwu5#ln37">
+      <Link id="sv4#page18#pwu5#ln33" name="Actualizar Pista" to="sv4#page19#enu1" type="normal" validate="true" gr:bendpoints="151,35,-174,44">
+        <LinkParameter id="sv4#page18#pwu5#ln33#par66" name="capacidad_Capacidad" source="data[].ent4#att18" target="sv4#page19#enu1#fld6_slot"/>
+        <LinkParameter id="sv4#page18#pwu5#ln33#par67" name="deporte_asociado_Deporte asociado" source="data[].ent4#att15" target="sv4#page19#enu1#fld2_slot"/>
+        <LinkParameter id="sv4#page18#pwu5#ln33#par68" name="hora_apertura_Hora apertura" source="data[].ent4#att16" target="sv4#page19#enu1#fld3_slot"/>
+        <LinkParameter id="sv4#page18#pwu5#ln33#par69" name="hora_cierre_Hora cierre" source="data[].ent4#att17" target="sv4#page19#enu1#fld4_slot"/>
+        <LinkParameter id="sv4#page18#pwu5#ln33#par70" name="oid_Key Condition [oid]" source="data[].ent4#att4" target="sv4#page19#enu1.ent4#att4"/>
+        <LinkParameter id="sv4#page18#pwu5#ln33#par71" name="nombre_pista_Nombre pista" source="data[].ent4#att14" target="sv4#page19#enu1#fld1_slot"/>
+        <LinkParameter id="sv4#page18#pwu5#ln33#par72" name="ubicacion_Ubicacion" source="data[].ent4#att39" target="sv4#page19#enu1#fld5_slot"/>
+        <LinkParameter id="sv4#page18#pwu5#ln33#par81" name="capacidad_PASSING" source="data[].ent4#att18" passing="true"/>
+        <LinkParameter id="sv4#page18#pwu5#ln33#par82" name="deporte_asociado_PASSING" source="data[].ent4#att15" passing="true"/>
+        <LinkParameter id="sv4#page18#pwu5#ln33#par83" name="hora_apertura_PASSING" source="data[].ent4#att16" passing="true"/>
+        <LinkParameter id="sv4#page18#pwu5#ln33#par84" name="hora_cierre_PASSING" source="data[].ent4#att17" passing="true"/>
+        <LinkParameter id="sv4#page18#pwu5#ln33#par85" name="nombre_pista_PASSING" source="data[].ent4#att14" passing="true"/>
+        <LinkParameter id="sv4#page18#pwu5#ln33#par86" name="oid_PASSING" source="data[].ent4#att4" passing="true"/>
+        <LinkParameter id="sv4#page18#pwu5#ln33#par87" name="ubicacion_PASSING" source="data[].ent4#att39" passing="true"/>
+        <LinkParameter id="sv4#page18#pwu5#ln33#par88" name="es_disponible_&#191;Est&#225; disponible?" source="data[].ent4#att19" target="sv4#page19#enu1#fld19_slot"/>
+      </Link>
+      <Link id="sv4#page18#pwu5#ln37" name="Eliminar Pista" to="sv4#page21#dau4" type="normal" validate="true">
+        <LinkParameter id="sv4#page18#pwu5#ln37#par90" name="oid_KeyCondition11 [oid]" source="data[].ent4#att4" target="sv4#page21#dau4#su17#kcond11.ent4#att4"/>
+      </Link>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page18#pwu5">
+          <layout:Link link="sv4#page18#pwu5#ln33"/>
+          <layout:Link link="sv4#page18#pwu5#ln37"/>
+          <layout:Attribute attribute="ent4#att14"/>
+          <layout:Attribute attribute="ent4#att15"/>
+          <layout:Attribute attribute="ent4#att16"/>
+          <layout:Attribute attribute="ent4#att17"/>
+          <layout:Attribute attribute="ent4#att18"/>
+          <layout:Attribute attribute="ent4#att39"/>
+          <layout:Attribute attribute="ent4#att19"/>
+          <layout:Attribute attribute="ent4#att38"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

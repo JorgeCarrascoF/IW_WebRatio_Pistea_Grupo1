@@ -1,0 +1,36 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="2280" gr:y="995" id="sv4#page54" name="Confirmar Borrar Comentario">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv4#page54#dau11" name="Mensaje a borrar" entity="ent6" displayAttributes="rel8#role16.userName ent6#att20" linkOrder="sv4#page54#dau11#ln65 sv4#page54#dau11#ln71">
+      <Selector id="sv4#page54#dau11#su41" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#page54#dau11#su41#kcond27" name="KeyCondition27" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv4#page54#dau11#ln65" name="Eliminar comentario" to="sv4#dlu13" type="normal" validate="true">
+        <LinkParameter id="sv4#page54#dau11#ln65#par35" name="oid_PASSING_KeyCondition28 [oid]" sourceLinkParameter="sv4#page52#pwu13#ln29#par32" target="sv4#dlu13#su42#kcond28.ent6#att6"/>
+      </Link>
+      <Link id="sv4#page54#dau11#ln71" name="Cancelar borrado" to="sv4#page52" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="216,-40,-74,164"/>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page54#dau11">
+          <layout:Attribute attribute="rel8#role16.userName"/>
+          <layout:Attribute attribute="ent6#att20"/>
+          <layout:Link link="sv4#page54#dau11#ln65"/>
+          <layout:Link link="sv4#page54#dau11#ln71"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

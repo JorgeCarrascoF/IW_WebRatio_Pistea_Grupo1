@@ -1,0 +1,36 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1485" gr:y="-270" id="sv4#page34" name="Confirmar Eliminar Torneo">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv4#page34#dau3" name="Torneo a borrar" entity="ent3" linkOrder="sv4#page34#dau3#ln54 sv4#page34#dau3#ln56" displayAttributes="ent3#att27 ent3#att28">
+      <Selector id="sv4#page34#dau3#su24" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#page34#dau3#su24#kcond18" name="KeyCondition18" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv4#page34#dau3#ln54" name="Eliminar torneo" to="sv4#dlu4" type="normal" validate="true">
+        <LinkParameter id="sv4#page34#dau3#ln54#par114" name="oid_KeyCondition19 [oid]" source="data.ent3#att3" target="sv4#dlu4#su25#kcond19.ent3#att3"/>
+      </Link>
+      <Link id="sv4#page34#dau3#ln56" name="Volver atr&#225;s" to="sv4#page29" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-95,165,185,5"/>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page34#dau3">
+          <layout:Link link="sv4#page34#dau3#ln54"/>
+          <layout:Link link="sv4#page34#dau3#ln56"/>
+          <layout:Attribute attribute="ent3#att27"/>
+          <layout:Attribute attribute="ent3#att28"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

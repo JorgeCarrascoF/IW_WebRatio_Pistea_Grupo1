@@ -1,0 +1,51 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="915" gr:y="120" id="sv4#page30" name="Participantes Torneo" linkOrder="sv4#page30#ln28">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv4#page30#pwu4" name="Participantes Torneo" sortable="true" checkable="false" useCountQuery="false" entity="User" linkOrder="sv4#page30#pwu4#ln26" displayAttributes="userName email">
+      <Selector id="sv4#page30#pwu4#su22" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#page30#pwu4#su22#rcond6" name="RoleCondition6" predicate="in" implied="false" role="rel4#role8"/>
+        <AttributesCondition id="sv4#page30#pwu4#su22#acond8" name="AttCondition8" predicate="eq" booleanOperator="or" implied="false" attributes="User#att1" value="true"/>
+      </Selector>
+      <Link id="sv4#page30#pwu4#ln26" name="Eliminar participante" to="sv4#dcnu1" type="normal" validate="true">
+        <LinkParameter id="sv4#page30#pwu4#ln26#par55" name="oid_KeyCondition16 [oid] [User] [Target]" source="data[].userOID" target="sv4#dcnu1#su15#kcond16.userOID"/>
+        <LinkParameter id="sv4#page30#pwu4#ln26#par60" name="oid_PASSING_KeyCondition9 [oid] [Torneo] [Source]" sourceLinkParameter="sv4#page29#pwu1#ln25#par59" target="sv4#dcnu1#su13#kcond9.ent3#att3"/>
+      </Link>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page30#pwu4">
+          <layout:Link link="sv4#page30#pwu4#ln26"/>
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="email"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv4#page30#ln28" name="Volver atr&#225;s" to="sv4#page29" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="151,-30,-129,144"/>
+</Page>

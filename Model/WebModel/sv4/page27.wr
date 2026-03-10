@@ -1,0 +1,36 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="585" gr:y="1020" id="sv4#page27" name="Confirmar Eliminar Incidencia">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv4#page27#dau6" name="Incidencia a eliminar" entity="ent5" displayAttributes="ent5#att9 ent5#att8 ent5#att10 ent5#att11" linkOrder="sv4#page27#dau6#ln49 sv4#page27#dau6#ln51">
+      <Selector id="sv4#page27#dau6#su20" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#page27#dau6#su20#kcond14" name="KeyCondition14" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv4#page27#dau6#ln49" name="Confirmar borrado" to="sv4#dlu2" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv4#page27#dau6#ln51" name="Cancelar borrado" to="sv4#page23#pwu6" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="175,-170,-211,116"/>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page27#dau6">
+          <layout:Attribute attribute="ent5#att9"/>
+          <layout:Attribute attribute="ent5#att8"/>
+          <layout:Attribute attribute="ent5#att10"/>
+          <layout:Attribute attribute="ent5#att11"/>
+          <layout:Link link="sv4#page27#dau6#ln49"/>
+          <layout:Link link="sv4#page27#dau6#ln51"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
