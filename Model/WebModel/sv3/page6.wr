@@ -1,15 +1,22 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="275" gr:y="345" id="sv3#page6" name="Mis pistas" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="330" gr:y="445" id="sv3#page6" name="Mis pistas" landmark="true" linkOrder="sv3#page6#ln94">
   <ContentUnits>
-    <IndexUnit gr:x="0" gr:y="0" id="sv3#page6#inu1" name="Pistas" entity="ent4">
-      <Selector id="sv3#page6#inu1#su2" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv3#page6#inu1#su2#rcond1" name="RoleCondition1" predicate="in" implied="false" role="rel14#role27"/>
+    <IndexUnit gr:x="0" gr:y="0" id="sv3#page6#inu1" name="Pistas" entity="ent4" linkOrder="sv3#page6#inu1#ln27" displayAttributes="ent4#att4 ent4#att14 ent4#att15 ent4#att19">
+      <Link id="sv3#page6#inu1#ln27" name="Ver pista" to="sv3#page8#dau14" automaticCoupling="true" type="normal" validate="true"/>
+      <Selector id="sv3#page6#inu1#su56" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#page6#inu1#su56#rcond15" name="RoleCondition15" predicate="in" implied="false" role="rel14#role27"/>
       </Selector>
     </IndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv3#page6#inu1"/>
+        <layout:Unit unitId="sv3#page6#inu1">
+          <layout:Link link="sv3#page6#inu1#ln27"/>
+          <layout:Attribute attribute="ent4#att4"/>
+          <layout:Attribute attribute="ent4#att14"/>
+          <layout:Attribute attribute="ent4#att15"/>
+          <layout:Attribute attribute="ent4#att19"/>
+        </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
@@ -24,4 +31,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv3#page6#ln94" name="Subir pista" to="sv3#page58" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

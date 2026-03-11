@@ -1,0 +1,73 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="85" gr:y="-20" id="sv3#page56" name="Crear torneo">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv3#page56#enu7" name="Crear torneo" entity="ent3" fieldOrder="sv3#page56#enu7#fld30 sv3#page56#enu7#fld33 sv3#page56#enu7#fld34 sv3#page56#enu7#fld35 sv3#page56#enu7#fld36 sv3#page56#enu7#fld37 sv3#page56#enu7#fld38 sv3#page56#enu7#sfld1" linkOrder="sv3#page56#enu7#ln95">
+      <Field id="sv3#page56#enu7#fld30" name="numero_plazas" type="integer" modifiable="true" attribute="ent3#att22"/>
+      <Field id="sv3#page56#enu7#fld33" name="fecha_inicio" type="timestamp" modifiable="true" attribute="ent3#att23"/>
+      <Field id="sv3#page56#enu7#fld34" name="nombre_torneo" type="string" modifiable="true" attribute="ent3#att27"/>
+      <Field id="sv3#page56#enu7#fld35" name="descripcion_torneo" type="string" modifiable="true" attribute="ent3#att28"/>
+      <Field id="sv3#page56#enu7#fld36" name="fecha_fin" type="timestamp" modifiable="true" attribute="ent3#att29"/>
+      <Field id="sv3#page56#enu7#fld37" name="premio" type="float" modifiable="true" attribute="ent3#att30"/>
+      <Field id="sv3#page56#enu7#fld38" name="precio_inscripcion" type="float" modifiable="true" attribute="ent3#att31"/>
+      <SelectionField id="sv3#page56#enu7#sfld1" name="Pista" type="string" role="rel9#role17"/>
+      <Link id="sv3#page56#enu7#ln95" name="Crear torneo" to="sv3#cru1" type="normal" validate="true">
+        <LinkParameter id="sv3#page56#enu7#ln95#par144" name="descripcion_torneo_descripcion_torneo" source="sv3#page56#enu7#fld35" target="sv3#cru1.ent3#att28"/>
+        <LinkParameter id="sv3#page56#enu7#ln95#par145" name="fecha_fin_fecha_fin" source="sv3#page56#enu7#fld36" target="sv3#cru1.ent3#att29"/>
+        <LinkParameter id="sv3#page56#enu7#ln95#par150" name="fecha_inicio_fecha_inicio" source="sv3#page56#enu7#fld33" target="sv3#cru1.ent3#att23"/>
+        <LinkParameter id="sv3#page56#enu7#ln95#par151" name="nombre_torneo_nombre_torneo" source="sv3#page56#enu7#fld34" target="sv3#cru1.ent3#att27"/>
+        <LinkParameter id="sv3#page56#enu7#ln95#par152" name="numero_plazas_numero_plazas" source="sv3#page56#enu7#fld30" target="sv3#cru1.ent3#att22"/>
+        <LinkParameter id="sv3#page56#enu7#ln95#par155" name="Pista_Pista.oid(TorneoToPista)" source="sv3#page56#enu7#sfld1" target="sv3#cru1.rel9#role17.ent4#att4"/>
+        <LinkParameter id="sv3#page56#enu7#ln95#par157" name="precio_inscripcion_precio_inscripcion" source="sv3#page56#enu7#fld38" target="sv3#cru1.ent3#att31"/>
+        <LinkParameter id="sv3#page56#enu7#ln95#par159" name="premio_premio" source="sv3#page56#enu7#fld37" target="sv3#cru1.ent3#att30"/>
+        <LinkParameter id="sv3#page56#enu7#ln95#par170" name="Torneo Object_Torneo Object" source="entityBean" target="sv3#cru1.entityBeans"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit gr:x="5" gr:y="140" id="sv3#page56#seu2" name="Selector2" entity="ent4" distinctAttributes="ent4#att4 ent4#att14">
+      <Link id="sv3#page56#seu2#ln87" name="Flow87" to="sv3#page56#enu7" type="transport" validate="true">
+        <LinkParameter id="sv3#page56#seu2#ln87#par138" name="nombre_pista_Pista [label]" source="ent4#att14Array" target="sv3#page56#enu7#sfld1_label"/>
+        <LinkParameter id="sv3#page56#seu2#ln87#par141" name="oid_Pista [output]" source="ent4#att4Array" target="sv3#page56#enu7#sfld1_output"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page56#enu7">
+          <layout:Field field="sv3#page56#enu7#fld30"/>
+          <layout:Field field="sv3#page56#enu7#fld33"/>
+          <layout:Field field="sv3#page56#enu7#fld34"/>
+          <layout:Field field="sv3#page56#enu7#fld35"/>
+          <layout:Field field="sv3#page56#enu7#fld36"/>
+          <layout:Field field="sv3#page56#enu7#fld37"/>
+          <layout:Field field="sv3#page56#enu7#fld38"/>
+          <layout:Field field="sv3#page56#enu7#sfld1"/>
+          <layout:Link link="sv3#page56#enu7#ln95"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

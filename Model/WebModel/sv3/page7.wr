@@ -1,8 +1,21 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="520" gr:y="360" id="sv3#page7" name="Gestionar reservas" landmark="true">
-  <ContentUnits/>
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="575" gr:y="250" id="sv3#page7" name="Gestionar reservas" landmark="true">
+  <ContentUnits>
+    <IndexUnit gr:x="0" gr:y="0" id="sv3#page7#inu3" name="Reservas de mis pistas" entity="ent2" displayAttributes="ent2#att2 ent2#att12 ent2#att13 ent2#att26">
+      <Selector id="sv3#page7#inu3#su55" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#page7#inu3#su55#rcond9" name="RoleCondition9" predicate="in" implied="false" role="rel14#role27.rel10#role20"/>
+      </Selector>
+    </IndexUnit>
+  </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
-      <layout:Cell colspan="12"/>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page7#inu3">
+          <layout:Attribute attribute="ent2#att2"/>
+          <layout:Attribute attribute="ent2#att12"/>
+          <layout:Attribute attribute="ent2#att13"/>
+          <layout:Attribute attribute="ent2#att26"/>
+        </layout:Unit>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

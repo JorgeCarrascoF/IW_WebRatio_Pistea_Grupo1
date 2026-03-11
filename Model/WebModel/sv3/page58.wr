@@ -1,0 +1,54 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="520" gr:y="455" id="sv3#page58" name="Subir pista">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv3#page58#enu8" name="Subir pista" entity="ent4" linkOrder="sv3#page58#enu8#ln96">
+      <Field id="sv3#page58#enu8#fld39" name="nombre_pista" type="string" modifiable="true" attribute="ent4#att14"/>
+      <Field id="sv3#page58#enu8#fld40" name="deporte_asociado" type="string" modifiable="true" attribute="ent4#att15"/>
+      <Field id="sv3#page58#enu8#fld41" name="hora_apertura" type="timestamp" modifiable="true" attribute="ent4#att16"/>
+      <Field id="sv3#page58#enu8#fld42" name="hora_cierre" type="timestamp" modifiable="true" attribute="ent4#att17"/>
+      <Field id="sv3#page58#enu8#fld43" name="capacidad" type="integer" modifiable="true" attribute="ent4#att18"/>
+      <Field id="sv3#page58#enu8#fld44" name="es_disponible" type="boolean" modifiable="true" attribute="ent4#att19"/>
+      <Field id="sv3#page58#enu8#fld45" name="ubicacion" type="string" modifiable="true" attribute="ent4#att39"/>
+      <Field id="sv3#page58#enu8#fld46" name="foto_pista" type="string" modifiable="true" attribute="ent4#att38"/>
+      <Link id="sv3#page58#enu8#ln96" name="Subir" to="sv3#cru2" type="normal" validate="true">
+        <LinkParameter id="sv3#page58#enu8#ln96#par42" name="capacidad_capacidad" source="sv3#page58#enu8#fld43" target="sv3#cru2.ent4#att18"/>
+        <LinkParameter id="sv3#page58#enu8#ln96#par53" name="deporte_asociado_deporte_asociado" source="sv3#page58#enu8#fld40" target="sv3#cru2.ent4#att15"/>
+        <LinkParameter id="sv3#page58#enu8#ln96#par115" name="es_disponible_es_disponible" source="sv3#page58#enu8#fld44" target="sv3#cru2.ent4#att19"/>
+        <LinkParameter id="sv3#page58#enu8#ln96#par119" name="foto_pista_foto_pista" source="sv3#page58#enu8#fld46" target="sv3#cru2.ent4#att38"/>
+        <LinkParameter id="sv3#page58#enu8#ln96#par142" name="hora_apertura_hora_apertura" source="sv3#page58#enu8#fld41" target="sv3#cru2.ent4#att16"/>
+        <LinkParameter id="sv3#page58#enu8#ln96#par143" name="hora_cierre_hora_cierre" source="sv3#page58#enu8#fld42" target="sv3#cru2.ent4#att17"/>
+        <LinkParameter id="sv3#page58#enu8#ln96#par173" name="nombre_pista_nombre_pista" source="sv3#page58#enu8#fld39" target="sv3#cru2.ent4#att14"/>
+        <LinkParameter id="sv3#page58#enu8#ln96#par174" name="Key [oid]_oid" source="key.ent4#att4" target="sv3#cru2.ent4#att4"/>
+        <LinkParameter id="sv3#page58#enu8#ln96#par178" name="Pista Object_Pista Object" source="entityBean" target="sv3#cru2.entityBeans"/>
+        <LinkParameter id="sv3#page58#enu8#ln96#par179" name="ubicacion_ubicacion" source="sv3#page58#enu8#fld45" target="sv3#cru2.ent4#att39"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page58#enu8">
+          <layout:Field field="sv3#page58#enu8#fld39"/>
+          <layout:Field field="sv3#page58#enu8#fld40"/>
+          <layout:Field field="sv3#page58#enu8#fld41"/>
+          <layout:Field field="sv3#page58#enu8#fld42"/>
+          <layout:Field field="sv3#page58#enu8#fld43"/>
+          <layout:Field field="sv3#page58#enu8#fld44"/>
+          <layout:Field field="sv3#page58#enu8#fld45"/>
+          <layout:Field field="sv3#page58#enu8#fld46"/>
+          <layout:Link link="sv3#page58#enu8#ln96"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

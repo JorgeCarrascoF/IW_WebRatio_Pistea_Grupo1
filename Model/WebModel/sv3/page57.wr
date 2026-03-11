@@ -1,0 +1,38 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="530" gr:y="40" id="sv3#page57" name="Torneo detalle">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv3#page57#dau16" name="Torneo" entity="ent3" displayAttributes="ent3#att3 ent3#att22 ent3#att23 ent3#att27 ent3#att28 ent3#att29 ent3#att30 ent3#att31 rel9#role17.ent4#att14">
+      <Selector id="sv3#page57#dau16#su53" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#page57#dau16#su53#kcond31" name="KeyCondition31" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#page57#dau16#ln97" name="Borrar torneo" to="sv3#dlu14" automaticCoupling="true" type="transport" validate="true"/>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page57#dau16">
+          <layout:Attribute attribute="ent3#att3"/>
+          <layout:Attribute attribute="ent3#att22"/>
+          <layout:Attribute attribute="ent3#att23"/>
+          <layout:Attribute attribute="ent3#att27"/>
+          <layout:Attribute attribute="ent3#att28"/>
+          <layout:Attribute attribute="ent3#att29"/>
+          <layout:Attribute attribute="ent3#att30"/>
+          <layout:Attribute attribute="ent3#att31"/>
+          <layout:Attribute attribute="rel9#role17.ent4#att14"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

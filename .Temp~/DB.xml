@@ -14,8 +14,8 @@
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="module_oid" primaryKey="true" notNull="true"/>
   </Table>
   <Table schema="public" ignoreIndexes="false" name="guarda_como_fav" type="TABLE" refreshed="true">
-    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="user_oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="pista_oid" primaryKey="true" notNull="true"/>
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="user_oid" primaryKey="true" notNull="true"/>
   </Table>
   <Table schema="public" ignoreIndexes="false" name="incidencia" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
@@ -44,6 +44,7 @@
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="capacidad" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="-7" indexed="unknown" autoIncrement="false" type="bool" size="1" decimalDigits="0" name="es_disponible" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="ubicacion" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="foto_pista" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="user_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="foto_pista" primaryKey="false" notNull="false"/>
   </Table>
@@ -79,6 +80,7 @@
     <Column sqlTypeId="93" indexed="unknown" autoIncrement="false" type="timestamp" size="29" decimalDigits="6" name="fecha_alta" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="foto_perfil" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="telefono" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="-7" indexed="unknown" autoIncrement="false" type="bool" size="1" decimalDigits="0" name="es_activo" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="group_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="user_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="-7" indexed="unknown" autoIncrement="false" type="bool" size="1" decimalDigits="0" name="es_activo" primaryKey="false" notNull="false"/>

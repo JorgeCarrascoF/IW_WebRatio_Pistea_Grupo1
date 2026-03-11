@@ -1,8 +1,9 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="415" gr:y="75" id="sv3#page5" name="Mis torneos" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="325" gr:y="40" id="sv3#page5" name="Mis torneos" landmark="true" linkOrder="sv3#page5#ln73">
   <ContentUnits>
-    <IndexUnit gr:x="0" gr:y="0" id="sv3#page5#inu2" name="Torneos" entity="ent3" displayAttributes="ent3#att3 ent3#att23 ent3#att27">
-      <Selector id="sv3#page5#inu2#su3" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv3#page5#inu2#su3#rcond2" name="RoleCondition2" predicate="in" implied="false" role="rel13#role25"/>
+    <IndexUnit gr:x="0" gr:y="0" id="sv3#page5#inu2" name="Torneos" entity="ent3" displayAttributes="ent3#att3 ent3#att23 ent3#att27" linkOrder="sv3#page5#inu2#ln75">
+      <Link id="sv3#page5#inu2#ln75" name="Ver torneo" to="sv3#page57#dau16" automaticCoupling="true" type="normal" validate="true"/>
+      <Selector id="sv3#page5#inu2#su54" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#page5#inu2#su54#rcond8" name="RoleCondition8" predicate="in" implied="false" role="rel13#role25"/>
       </Selector>
     </IndexUnit>
   </ContentUnits>
@@ -13,6 +14,7 @@
           <layout:Attribute attribute="ent3#att3"/>
           <layout:Attribute attribute="ent3#att23"/>
           <layout:Attribute attribute="ent3#att27"/>
+          <layout:Link link="sv3#page5#inu2#ln75"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -28,4 +30,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv3#page5#ln73" name="Crear torneo" to="sv3#page56" automaticCoupling="true" type="normal" validate="true"/>
 </Page>
