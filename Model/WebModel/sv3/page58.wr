@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="520" gr:y="455" id="sv3#page58" name="Subir pista">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="510" gr:y="370" id="sv3#page58" name="Subir pista">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv3#page58#enu8" name="Subir pista" entity="ent4" linkOrder="sv3#page58#enu8#ln96">
       <Field id="sv3#page58#enu8#fld39" name="nombre_pista" type="string" modifiable="true" attribute="ent4#att14"/>

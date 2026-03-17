@@ -53,11 +53,12 @@
       <db:JoinColumn attribute="moduleOID" name="module_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="75" gr:y="435" id="ent2" name="Reserva" duration="persistent" attributeOrder="ent2#att2 ent2#att12 ent2#att13 ent2#att26" db:database="db1" db:table="reserva">
+  <Entity gr:x="75" gr:y="435" id="ent2" name="Reserva" duration="persistent" attributeOrder="ent2#att2 ent2#att12 ent2#att13 ent2#att26 ent2#att7" db:database="db1" db:table="reserva">
     <Attribute id="ent2#att2" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent2#att12" name="hora_inicio" type="timestamp" db:column="hora_inicio"/>
     <Attribute id="ent2#att13" name="estado_reserva" type="integer" db:column="estado_reserva"/>
     <Attribute id="ent2#att26" name="precio" type="float" db:column="precio"/>
+    <Attribute id="ent2#att7" name="pista" type="string" derivationQuery="simpleImported::Self.rel10#role19.ent4#att14"/>
   </Entity>
   <Entity id="ent3" name="Torneo" duration="persistent" gr:x="1010" gr:y="185" attributeOrder="ent3#att3 ent3#att22 ent3#att23 ent3#att27 ent3#att28 ent3#att29 ent3#att30 ent3#att31" db:database="db1" db:table="torneo">
     <Attribute id="ent3#att3" name="oid" key="true" type="integer" db:column="oid"/>
@@ -189,8 +190,7 @@
       <db:JoinColumn attribute="userOID" name="oid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db1" name="PisteaDB" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/Pistea" username="admin" cryptedPassword="true" password="YWRtaW4=" schema="public">
-  </db:Database>
+  <db:Database id="db1" name="PisteaDB" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/Pistea" username="admin" cryptedPassword="true" password="YWRtaW4=" schema="public"/>
   <Relationship id="rel2" name="guarda_como_fav" sourceEntity="ent4" targetEntity="User" gr:bendpoints="295,-167,-25,238" db:database="db1" db:table="guarda_como_fav">
     <RelationshipRole1 id="rel2#role3" name="PistaToUser" maxCard="N">
       <db:JoinColumn attribute="ent4#att4" name="pista_oid"/>

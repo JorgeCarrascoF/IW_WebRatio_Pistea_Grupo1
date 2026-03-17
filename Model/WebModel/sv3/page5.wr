@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="325" gr:y="40" id="sv3#page5" name="Mis torneos" landmark="true" linkOrder="sv3#page5#ln73">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="330" gr:y="-95" id="sv3#page5" name="Mis torneos" landmark="true" linkOrder="sv3#page5#ln73">
   <ContentUnits>
     <IndexUnit gr:x="0" gr:y="0" id="sv3#page5#inu2" name="Torneos" entity="ent3" displayAttributes="ent3#att3 ent3#att23 ent3#att27" linkOrder="sv3#page5#inu2#ln75">
       <Link id="sv3#page5#inu2#ln75" name="Ver torneo" to="sv3#page57#dau16" automaticCoupling="true" type="normal" validate="true"/>
@@ -6,6 +6,9 @@
         <RelationshipRoleCondition id="sv3#page5#inu2#su54#rcond8" name="RoleCondition8" predicate="in" implied="false" role="rel13#role25"/>
       </Selector>
     </IndexUnit>
+    <GetUnit gr:x="10" gr:y="125" id="sv3#page5#gtu6" name="Get6" contextParameters="UserCtxParam">
+      <Link id="sv3#page5#gtu6#ln123" name="Flow123" to="sv3#page5#inu2" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -17,6 +20,20 @@
           <layout:Link link="sv3#page5#inu2#ln75"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

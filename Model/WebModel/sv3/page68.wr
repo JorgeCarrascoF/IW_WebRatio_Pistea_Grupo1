@@ -1,0 +1,26 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="640" gr:y="515" id="sv3#page68" name="Error confirmar reserva" linkOrder="sv3#page68#ln139">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv3#page68#mssu28" name="Message28">
+      <Message xml:space="preserve">Ha habido un error al intentar confirmar la reserva. Int&#233;ntelo de nuevo m&#225;s tarde.</Message>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page68#mssu28"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv3#page68#ln139" name="Volver" to="sv3#page7" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="74,-118,64,188"/>
+</Page>

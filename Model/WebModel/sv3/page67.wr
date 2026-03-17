@@ -1,0 +1,27 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1180" gr:y="210" id="sv3#page67" name="Cancelar reserva" linkOrder="sv3#page67#ln130 sv3#page67#ln131">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv3#page67#mssu27" name="Confirmar">
+      <Message xml:space="preserve">&#191;Seguro que quieres cancelar esta reserva?</Message>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page67#mssu27"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv3#page67#ln130" name="S&#237;, cancelar reserva" to="sv3#mfu15" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-31,-96,-1,94"/>
+  <Link id="sv3#page67#ln131" name="No, volver atr&#225;s" to="sv3#page65" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-118,15,102,15"/>
+</Page>

@@ -1,0 +1,82 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="715" gr:y="-95" id="sv3#page63" name="Editar torneo">
+  <ContentUnits>
+    <EntryUnit gr:x="20" gr:y="10" id="sv3#page63#enu13" name="Form13" entity="ent3" linkOrder="sv3#page63#enu13#ln114">
+      <Field id="sv3#page63#enu13#fld79" name="oid" type="integer" modifiable="false" preloaded="true" attribute="ent3#att3" hidden="true"/>
+      <Field id="sv3#page63#enu13#fld80" name="numero_plazas" type="integer" modifiable="true" preloaded="true" attribute="ent3#att22"/>
+      <Field id="sv3#page63#enu13#fld81" name="fecha_inicio" type="timestamp" modifiable="true" preloaded="true" attribute="ent3#att23"/>
+      <Field id="sv3#page63#enu13#fld82" name="nombre_torneo" type="string" modifiable="true" preloaded="true" attribute="ent3#att27"/>
+      <Field id="sv3#page63#enu13#fld83" name="Descripcion" type="string" modifiable="true" preloaded="true" attribute="ent3#att28"/>
+      <Field id="sv3#page63#enu13#fld84" name="fecha_fin" type="timestamp" modifiable="true" preloaded="true" attribute="ent3#att29"/>
+      <Field id="sv3#page63#enu13#fld85" name="premio" type="float" modifiable="true" preloaded="true" attribute="ent3#att30"/>
+      <Field id="sv3#page63#enu13#fld86" name="precio_inscripcion" type="float" modifiable="true" preloaded="true" attribute="ent3#att31"/>
+      <SelectionField id="sv3#page63#enu13#sfld4" name="Pista" type="string" role="rel9#role17"/>
+      <Link id="sv3#page63#enu13#ln114" name="Actualizar" to="sv3#mfu14" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv3#page63#enu13#ln145" name="Flow145" to="sv3#page63#inu4" automaticCoupling="true" type="transport" validate="true"/>
+    </EntryUnit>
+    <SelectorUnit gr:x="140" gr:y="0" id="sv3#page63#seu7" name="SelectorPista" entity="ent4">
+      <Link id="sv3#page63#seu7#ln133" name="Flow133" to="sv3#page63#enu13" type="transport" validate="true">
+        <LinkParameter id="sv3#page63#seu7#ln133#par229" name="nombre_pista_TorneoToPista [label]" source="ent4#att14Array" target="sv3#page63#enu13#sfld4_label"/>
+        <LinkParameter id="sv3#page63#seu7#ln133#par230" name="oid_TorneoToPista [output]" source="ent4#att4Array" target="sv3#page63#enu13#sfld4_output"/>
+      </Link>
+      <Selector id="sv3#page63#seu7#su63" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#page63#seu7#su63#rcond2" name="RoleCondition2" predicate="in" implied="false" role="rel14#role27"/>
+      </Selector>
+    </SelectorUnit>
+    <GetUnit gr:x="145" gr:y="140" id="sv3#page63#gtu10" name="Get10" contextParameters="UserCtxParam">
+      <Link id="sv3#page63#gtu10#ln135" name="Flow135" to="sv3#page63#seu7" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
+    <IndexUnit gr:x="0" gr:y="130" id="sv3#page63#inu4" name="Participantes" entity="User" displayAttributes="userName email User#att37">
+      <Selector id="sv3#page63#inu4#su67" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#page63#inu4#su67#rcond18" name="RoleCondition18" predicate="in" implied="false" role="rel4#role8"/>
+      </Selector>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page63#enu13">
+          <layout:Field field="sv3#page63#enu13#fld80"/>
+          <layout:Field field="sv3#page63#enu13#fld81"/>
+          <layout:Field field="sv3#page63#enu13#fld82"/>
+          <layout:Field field="sv3#page63#enu13#fld83"/>
+          <layout:Field field="sv3#page63#enu13#fld84"/>
+          <layout:Field field="sv3#page63#enu13#fld85"/>
+          <layout:Field field="sv3#page63#enu13#fld86"/>
+          <layout:Field field="sv3#page63#enu13#sfld4"/>
+          <layout:Link link="sv3#page63#enu13#ln114"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page63#inu4">
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Attribute attribute="User#att37"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

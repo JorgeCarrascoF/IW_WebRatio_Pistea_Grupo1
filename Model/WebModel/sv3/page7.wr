@@ -1,21 +1,70 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="575" gr:y="250" id="sv3#page7" name="Gestionar reservas" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="515" gr:y="190" id="sv3#page7" name="Gestionar reservas" landmark="true">
   <ContentUnits>
-    <IndexUnit gr:x="0" gr:y="0" id="sv3#page7#inu3" name="Reservas de mis pistas" entity="ent2" displayAttributes="ent2#att2 ent2#att12 ent2#att13 ent2#att26">
+    <IndexUnit gr:x="240" gr:y="0" id="sv3#page7#inu3" name="Reservas de mis pistas" entity="ent2" displayAttributes="ent2#att2 ent2#att7 ent2#att12 ent2#att13 ent2#att26" linkOrder="sv3#page7#inu3#ln127 sv3#page7#inu3#ln138 sv3#page7#inu3#ln1">
       <Selector id="sv3#page7#inu3#su55" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#page7#inu3#su55#rcond9" name="RoleCondition9" predicate="in" implied="false" role="rel14#role27.rel10#role20"/>
       </Selector>
+      <Link id="sv3#page7#inu3#ln127" name="Ver reserva" to="sv3#page65#dau17" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv3#page7#inu3#ln138" name="Confirmar reserva" to="sv3#mfu16" type="normal" validate="true">
+        <LinkParameter id="sv3#page7#inu3#ln138#par234" name="1_estado_reserva" sourceValue="1" target="sv3#mfu16.ent2#att13"/>
+        <LinkParameter id="sv3#page7#inu3#ln138#par235" name="oid_KeyCondition41 [oid]" source="data[].ent2#att2" target="sv3#mfu16#su65#kcond41.ent2#att2"/>
+      </Link>
+      <Link id="sv3#page7#inu3#ln1" name="Cancelar reserva" to="sv3#mfu17" type="normal" validate="true">
+        <LinkParameter id="sv3#page7#inu3#ln1#par180" name="2_estado_reserva" sourceValue="2" target="sv3#mfu17.ent2#att13"/>
+        <LinkParameter id="sv3#page7#inu3#ln1#par181" name="oid_KeyCondition44 [oid]" source="data[].ent2#att2" target="sv3#mfu17#su58#kcond44.ent2#att2"/>
+      </Link>
     </IndexUnit>
+    <GetUnit gr:x="115" gr:y="10" id="sv3#page7#gtu9" name="Get9" contextParameters="UserCtxParam">
+      <Link id="sv3#page7#gtu9#ln126" name="Flow126" to="sv3#page7#inu3" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
+    <MultiMessageUnit gr:x="0" gr:y="15" id="sv3#page7#mssu24" name="Estado reserva">
+      <Message xml:space="preserve">Estado reserva (0 - Pendiente, 1 - Confirmada, 2 - Cancelada)</Message>
+    </MultiMessageUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page7#mssu24"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
         <layout:Unit unitId="sv3#page7#inu3">
           <layout:Attribute attribute="ent2#att2"/>
+          <layout:Attribute attribute="ent2#att7"/>
           <layout:Attribute attribute="ent2#att12"/>
           <layout:Attribute attribute="ent2#att13"/>
           <layout:Attribute attribute="ent2#att26"/>
+          <layout:Link link="sv3#page7#inu3#ln127"/>
+          <layout:Link link="sv3#page7#inu3#ln138"/>
+          <layout:Link link="sv3#page7#inu3#ln1"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

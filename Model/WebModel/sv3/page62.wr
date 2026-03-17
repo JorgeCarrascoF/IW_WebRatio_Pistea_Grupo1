@@ -1,0 +1,55 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-215" gr:y="425" id="sv3#page62" name="Editar pista">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv3#page62#enu9" name="Form9" entity="ent4" linkOrder="sv3#page62#enu9#ln111" fieldOrder="sv3#page62#enu9#fld47 sv3#page62#enu9#fld48 sv3#page62#enu9#fld49 sv3#page62#enu9#fld50 sv3#page62#enu9#fld51 sv3#page62#enu9#fld52 sv3#page62#enu9#fld53 sv3#page62#enu9#fld54">
+      <Field id="sv3#page62#enu9#fld47" name="nombre_pista" type="string" modifiable="true" preloaded="true" attribute="ent4#att14"/>
+      <Field id="sv3#page62#enu9#fld48" name="deporte_asociado" type="string" modifiable="true" preloaded="true" attribute="ent4#att15"/>
+      <Field id="sv3#page62#enu9#fld49" name="hora_apertura" type="timestamp" modifiable="true" preloaded="true" attribute="ent4#att16"/>
+      <Field id="sv3#page62#enu9#fld50" name="hora_cierre" type="timestamp" modifiable="true" preloaded="true" attribute="ent4#att17"/>
+      <Field id="sv3#page62#enu9#fld51" name="capacidad" type="integer" modifiable="true" preloaded="true" attribute="ent4#att18"/>
+      <Field id="sv3#page62#enu9#fld52" name="es_disponible" type="boolean" modifiable="true" preloaded="true" attribute="ent4#att19"/>
+      <Field id="sv3#page62#enu9#fld53" name="ubicacion" type="string" modifiable="true" preloaded="true" attribute="ent4#att39"/>
+      <Field id="sv3#page62#enu9#fld54" name="foto_pista" type="string" modifiable="true" preloaded="true" attribute="ent4#att38"/>
+      <Field id="sv3#page62#enu9#fld55" name="oid" type="integer" modifiable="false" attribute="ent4#att4" preloaded="true" hidden="true"/>
+      <Link id="sv3#page62#enu9#ln111" name="Flow111" to="sv3#mfu13" type="normal" validate="true">
+        <LinkParameter id="sv3#page62#enu9#ln111#par204" name="capacidad_capacidad" source="sv3#page62#enu9#fld51" target="sv3#mfu13.ent4#att18"/>
+        <LinkParameter id="sv3#page62#enu9#ln111#par205" name="deporte_asociado_deporte_asociado" source="sv3#page62#enu9#fld48" target="sv3#mfu13.ent4#att15"/>
+        <LinkParameter id="sv3#page62#enu9#ln111#par206" name="es_disponible_es_disponible" source="sv3#page62#enu9#fld52" target="sv3#mfu13.ent4#att19"/>
+        <LinkParameter id="sv3#page62#enu9#ln111#par207" name="foto_pista_foto_pista" source="sv3#page62#enu9#fld54" target="sv3#mfu13.ent4#att38"/>
+        <LinkParameter id="sv3#page62#enu9#ln111#par208" name="hora_apertura_hora_apertura" source="sv3#page62#enu9#fld49" target="sv3#mfu13.ent4#att16"/>
+        <LinkParameter id="sv3#page62#enu9#ln111#par209" name="hora_cierre_hora_cierre" source="sv3#page62#enu9#fld50" target="sv3#mfu13.ent4#att17"/>
+        <LinkParameter id="sv3#page62#enu9#ln111#par210" name="Key [oid]_KeyCondition36 [oid]" source="key.ent4#att4" target="sv3#mfu13#su50#kcond36.ent4#att4"/>
+        <LinkParameter id="sv3#page62#enu9#ln111#par211" name="nombre_pista_nombre_pista" source="sv3#page62#enu9#fld47" target="sv3#mfu13.ent4#att14"/>
+        <LinkParameter id="sv3#page62#enu9#ln111#par212" name="Pista Object_Pista Object" source="entityBean" target="sv3#mfu13.entityBeans"/>
+        <LinkParameter id="sv3#page62#enu9#ln111#par213" name="ubicacion_ubicacion" source="sv3#page62#enu9#fld53" target="sv3#mfu13.ent4#att39"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page62#enu9">
+          <layout:Field field="sv3#page62#enu9#fld47"/>
+          <layout:Field field="sv3#page62#enu9#fld48"/>
+          <layout:Field field="sv3#page62#enu9#fld49"/>
+          <layout:Field field="sv3#page62#enu9#fld50"/>
+          <layout:Field field="sv3#page62#enu9#fld51"/>
+          <layout:Field field="sv3#page62#enu9#fld52"/>
+          <layout:Field field="sv3#page62#enu9#fld53"/>
+          <layout:Field field="sv3#page62#enu9#fld54"/>
+          <layout:Link link="sv3#page62#enu9#ln111"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

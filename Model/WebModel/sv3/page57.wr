@@ -1,11 +1,30 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="530" gr:y="40" id="sv3#page57" name="Torneo detalle">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="515" gr:y="-95" id="sv3#page57" name="Torneo detalle">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="0" id="sv3#page57#dau16" name="Torneo" entity="ent3" displayAttributes="ent3#att3 ent3#att22 ent3#att23 ent3#att27 ent3#att28 ent3#att29 ent3#att30 ent3#att31 rel9#role17.ent4#att14">
+    <DataUnit gr:x="15" gr:y="0" id="sv3#page57#dau16" name="Torneo" entity="ent3" displayAttributes="ent3#att3 ent3#att22 ent3#att23 ent3#att27 ent3#att28 ent3#att29 ent3#att30 ent3#att31 rel9#role17.ent4#att14" linkOrder="sv3#page57#dau16#ln97 sv3#page57#dau16#ln113">
       <Selector id="sv3#page57#dau16#su53" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#page57#dau16#su53#kcond31" name="KeyCondition31" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv3#page57#dau16#ln97" name="Borrar torneo" to="sv3#dlu14" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv3#page57#dau16#ln97" name="Borrar torneo" to="sv3#page59" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv3#page57#dau16#ln100" name="Flow100" to="sv3#dlu14" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv3#page57#dau16#ln113" name="Editar torneo" to="sv3#page63#enu13" type="normal" validate="true">
+        <LinkParameter id="sv3#page57#dau16#ln113#par183" name="descripcion_torneo_descripcion_torneo" source="data.ent3#att28" target="sv3#page63#enu13#fld83_slot"/>
+        <LinkParameter id="sv3#page57#dau16#ln113#par214" name="fecha_fin_fecha_fin" source="data.ent3#att29" target="sv3#page63#enu13#fld84_slot"/>
+        <LinkParameter id="sv3#page57#dau16#ln113#par215" name="fecha_inicio_fecha_inicio" source="data.ent3#att23" target="sv3#page63#enu13#fld81_slot"/>
+        <LinkParameter id="sv3#page57#dau16#ln113#par216" name="oid_Key Condition [oid]" source="data.ent3#att3" target="sv3#page63#enu13.ent3#att3"/>
+        <LinkParameter id="sv3#page57#dau16#ln113#par217" name="nombre_torneo_nombre_torneo" source="data.ent3#att27" target="sv3#page63#enu13#fld82_slot"/>
+        <LinkParameter id="sv3#page57#dau16#ln113#par218" name="numero_plazas_numero_plazas" source="data.ent3#att22" target="sv3#page63#enu13#fld80_slot"/>
+        <LinkParameter id="sv3#page57#dau16#ln113#par219" name="oid_oid" source="data.ent3#att3" target="sv3#page63#enu13#fld79_slot"/>
+        <LinkParameter id="sv3#page57#dau16#ln113#par220" name="precio_inscripcion_precio_inscripcion" source="data.ent3#att31" target="sv3#page63#enu13#fld86_slot"/>
+        <LinkParameter id="sv3#page57#dau16#ln113#par221" name="premio_premio" source="data.ent3#att30" target="sv3#page63#enu13#fld85_slot"/>
+        <LinkParameter id="sv3#page57#dau16#ln113#par222" name="TorneoToPista.oid_TorneoToPista - Preselection" source="data.rel9#role17_ent4#att4" target="sv3#page63#enu13#sfld4_presel"/>
+      </Link>
+      <Link id="sv3#page57#dau16#ln107" name="Flow107" to="sv3#page57#inu6" automaticCoupling="true" type="transport" validate="true"/>
     </DataUnit>
+    <IndexUnit gr:x="0" gr:y="125" id="sv3#page57#inu6" name="Participantes" entity="User" displayAttributes="userName email User#att37">
+      <Selector id="sv3#page57#inu6#su68" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#page57#inu6#su68#rcond19" name="RoleCondition19" predicate="in" implied="false" role="rel4#role8"/>
+      </Selector>
+    </IndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -20,6 +39,28 @@
           <layout:Attribute attribute="ent3#att30"/>
           <layout:Attribute attribute="ent3#att31"/>
           <layout:Attribute attribute="rel9#role17.ent4#att14"/>
+          <layout:Link link="sv3#page57#dau16#ln97"/>
+          <layout:Link link="sv3#page57#dau16#ln113"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page57#inu6">
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Attribute attribute="User#att37"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

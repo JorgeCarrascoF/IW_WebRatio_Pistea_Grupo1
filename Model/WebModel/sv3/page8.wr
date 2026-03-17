@@ -1,16 +1,37 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="150" gr:y="445" id="sv3#page8" name="Pista detalle">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-40" gr:y="415" id="sv3#page8" name="Pista detalle">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="0" id="sv3#page8#dau14" name="Details14" entity="ent4" displayAttributes="ent4#att4 ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att19 ent4#att39 ent4#att38">
+    <DataUnit gr:x="0" gr:y="0" id="sv3#page8#dau14" name="Details14" entity="ent4" linkOrder="sv3#page8#dau14#ln102 sv3#page8#dau14#ln110" displayAttributes="ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att19 ent4#att39 ent4#att38 avg(rel12#role24.ent6#att21) count(rel12#role24.ent6#att21)">
       <Selector id="sv3#page8#dau14#su5" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#page8#dau14#su5#kcond30" name="KeyCondition30" predicate="in" implied="false"/>
       </Selector>
+      <Link id="sv3#page8#dau14#ln102" name="Borrar pista" to="sv3#page60" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv3#page8#dau14#ln104" name="Flow104" to="sv3#dlu15" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv3#page8#dau14#ln110" name="Editar pista" to="sv3#page62#enu9" type="normal" validate="true">
+        <LinkParameter id="sv3#page8#dau14#ln110#par184" name="capacidad_capacidad" source="data.ent4#att18" target="sv3#page62#enu9#fld51_slot"/>
+        <LinkParameter id="sv3#page8#dau14#ln110#par187" name="deporte_asociado_deporte_asociado" source="data.ent4#att15" target="sv3#page62#enu9#fld48_slot"/>
+        <LinkParameter id="sv3#page8#dau14#ln110#par196" name="es_disponible_es_disponible" source="data.ent4#att19" target="sv3#page62#enu9#fld52_slot"/>
+        <LinkParameter id="sv3#page8#dau14#ln110#par197" name="foto_pista_foto_pista" source="data.ent4#att38" target="sv3#page62#enu9#fld54_slot"/>
+        <LinkParameter id="sv3#page8#dau14#ln110#par198" name="hora_apertura_hora_apertura" source="data.ent4#att16" target="sv3#page62#enu9#fld49_slot"/>
+        <LinkParameter id="sv3#page8#dau14#ln110#par199" name="hora_cierre_hora_cierre" source="data.ent4#att17" target="sv3#page62#enu9#fld50_slot"/>
+        <LinkParameter id="sv3#page8#dau14#ln110#par200" name="oid_Key Condition [oid]" source="data.ent4#att4" target="sv3#page62#enu9.ent4#att4"/>
+        <LinkParameter id="sv3#page8#dau14#ln110#par201" name="nombre_pista_nombre_pista" source="data.ent4#att14" target="sv3#page62#enu9#fld47_slot"/>
+        <LinkParameter id="sv3#page8#dau14#ln110#par202" name="oid_oid" source="data.ent4#att4" target="sv3#page62#enu9#fld55_slot"/>
+        <LinkParameter id="sv3#page8#dau14#ln110#par203" name="ubicacion_ubicacion" source="data.ent4#att39" target="sv3#page62#enu9#fld53_slot"/>
+      </Link>
+      <Link id="sv3#page8#dau14#ln101" name="Flow101" to="sv3#page8#inu5" automaticCoupling="true" type="transport" validate="true"/>
     </DataUnit>
+    <IndexUnit gr:x="175" gr:y="65" id="sv3#page8#inu5" name="Valoraciones" entity="ent6" displayAttributes="ent6#att21 ent6#att20 ent6#att24 rel8#role16.userName">
+      <Selector id="sv3#page8#inu5#su66" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#page8#inu5#su66#rcond17" name="RoleCondition17" predicate="in" implied="false" role="rel12#role24"/>
+      </Selector>
+    </IndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv3#page8#dau14">
-          <layout:Attribute attribute="ent4#att4"/>
+          <layout:Link link="sv3#page8#dau14#ln102"/>
+          <layout:Link link="sv3#page8#dau14#ln110"/>
           <layout:Attribute attribute="ent4#att14"/>
           <layout:Attribute attribute="ent4#att15"/>
           <layout:Attribute attribute="ent4#att16"/>
@@ -19,6 +40,29 @@
           <layout:Attribute attribute="ent4#att19"/>
           <layout:Attribute attribute="ent4#att39"/>
           <layout:Attribute attribute="ent4#att38"/>
+          <layout:Attribute attribute="avg(rel12#role24.ent6#att21)"/>
+          <layout:Attribute attribute="count(rel12#role24.ent6#att21)"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page8#inu5">
+          <layout:Attribute attribute="ent6#att21"/>
+          <layout:Attribute attribute="ent6#att20"/>
+          <layout:Attribute attribute="ent6#att24"/>
+          <layout:Attribute attribute="rel8#role16.userName"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

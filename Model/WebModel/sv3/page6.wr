@@ -1,11 +1,14 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="330" gr:y="445" id="sv3#page6" name="Mis pistas" landmark="true" linkOrder="sv3#page6#ln94">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="330" gr:y="300" id="sv3#page6" name="Mis pistas" landmark="true" linkOrder="sv3#page6#ln94">
   <ContentUnits>
-    <IndexUnit gr:x="0" gr:y="0" id="sv3#page6#inu1" name="Pistas" entity="ent4" linkOrder="sv3#page6#inu1#ln27" displayAttributes="ent4#att4 ent4#att14 ent4#att15 ent4#att19">
+    <IndexUnit gr:x="0" gr:y="115" id="sv3#page6#inu1" name="Pistas" entity="ent4" linkOrder="sv3#page6#inu1#ln27" displayAttributes="ent4#att4 ent4#att14 ent4#att15 ent4#att19">
       <Link id="sv3#page6#inu1#ln27" name="Ver pista" to="sv3#page8#dau14" automaticCoupling="true" type="normal" validate="true"/>
       <Selector id="sv3#page6#inu1#su56" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#page6#inu1#su56#rcond15" name="RoleCondition15" predicate="in" implied="false" role="rel14#role27"/>
       </Selector>
     </IndexUnit>
+    <GetUnit gr:x="5" gr:y="0" id="sv3#page6#gtu8" name="Get8" contextParameters="UserCtxParam">
+      <Link id="sv3#page6#gtu8#ln125" name="Flow125" to="sv3#page6#inu1" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -18,6 +21,20 @@
           <layout:Attribute attribute="ent4#att19"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

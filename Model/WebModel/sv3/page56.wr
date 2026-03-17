@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="85" gr:y="-20" id="sv3#page56" name="Crear torneo">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="140" gr:y="-155" id="sv3#page56" name="Crear torneo">
   <ContentUnits>
-    <EntryUnit gr:x="0" gr:y="0" id="sv3#page56#enu7" name="Crear torneo" entity="ent3" fieldOrder="sv3#page56#enu7#fld30 sv3#page56#enu7#fld33 sv3#page56#enu7#fld34 sv3#page56#enu7#fld35 sv3#page56#enu7#fld36 sv3#page56#enu7#fld37 sv3#page56#enu7#fld38 sv3#page56#enu7#sfld1" linkOrder="sv3#page56#enu7#ln95">
+    <EntryUnit gr:x="10" gr:y="0" id="sv3#page56#enu7" name="Crear torneo" entity="ent3" fieldOrder="sv3#page56#enu7#fld30 sv3#page56#enu7#fld33 sv3#page56#enu7#fld34 sv3#page56#enu7#fld35 sv3#page56#enu7#fld36 sv3#page56#enu7#fld37 sv3#page56#enu7#fld38 sv3#page56#enu7#sfld1" linkOrder="sv3#page56#enu7#ln95">
       <Field id="sv3#page56#enu7#fld30" name="numero_plazas" type="integer" modifiable="true" attribute="ent3#att22"/>
       <Field id="sv3#page56#enu7#fld33" name="fecha_inicio" type="timestamp" modifiable="true" attribute="ent3#att23"/>
       <Field id="sv3#page56#enu7#fld34" name="nombre_torneo" type="string" modifiable="true" attribute="ent3#att27"/>
@@ -21,12 +21,20 @@
         <LinkParameter id="sv3#page56#enu7#ln95#par170" name="Torneo Object_Torneo Object" source="entityBean" target="sv3#cru1.entityBeans"/>
       </Link>
     </EntryUnit>
-    <SelectorUnit gr:x="5" gr:y="140" id="sv3#page56#seu2" name="Selector2" entity="ent4" distinctAttributes="ent4#att4 ent4#att14">
+    <SelectorUnit gr:x="0" gr:y="105" id="sv3#page56#seu2" name="Selector2" entity="ent4" distinctAttributes="ent4#att4 ent4#att14">
       <Link id="sv3#page56#seu2#ln87" name="Flow87" to="sv3#page56#enu7" type="transport" validate="true">
         <LinkParameter id="sv3#page56#seu2#ln87#par138" name="nombre_pista_Pista [label]" source="ent4#att14Array" target="sv3#page56#enu7#sfld1_label"/>
         <LinkParameter id="sv3#page56#seu2#ln87#par141" name="oid_Pista [output]" source="ent4#att4Array" target="sv3#page56#enu7#sfld1_output"/>
       </Link>
+      <Selector id="sv3#page56#seu2#su60" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#page56#seu2#su60#rcond1" name="RoleCondition1" predicate="in" implied="false" role="rel14#role27"/>
+      </Selector>
     </SelectorUnit>
+    <GetUnit gr:x="0" gr:y="250" id="sv3#page56#gtu7" name="Get7" contextParameters="UserCtxParam">
+      <Link id="sv3#page56#gtu7#ln124" name="Flow124" to="sv3#page56#seu2" type="transport" validate="true">
+        <LinkParameter id="sv3#page56#gtu7#ln124#par226" name="UserCtxParam.oid_RoleCondition1 [oid]" source="sv3#page56#gtu7.UserCtxParam" target="sv3#page56#seu2#su60#rcond1.userOID"/>
+      </Link>
+    </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>

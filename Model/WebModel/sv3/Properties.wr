@@ -1,21 +1,57 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3" name="gerente" protected="false" homePage="sv3#page4" landmarks="sv3#page4 sv3#page5 sv3#page6 sv3#page7">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3" name="gerente" protected="true" landmarks="sv3#page4 sv3#page5 sv3#page6 sv3#page7 sv3#lou2" homePage="sv3#page4">
   <OperationUnits>
-    <GetUnit gr:x="350" gr:y="295" id="sv3#gtu1" name="Get1" contextParameters="UserCtxParam" linkOrder="sv3#gtu1#ln76 sv3#gtu1#ln78 sv3#gtu1#ln86">
-      <Link id="sv3#gtu1#ln76" name="Flow76" to="sv3#page5#inu2" automaticCoupling="true" type="transport" validate="true"/>
-      <Link id="sv3#gtu1#ln78" name="Flow78" to="sv3#page7#inu3" automaticCoupling="true" type="transport" validate="true"/>
-      <Link id="sv3#gtu1#ln86" name="Flow86" to="sv3#page6#inu1" automaticCoupling="true" type="transport" validate="true"/>
-    </GetUnit>
-    <CreateUnit gr:x="110" gr:y="-130" id="sv3#cru1" name="Create1" entity="ent3">
+    <CreateUnit gr:x="165" gr:y="-255" id="sv3#cru1" name="CrearTorneo" entity="ent3">
       <OKLink id="sv3#cru1#oln31" name="OKFlow31" to="sv3#page5" automaticCoupling="true"/>
     </CreateUnit>
-    <CreateUnit gr:x="535" gr:y="635" id="sv3#cru2" name="CrearPista" entity="ent4">
+    <CreateUnit gr:x="525" gr:y="545" id="sv3#cru2" name="CrearPista" entity="ent4">
       <OKLink id="sv3#cru2#oln30" name="OKFlow30" to="sv3#page6" automaticCoupling="true"/>
     </CreateUnit>
-    <DeleteUnit gr:x="540" gr:y="-110" id="sv3#dlu14" name="Borrar torneo" entity="ent3">
+    <DeleteUnit gr:x="360" gr:y="-230" id="sv3#dlu14" name="Borrar torneo" entity="ent3">
       <Selector id="sv3#dlu14#su57" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#dlu14#su57#kcond32" name="KeyCondition32" predicate="in" implied="false"/>
       </Selector>
       <OKLink id="sv3#dlu14#oln32" name="OKFlow32" to="sv3#page5" automaticCoupling="true"/>
     </DeleteUnit>
+    <DeleteUnit gr:x="360" gr:y="655" id="sv3#dlu15" name="BorrarPista" entity="ent4">
+      <Selector id="sv3#dlu15#su3" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#dlu15#su3#kcond35" name="KeyCondition35" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#dlu15#oln35" name="OKFlow35" to="sv3#page6" automaticCoupling="true"/>
+      <KOLink id="sv3#dlu15#kln3" name="KOFlow3" to="sv3#page61" automaticCoupling="true"/>
+    </DeleteUnit>
+    <ModifyUnit gr:x="-215" gr:y="615" id="sv3#mfu13" name="ActualizarPista" entity="ent4">
+      <Selector id="sv3#mfu13#su50" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#mfu13#su50#kcond36" name="KeyCondition36" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#mfu13#oln36" name="OKFlow36" to="sv3#page8" automaticCoupling="true"/>
+    </ModifyUnit>
+    <ModifyUnit gr:x="730" gr:y="-230" id="sv3#mfu14" name="Actualizar torneo" entity="ent3">
+      <Selector id="sv3#mfu14#su2" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#mfu14#su2#kcond33" name="KeyCondition33" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#mfu14#oln33" name="OKFlow33" to="sv3#page57" automaticCoupling="true"/>
+    </ModifyUnit>
+    <ModifyUnit gr:x="1200" gr:y="20" id="sv3#mfu15" name="Cancelar reserva" entity="ent2">
+      <Selector id="sv3#mfu15#su62" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#mfu15#su62#kcond40" name="KeyCondition40" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#mfu15#oln37" name="OKFlow37" to="sv3#page65" automaticCoupling="true"/>
+      <KOLink id="sv3#mfu15#kln4" name="KOFlow4" to="sv3#page67" automaticCoupling="true"/>
+    </ModifyUnit>
+    <ModifyUnit gr:x="645" gr:y="380" id="sv3#mfu16" name="Confirmar reserva" entity="ent2">
+      <Selector id="sv3#mfu16#su65" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#mfu16#su65#kcond41" name="KeyCondition41" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#mfu16#oln38" name="OKFlow38" to="sv3#page7" automaticCoupling="true"/>
+      <KOLink id="sv3#mfu16#kln5" name="KOFlow5" to="sv3#page68" automaticCoupling="true"/>
+    </ModifyUnit>
+    <ModifyUnit gr:x="890" gr:y="380" id="sv3#mfu17" name="Cancelar reserva" entity="ent2">
+      <Selector id="sv3#mfu17#su58" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#mfu17#su58#kcond44" name="KeyCondition44" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#mfu17#oln34" name="OKFlow34" to="sv3#page7" automaticCoupling="true"/>
+      <KOLink id="sv3#mfu17#kln2" name="KOFlow2" to="sv3#page64" automaticCoupling="true"/>
+    </ModifyUnit>
+    <LogoutUnit gr:x="345" gr:y="190" id="sv3#lou2" name="Cerrar sesi&#243;n" siteView="sv1" landmark="true"/>
   </OperationUnits>
 </SiteView>

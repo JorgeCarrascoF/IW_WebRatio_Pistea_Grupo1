@@ -1,0 +1,26 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="825" gr:y="515" id="sv3#page64" name="Error cancelar reserva" linkOrder="sv3#page64#ln2">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv3#page64#mssu29" name="Message29">
+      <Message xml:space="preserve">Ha habido un error al intentar cancelar la reserva. Int&#233;ntelo de nuevo m&#225;s tarde.</Message>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page64#mssu29"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv3#page64#ln2" name="Volver" to="sv3#page7" automaticCoupling="true" type="normal" validate="true"/>
+</Page>
