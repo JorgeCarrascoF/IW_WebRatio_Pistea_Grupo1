@@ -6,7 +6,7 @@
       </Selector>
       <OKLink id="sv4#mfu1#oln2" name="OKEditarUsuario" to="sv4#page12" automaticCoupling="true"/>
     </ModifyUnit>
-    <MailUnit gr:x="130" gr:y="360" id="sv4#mlu1" name="Enviar Contacto" format="plainText">
+    <MailUnit gr:x="125" gr:y="410" id="sv4#mlu1" name="Enviar Contacto" format="plainText">
       <SubjectTemplate xml:space="preserve">{asunto}</SubjectTemplate>
       <BodyTemplate xml:space="preserve">{mensaje}</BodyTemplate>
     </MailUnit>
@@ -120,7 +120,7 @@
         <LinkParameter id="sv4#dlu6#oln16#par115" name="oid_PASSING_userOid" sourceLinkParameter="sv4#dlu3#oln14#par58" target="sv4#scu1.userOid"/>
       </OKLink>
     </DeleteUnit>
-    <ScriptUnit gr:x="2655" gr:y="-75" id="sv4#scu1" name="Borrar Favoritos">
+    <ScriptUnit gr:x="2695" gr:y="-75" id="sv4#scu1" name="Borrar Favoritos">
       <ScriptUnitText xml:space="preserve">#input Integer userOid
 #output String resultCode
 
@@ -206,7 +206,7 @@ try {
         <LinkParameter id="sv4#dlu9#oln20#par163" name="oid_PASSING_KeyCondition25 [oid]" sourceLinkParameter="sv4#dlu10#oln22#par162" target="sv4#mfu10#su34#kcond25.userOID"/>
       </OKLink>
     </DeleteUnit>
-    <DeleteUnit gr:x="2305" gr:y="780" id="sv4#dlu10" name="Borrar Torneos" entity="ent3">
+    <DeleteUnit gr:x="2315" gr:y="800" id="sv4#dlu10" name="Borrar Torneos" entity="ent3">
       <Selector id="sv4#dlu10#su45" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#dlu10#su45#rcond11" name="RoleCondition11" predicate="in" implied="false" role="rel13#role25"/>
       </Selector>

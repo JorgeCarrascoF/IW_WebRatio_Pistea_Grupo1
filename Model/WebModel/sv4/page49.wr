@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-115" gr:y="330" id="sv4#page49" name="ObtenerEmailAdmin" landmark="false">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-115" gr:y="380" id="sv4#page49" name="ObtenerEmailAdmin" landmark="false">
   <ContentUnits>
     <PowerIndexUnit gr:x="0" gr:y="0" id="sv4#page49#pwu11" name="AdminLoggeado" sortable="true" checkable="false" useCountQuery="false" entity="User" displayAttributes="userName email" linkOrder="sv4#page49#pwu11#ln89">
       <Link id="sv4#page49#pwu11#ln89" name="Flow89" to="sv4#page13#enu3" type="normal" validate="true" gr:bendpoints="107,-42,-88,138">

@@ -2,7 +2,7 @@
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page46#mssu16" name="&#201;xito al ascender usuario" linkOrder="sv4#page46#mssu16#ln80">
       <Message xml:space="preserve">Gerente ascendido a admin exitosamente.</Message>
-      <Link id="sv4#page46#mssu16#ln80" name="Continuar moderando" to="sv4#page41" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-107,8,153,168;-110,20,140,185;-124,20,126,185;-138,21,112,186"/>
+      <Link id="sv4#page46#mssu16#ln80" name="Continuar moderando" to="sv4#page41" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-110,20,140,185"/>
     </MultiMessageUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
