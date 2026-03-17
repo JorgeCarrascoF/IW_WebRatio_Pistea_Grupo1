@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-55" gr:y="565" id="sv4#page21" name="Confirmar Eliminar Pista">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-90" gr:y="535" id="sv4#page21" name="Confirmar Eliminar Pista">
   <ContentUnits>
     <DataUnit gr:x="0" gr:y="0" id="sv4#page21#dau4" name="Pista a borrar" entity="ent4" linkOrder="sv4#page21#dau4#ln38 sv4#page21#dau4#ln39" displayAttributes="ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att19 ent4#att39">
       <Selector id="sv4#page21#dau4#su17" defaultPolicy="fill" booleanOperator="and">

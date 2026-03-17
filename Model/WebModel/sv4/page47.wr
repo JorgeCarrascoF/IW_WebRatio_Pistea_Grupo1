@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="2475" gr:y="210" id="sv4#page47" name="Confirmar Degradar Gerente">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="2455" gr:y="230" id="sv4#page47" name="Confirmar Degradar Gerente">
   <ContentUnits>
     <DataUnit gr:x="0" gr:y="0" id="sv4#page47#dau13" name="Usuario a degradar" entity="User" linkOrder="sv4#page47#dau13#ln82 sv4#page47#dau13#ln83" displayAttributes="userName password">
       <Selector id="sv4#page47#dau13#su46" defaultPolicy="fill" booleanOperator="and">
@@ -8,9 +8,16 @@
       <Link id="sv4#page47#dau13#ln82" name="Confirmar degradaci&#243;n" to="sv4#dlu11" type="normal" validate="true" gr:bendpoints="216,212,-184,-122">
         <LinkParameter id="sv4#page47#dau13#ln82#par166" name="oid_PASSING" source="data.userOID" passing="true"/>
         <LinkParameter id="sv4#page47#dau13#ln82#par167" name="oid_PASSING_RoleCondition12 [oid]" sourceLinkParameter="sv4#page41#pwu9#ln81#par165" target="sv4#dlu11#su47#rcond12.userOID"/>
+        <LinkParameter id="sv4#page47#dau13#ln82#par175" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv4#page47#gtu3#ln86#par174" passing="true"/>
       </Link>
       <Link id="sv4#page47#dau13#ln83" name="Cancelar degradaci&#243;n" to="sv4#page41#pwu9" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-142,-68,132,-48"/>
     </DataUnit>
+    <GetUnit gr:x="170" gr:y="20" id="sv4#page47#gtu3" name="ObtenerIDAdmin" contextParameters="UserCtxParam">
+      <Link id="sv4#page47#gtu3#ln86" name="Flow86" to="sv4#page47#dau13" type="transport" validate="true">
+        <LinkParameter id="sv4#page47#gtu3#ln86#par173" name="UserCtxParam.oid_KeyCondition37 [oid]" source="sv4#page47#gtu3.UserCtxParam" target="sv4#page47#dau13#su46#kcond37.userOID"/>
+        <LinkParameter id="sv4#page47#gtu3#ln86#par174" name="UserCtxParam.oid_PASSING" source="sv4#page47#gtu3.UserCtxParam" passing="true"/>
+      </Link>
+    </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -22,6 +29,20 @@
           <layout:Attribute attribute="password"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

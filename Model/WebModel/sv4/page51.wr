@@ -1,23 +1,20 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="3065" gr:y="130" id="sv4#page51" name="ObtenerUsername">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="3075" gr:y="290" id="sv4#page51" name="ObtenerUsername">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="0" id="sv4#page51#dau15" name="Usuario admin" entity="User" displayAttributes="userName email" linkOrder="sv4#page51#dau15#ln93">
-      <Selector id="sv4#page51#dau15#su52" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv4#page51#dau15#su52#kcond43" name="KeyCondition43" predicate="in" implied="false"/>
-      </Selector>
-      <Link id="sv4#page51#dau15#ln93" name="Flow93" to="sv4#page3#mssu19" type="normal" validate="true">
-        <LinkParameter id="sv4#page51#dau15#ln93#par195" name="username_Placeholder1" source="data.userName" target="sv4#page3#mssu19.sv4#page3#mssu19#ph1"/>
+    <GetUnit gr:x="0" gr:y="0" id="sv4#page51#gtu5" name="ObtenerIDAdmin" contextParameters="UserCtxParam">
+      <Link id="sv4#page51#gtu5#ln75" name="Flow75" to="sv4#page51#seu3" type="transport" validate="true">
+        <LinkParameter id="sv4#page51#gtu5#ln75#par157" name="UserCtxParam.oid_KeyCondition32 [oid]" source="sv4#page51#gtu5.UserCtxParam" target="sv4#page51#seu3#su51#kcond32.userOID"/>
+        <LinkParameter id="sv4#page51#gtu5#ln75#par159" name="UserCtxParam.oid_PASSING" source="sv4#page51#gtu5.UserCtxParam" passing="true"/>
       </Link>
-    </DataUnit>
+    </GetUnit>
+    <SelectorUnit gr:x="5" gr:y="100" id="sv4#page51#seu3" name="ObtenerIDAdmin" entity="User" distinctAttributes="userOID">
+      <Selector id="sv4#page51#seu3#su51" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#page51#seu3#su51#kcond32" name="KeyCondition32" predicate="in" implied="false"/>
+      </Selector>
+    </SelectorUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:Unit unitId="sv4#page51#dau15">
-          <layout:Attribute attribute="userName"/>
-          <layout:Attribute attribute="email"/>
-          <layout:Link link="sv4#page51#dau15#ln93"/>
-        </layout:Unit>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

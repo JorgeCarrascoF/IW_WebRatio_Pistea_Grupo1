@@ -1,15 +1,42 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="3070" gr:y="-75" id="sv4#page3" name="Home Admin">
   <ContentUnits>
-    <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page3#mssu19" name="Bienvenida">
+    <MultiMessageUnit gr:x="30" gr:y="0" id="sv4#page3#mssu19" name="Bienvenida">
       <Placeholder id="sv4#page3#mssu19#ph1" name="Placeholder1"/>
-      <Message xml:space="preserve">Bienvenido al panel de administraci&#243;n, {Placeholder1}. Gestiona usuarios, pistas, incidencias y mucho m&#225;s desde aqu&#237;.</Message>
+      <Message xml:space="preserve">Bienvenido al panel de administraci&#243;n, $$Placeholder1$$. Gestiona usuarios, pistas, incidencias y mucho m&#225;s desde aqu&#237;.</Message>
     </MultiMessageUnit>
+    <GetUnit gr:x="5" gr:y="220" id="sv4#page3#gtu2" name="ObtenerIDAdmin" contextParameters="UserCtxParam">
+      <Link id="sv4#page3#gtu2#ln27" name="Flow27" to="sv4#page3#seu1" type="transport" validate="true">
+        <LinkParameter id="sv4#page3#gtu2#ln27#par42" name="UserCtxParam.oid_KeyCondition30 [oid]" source="sv4#page3#gtu2.UserCtxParam" target="sv4#page3#seu1#su5#kcond30.userOID"/>
+      </Link>
+    </GetUnit>
+    <SelectorUnit gr:x="0" gr:y="95" id="sv4#page3#seu1" name="ObtenerUsername" entity="User" distinctAttributes="userName">
+      <Selector id="sv4#page3#seu1#su5" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#page3#seu1#su5#kcond30" name="KeyCondition30" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv4#page3#seu1#ln72" name="Flow72" to="sv4#page3#mssu19" type="transport" validate="true">
+        <LinkParameter id="sv4#page3#seu1#ln72#par53" name="username_Placeholder1" source="userNameArray" target="sv4#page3#mssu19.sv4#page3#mssu19#ph1"/>
+      </Link>
+    </SelectorUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv4#page3#mssu19"/>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

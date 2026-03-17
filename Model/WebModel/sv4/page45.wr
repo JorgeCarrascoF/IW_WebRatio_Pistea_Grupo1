@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="2095" gr:y="380" id="sv4#page45" name="Confirmar Ascender Admin">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="2095" gr:y="400" id="sv4#page45" name="Confirmar Ascender Admin">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page45#mssu15" name="Aviso Borrado Cascada">
       <Message xml:space="preserve">Sus pistas y torneos ser&#225;n eliminados.</Message>

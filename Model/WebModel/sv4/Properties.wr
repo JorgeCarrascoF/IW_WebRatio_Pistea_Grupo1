@@ -6,16 +6,10 @@
       </Selector>
       <OKLink id="sv4#mfu1#oln2" name="OKEditarUsuario" to="sv4#page12" automaticCoupling="true"/>
     </ModifyUnit>
-    <MailUnit gr:x="110" gr:y="375" id="sv4#mlu1" name="Enviar Contacto" format="plainText">
+    <MailUnit gr:x="130" gr:y="360" id="sv4#mlu1" name="Enviar Contacto" format="plainText">
       <SubjectTemplate xml:space="preserve">{asunto}</SubjectTemplate>
       <BodyTemplate xml:space="preserve">{mensaje}</BodyTemplate>
     </MailUnit>
-    <GetUnit gr:x="-95" gr:y="90" id="sv4#gtu3" name="Obtener Email" contextParameters="UserCtxParam" landmark="false" linkOrder="sv4#gtu3#ln88">
-      <Link id="sv4#gtu3#ln88" name="Flow88" to="sv4#page49#pwu11" type="transport" validate="true">
-        <LinkParameter id="sv4#gtu3#ln88#par188" name="UserCtxParam.oid_PASSING" source="sv4#gtu3.UserCtxParam" passing="true"/>
-        <LinkParameter id="sv4#gtu3#ln88#par192" name="UserCtxParam.oid_KeyCondition42 [oid]" source="sv4#gtu3.UserCtxParam" target="sv4#page49#pwu11#su51#kcond42.userOID"/>
-      </Link>
-    </GetUnit>
     <ModifyUnit gr:x="655" gr:y="110" id="sv4#mfu2" name="Eliminar Usuario" entity="User">
       <Selector id="sv4#mfu2#su6" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#mfu2#su6#kcond4" name="KeyCondition4" predicate="in" implied="false"/>
@@ -36,7 +30,7 @@
       </Selector>
       <OKLink id="sv4#mfu4#oln4" name="OKEditarPista" to="sv4#page20" automaticCoupling="true"/>
     </ModifyUnit>
-    <DeleteUnit gr:x="-55" gr:y="920" id="sv4#dlu1" name="Eliminar Pista" entity="ent4">
+    <DeleteUnit gr:x="-30" gr:y="905" id="sv4#dlu1" name="Eliminar Pista" entity="ent4">
       <Selector id="sv4#dlu1#su16" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#dlu1#su16#kcond10" name="KeyCondition10" predicate="in" implied="false"/>
       </Selector>
@@ -48,7 +42,7 @@
       </Selector>
       <OKLink id="sv4#mfu6#oln6" name="OKActualizarIncidencia" to="sv4#page26" automaticCoupling="true"/>
     </ModifyUnit>
-    <DeleteUnit gr:x="875" gr:y="1055" id="sv4#dlu2" name="Eliminar Incidencia" entity="ent5">
+    <DeleteUnit gr:x="885" gr:y="1055" id="sv4#dlu2" name="Eliminar Incidencia" entity="ent5">
       <Selector id="sv4#dlu2#su21" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#dlu2#su21#kcond15" name="KeyCondition15" predicate="in" implied="false"/>
       </Selector>
@@ -94,7 +88,7 @@
       </Selector>
       <OKLink id="sv4#mfu8#oln24" name="OKFlow24" to="sv4#page43#mssu13"/>
     </ModifyUnit>
-    <ModifyUnit gr:x="2810" gr:y="190" id="sv4#mfu9" name="Cambiar Cliente" entity="User">
+    <ModifyUnit gr:x="2855" gr:y="205" id="sv4#mfu9" name="Cambiar Cliente" entity="User">
       <Selector id="sv4#mfu9#su33" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#mfu9#su33#kcond24" name="KeyCondition24" predicate="in" implied="false"/>
         <AttributesCondition id="sv4#mfu9#su33#acond17" name="AttCondition17" predicate="eq" booleanOperator="or" implied="false" attributes="User#att1" value="true"/>
@@ -123,45 +117,71 @@
       </Selector>
       <OKLink id="sv4#dlu6#oln16" name="OKFlow16" to="sv4#scu1">
         <LinkParameter id="sv4#dlu6#oln16#par146" name="oid_PASSING" sourceLinkParameter="sv4#dlu3#oln14#par58" passing="true"/>
-        <LinkParameter id="sv4#dlu6#oln16#par149" name="oid_PASSING_OidUser" sourceLinkParameter="sv4#dlu3#oln14#par58" target="sv4#scu1#sci1"/>
+        <LinkParameter id="sv4#dlu6#oln16#par115" name="oid_PASSING_userOid" sourceLinkParameter="sv4#dlu3#oln14#par58" target="sv4#scu1.userOid"/>
       </OKLink>
     </DeleteUnit>
     <ScriptUnit gr:x="2655" gr:y="-75" id="sv4#scu1" name="Borrar Favoritos">
       <ScriptUnitText xml:space="preserve">#input Integer userOid
 #output String resultCode
 
+log.debug("userOid recibido: " + userOid)
+
 def dbId = "db1"
 def session = getDBSession(dbId)
 
 try {
     def query = session.createSQLQuery(
-        "DELETE FROM public.guarda_como_fav WHERE user_oid = :userOid"
+        "DELETE FROM guarda_como_fav WHERE user_oid = :userOid"
     )
     query.setParameter("userOid", userOid)
     query.executeUpdate()
-    commit(session)
     return ["resultCode":"success"]
 } catch (Exception e) {
-    rollback(session)
     log.error("Error deleting favorites for userOid=" + userOid, e)
     return ["resultCode":"error"]
-}
-</ScriptUnitText>      <OKLink id="sv4#scu1#oln17" name="OKFlow17" to="sv4#mfu8">        <LinkParameter id="sv4#scu1#oln17#par147" name="2_Group.oid(defaultGroup)" sourceValue="2" target="sv4#mfu8.User2DefaultGroup.groupOID"/>        <LinkParameter id="sv4#scu1#oln17#par148" name="oid_PASSING_KeyCondition23 [oid]" sourceLinkParameter="sv4#dlu6#oln16#par146" target="sv4#mfu8#su32#kcond23.userOID"/>      </OKLink>      <ScriptInput id="sv4#scu1#sci1" name="userOid"/>    </ScriptUnit>    <DeleteUnit gr:x="1740" gr:y="-60" id="sv4#dlu7" name="Borrar Reservas" entity="ent2">      <Selector id="sv4#dlu7#su36" defaultPolicy="fill" booleanOperator="and">        <RelationshipRoleCondition id="sv4#dlu7#su36#rcond5" name="RoleCondition5" predicate="in" implied="false" role="rel7#role13"/>      </Selector>      <OKLink id="sv4#dlu7#oln13" name="OKFlow13" to="sv4#dlu8">        <LinkParameter id="sv4#dlu7#oln13#par120" name="oid_PASSING" sourceLinkParameter="sv4#page31#dau5#ln23#par116" passing="true"/>        <LinkParameter id="sv4#dlu7#oln13#par131" name="oid_PASSING_RoleCondition7 [oid]" sourceLinkParameter="sv4#page31#dau5#ln23#par116" target="sv4#dlu8#su38#rcond7.userOID"/>      </OKLink>    </DeleteUnit>    <DeleteUnit gr:x="1950" gr:y="15" id="sv4#dlu8" name="Borrar Valoraciones" entity="ent6">      <Selector id="sv4#dlu8#su38" defaultPolicy="fill" booleanOperator="and">        <RelationshipRoleCondition id="sv4#dlu8#su38#rcond7" name="RoleCondition7" predicate="in" implied="false" role="rel8#role15"/>      </Selector>      <OKLink id="sv4#dlu8#oln15" name="OKFlow15" to="sv4#scu2">        <LinkParameter id="sv4#dlu8#oln15#par121" name="oid_PASSING" sourceLinkParameter="sv4#dlu7#oln13#par120" passing="true"/>        <LinkParameter id="sv4#dlu8#oln15#par123" name="oid_PASSING_userOid" sourceLinkParameter="sv4#dlu7#oln13#par120" target="sv4#scu2.userOid"/>      </OKLink>    </DeleteUnit>    <ScriptUnit gr:x="1745" gr:y="95" id="sv4#scu2" name="Borrar Favoritos">      <ScriptInput id="sv4#scu2#sci2" name="userOid"/>      <ScriptUnitText xml:space="preserve">#input Integer userOid
+}</ScriptUnitText>
+      <OKLink id="sv4#scu1#oln17" name="OKFlow17" to="sv4#mfu8">
+        <LinkParameter id="sv4#scu1#oln17#par147" name="2_Group.oid(defaultGroup)" sourceValue="2" target="sv4#mfu8.User2DefaultGroup.groupOID"/>
+        <LinkParameter id="sv4#scu1#oln17#par148" name="oid_PASSING_KeyCondition23 [oid]" sourceLinkParameter="sv4#dlu6#oln16#par146" target="sv4#mfu8#su32#kcond23.userOID"/>
+      </OKLink>
+      <ScriptInput id="sv4#scu1#sci1" name="userOid"/>
+    </ScriptUnit>
+    <DeleteUnit gr:x="1740" gr:y="-60" id="sv4#dlu7" name="Borrar Reservas" entity="ent2">
+      <Selector id="sv4#dlu7#su36" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#dlu7#su36#rcond5" name="RoleCondition5" predicate="in" implied="false" role="rel7#role13"/>
+      </Selector>
+      <OKLink id="sv4#dlu7#oln13" name="OKFlow13" to="sv4#dlu8">
+        <LinkParameter id="sv4#dlu7#oln13#par120" name="oid_PASSING" sourceLinkParameter="sv4#page31#dau5#ln23#par116" passing="true"/>
+        <LinkParameter id="sv4#dlu7#oln13#par131" name="oid_PASSING_RoleCondition7 [oid]" sourceLinkParameter="sv4#page31#dau5#ln23#par116" target="sv4#dlu8#su38#rcond7.userOID"/>
+      </OKLink>
+    </DeleteUnit>
+    <DeleteUnit gr:x="1950" gr:y="15" id="sv4#dlu8" name="Borrar Valoraciones" entity="ent6">
+      <Selector id="sv4#dlu8#su38" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#dlu8#su38#rcond7" name="RoleCondition7" predicate="in" implied="false" role="rel8#role15"/>
+      </Selector>
+      <OKLink id="sv4#dlu8#oln15" name="OKFlow15" to="sv4#scu2">
+        <LinkParameter id="sv4#dlu8#oln15#par121" name="oid_PASSING" sourceLinkParameter="sv4#dlu7#oln13#par120" passing="true"/>
+        <LinkParameter id="sv4#dlu8#oln15#par123" name="oid_PASSING_userOid" sourceLinkParameter="sv4#dlu7#oln13#par120" target="sv4#scu2.userOid"/>
+      </OKLink>
+    </DeleteUnit>
+    <ScriptUnit gr:x="1745" gr:y="95" id="sv4#scu2" name="Borrar Favoritos">
+      <ScriptInput id="sv4#scu2#sci2" name="userOid"/>
+      <ScriptUnitText xml:space="preserve">#input Integer userOid
 #output String resultCode
+
+log.debug("userOid recibido: " + userOid)
 
 def dbId = "db1"
 def session = getDBSession(dbId)
 
 try {
     def query = session.createSQLQuery(
-        "DELETE FROM public.guarda_como_fav WHERE user_oid = :userOid"
+        "DELETE FROM guarda_como_fav WHERE user_oid = :userOid"
     )
     query.setParameter("userOid", userOid)
     query.executeUpdate()
-    commit(session)
     return ["resultCode":"success"]
 } catch (Exception e) {
-    rollback(session)
     log.error("Error deleting favorites for userOid=" + userOid, e)
     return ["resultCode":"error"]
 }</ScriptUnitText>
@@ -195,42 +215,25 @@ try {
         <LinkParameter id="sv4#dlu10#oln22#par162" name="oid_PASSING" sourceLinkParameter="sv4#page45#dau12#ln77#par158" passing="true"/>
       </OKLink>
     </DeleteUnit>
-    <DeleteUnit gr:x="2880" gr:y="570" id="sv4#dlu11" name="Borrar Torneos" entity="ent3">
+    <DeleteUnit gr:x="2870" gr:y="565" id="sv4#dlu11" name="Borrar Torneos" entity="ent3">
       <Selector id="sv4#dlu11#su47" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#dlu11#su47#rcond12" name="RoleCondition12" predicate="in" implied="false" role="rel13#role25"/>
       </Selector>
       <OKLink id="sv4#dlu11#oln23" name="OKFlow23" to="sv4#dlu12">
         <LinkParameter id="sv4#dlu11#oln23#par168" name="oid_PASSING_RoleCondition13 [oid]" sourceLinkParameter="sv4#page47#dau13#ln82#par166" target="sv4#dlu12#su48#rcond13.userOID"/>
         <LinkParameter id="sv4#dlu11#oln23#par169" name="oid_PASSING" sourceLinkParameter="sv4#page47#dau13#ln82#par166" passing="true"/>
+        <LinkParameter id="sv4#dlu11#oln23#par176" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv4#page47#dau13#ln82#par175" passing="true"/>
       </OKLink>
     </DeleteUnit>
-    <DeleteUnit gr:x="3115" gr:y="570" id="sv4#dlu12" name="Borrar Pistas" entity="ent4">
+    <DeleteUnit gr:x="3115" gr:y="605" id="sv4#dlu12" name="Borrar Pistas" entity="ent4">
       <Selector id="sv4#dlu12#su48" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#dlu12#su48#rcond13" name="RoleCondition13" predicate="in" implied="false" role="rel14#role27"/>
       </Selector>
-      <OKLink id="sv4#dlu12#oln25" name="OKFlow25" to="sv4#mfu12">
-        <LinkParameter id="sv4#dlu12#oln25#par171" name="oid_PASSING" sourceLinkParameter="sv4#dlu11#oln23#par169" passing="true"/>
-        <LinkParameter id="sv4#dlu12#oln25#par172" name="oid_PASSING_RoleCondition14 [oid]" sourceLinkParameter="sv4#dlu11#oln23#par169" target="sv4#mfu12#su49#rcond14.userOID"/>
+      <OKLink id="sv4#dlu12#oln30" name="OKFlow30" to="sv4#scu3" gr:bendpoints="-148,-80,97,110">
+        <LinkParameter id="sv4#dlu12#oln30#par152" name="oid_PASSING_userOid" sourceLinkParameter="sv4#dlu11#oln23#par169" target="sv4#scu3.userOid"/>
+        <LinkParameter id="sv4#dlu12#oln30#par172" name="UserCtxParam.oid_PASSING_adminOid" sourceLinkParameter="sv4#dlu11#oln23#par176" target="sv4#scu3.adminOid"/>
       </OKLink>
     </DeleteUnit>
-    <ModifyUnit gr:x="2750" gr:y="345" id="sv4#mfu12" name="Reasignar Incidencia" entity="ent5">
-      <Selector id="sv4#mfu12#su49" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv4#mfu12#su49#rcond14" name="RoleCondition14" predicate="in" implied="false" role="rel17#role33"/>
-      </Selector>
-      <OKLink id="sv4#mfu12#oln26" name="OKFlow26" to="sv4#mfu9">
-        <LinkParameter id="sv4#mfu12#oln26#par176" name="3_Group.oid(defaultGroup)" sourceValue="3" target="sv4#mfu9.User2DefaultGroup.groupOID"/>
-        <LinkParameter id="sv4#mfu12#oln26#par177" name="oid_PASSING_KeyCondition24 [oid]" sourceLinkParameter="sv4#dlu12#oln25#par171" target="sv4#mfu9#su33#kcond24.userOID"/>
-      </OKLink>
-    </ModifyUnit>
-    <GetUnit gr:x="3085" gr:y="385" id="sv4#gtu2" name="ObtenerIDAdmin" contextParameters="UserCtxParam" linkOrder="sv4#gtu2#ln84 sv4#gtu2#ln92" landmark="false">
-      <Link id="sv4#gtu2#ln84" name="Flow84" to="sv4#mfu12" type="transport" validate="true">
-        <LinkParameter id="sv4#gtu2#ln84#par175" name="UserCtxParam.oid_User.oid(IncidenciaToUser_2)" source="sv4#gtu2.UserCtxParam" target="sv4#mfu12.rel17#role34.userOID"/>
-      </Link>
-      <Link id="sv4#gtu2#ln92" name="Flow92" to="sv4#page51#dau15" type="transport" validate="true" gr:bendpoints="-150,-74,-134,186;-144,-136,-158,124;-136,-252,-150,8">
-        <LinkParameter id="sv4#gtu2#ln92#par193" name="UserCtxParam.oid_KeyCondition43 [oid]" source="sv4#gtu2.UserCtxParam" target="sv4#page51#dau15#su52#kcond43.userOID"/>
-        <LinkParameter id="sv4#gtu2#ln92#par194" name="UserCtxParam.oid_PASSING" source="sv4#gtu2.UserCtxParam" passing="true"/>
-      </Link>
-    </GetUnit>
     <LogoutUnit gr:x="2885" gr:y="-75" id="sv4#lou1" name="Cerrar Sesi&#243;n" siteView="sv1"/>
     <DeleteUnit gr:x="2650" gr:y="1030" id="sv4#dlu13" name="Eliminar Valoraci&#243;n" entity="ent6">
       <Selector id="sv4#dlu13#su42" defaultPolicy="fill" booleanOperator="and">
@@ -238,5 +241,36 @@ try {
       </Selector>
       <OKLink id="sv4#dlu13#oln28" name="OKFlow28" to="sv4#page55#mssu20"/>
     </DeleteUnit>
+    <ScriptUnit gr:x="2845" gr:y="400" id="sv4#scu3" name="Reasignar Incidencia">
+      <OKLink id="sv4#scu3#oln29" name="OKFlow26" to="sv4#mfu9">
+        <LinkParameter id="sv4#scu3#oln29#par149" name="3_Group.oid(defaultGroup)" target="sv4#mfu9.User2DefaultGroup.groupOID" sourceValue="3"/>
+        <LinkParameter id="sv4#scu3#oln29#par155" name="userOidOut_KeyCondition24 [oid]" source="result(userOidOut)" target="sv4#mfu9#su33#kcond24.userOID"/>
+      </OKLink>
+      <ScriptUnitText xml:space="preserve">#input Integer userOid
+#input Integer adminOid
+#output String resultCode
+#output Integer userOidOut
+
+log.debug("&gt;&gt;&gt; Reasignando incidencias de userOid=" + userOid + " a adminOid=" + adminOid)
+
+def dbId = "db1"
+def session = getDBSession(dbId)
+
+try {
+    def query = session.createSQLQuery(
+        "UPDATE incidencia SET user_oid = :adminOid WHERE user_oid = :userOid"
+    )
+    query.setParameter("adminOid", adminOid)
+    query.setParameter("userOid", userOid)
+    query.executeUpdate()
+    return ["resultCode":"success", "userOidOut":userOid]
+} catch (Exception e) {
+    log.error("&gt;&gt;&gt; Error: " + e.getMessage())
+    return ["resultCode":"error", "userOidOut":userOid]
+}</ScriptUnitText>
+      <ScriptInput id="sv4#scu3#sci3" name="userOid"/>
+      <ScriptInput id="sv4#scu3#sci4" name="adminOid"/>
+      <ScriptOutput id="sv4#scu3#sco1" name="userOidOut"/>
+    </ScriptUnit>
   </OperationUnits>
 </SiteView>

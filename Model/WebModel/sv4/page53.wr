@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="3015" gr:y="785" id="sv4#page53" name="Ver detalle comentario">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="3010" gr:y="755" id="sv4#page53" name="Ver detalle comentario">
   <ContentUnits>
     <DataUnit gr:x="0" gr:y="0" id="sv4#page53#dau10" name="Comentario" entity="ent6" displayAttributes="rel8#role16.userName rel12#role23.ent4#att14 ent6#att20 ent6#att21 ent6#att24" linkOrder="sv4#page53#dau10#ln6">
       <Selector id="sv4#page53#dau10#su40" defaultPolicy="fill" booleanOperator="and">

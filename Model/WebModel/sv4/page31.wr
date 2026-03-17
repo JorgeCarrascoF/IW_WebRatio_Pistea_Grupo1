@@ -1,12 +1,12 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1815" gr:y="-280" id="sv4#page31" name="Confirmar Ascender Admin">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="0" id="sv4#page31#dau5" name="Usuario a ascender" entity="User" linkOrder="sv4#page31#dau5#ln22 sv4#page31#dau5#ln23">
+    <DataUnit gr:x="0" gr:y="0" id="sv4#page31#dau5" name="Usuario a ascender" entity="User" linkOrder="sv4#page31#dau5#ln22 sv4#page31#dau5#ln23" displayAttributes="userName email">
       <Selector id="sv4#page31#dau5#su18" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#page31#dau5#su18#kcond1" name="KeyCondition1" predicate="in" implied="false"/>
         <AttributesCondition id="sv4#page31#dau5#su18#acond4" name="AttCondition4" predicate="eq" booleanOperator="or" implied="false" attributes="User#att1" value="true"/>
       </Selector>
       <Link id="sv4#page31#dau5#ln22" name="Volver atr&#225;s" to="sv4#page41" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="210,82,-114,-178"/>
-      <Link id="sv4#page31#dau5#ln23" name="Flow23" to="sv4#dlu7" type="normal" validate="true">
+      <Link id="sv4#page31#dau5#ln23" name="Confirmar ascenso" to="sv4#dlu7" type="normal" validate="true">
         <LinkParameter id="sv4#page31#dau5#ln23#par116" name="oid_PASSING" source="data.userOID" passing="true"/>
         <LinkParameter id="sv4#page31#dau5#ln23#par130" name="oid_RoleCondition5 [oid]" source="data.userOID" target="sv4#dlu7#su36#rcond5.userOID"/>
       </Link>
@@ -18,6 +18,8 @@
         <layout:Unit unitId="sv4#page31#dau5">
           <layout:Link link="sv4#page31#dau5#ln22"/>
           <layout:Link link="sv4#page31#dau5#ln23"/>
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="email"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

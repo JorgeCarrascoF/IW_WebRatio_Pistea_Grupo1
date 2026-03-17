@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="45" gr:y="65" id="sv4#page13" name="Contactar Usuario">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-120" gr:y="100" id="sv4#page13" name="Contactar Usuario">
   <ContentUnits>
-    <EntryUnit gr:x="0" gr:y="0" id="sv4#page13#enu3" name="Formulario de Contacto" linkOrder="sv4#page13#enu3#ln12 sv4#page13#enu3#ln7" entity="User" fieldOrder="sv4#page13#enu3#fld16 sv4#page13#enu3#fld14 sv4#page13#enu3#fld15 sv4#page13#enu3#fld17">
+    <EntryUnit gr:x="175" gr:y="55" id="sv4#page13#enu3" name="Formulario de Contacto" linkOrder="sv4#page13#enu3#ln12 sv4#page13#enu3#ln7" entity="User" fieldOrder="sv4#page13#enu3#fld16 sv4#page13#enu3#fld14 sv4#page13#enu3#fld15">
       <Field id="sv4#page13#enu3#fld14" name="asunto" type="string" modifiable="true" contentType="text/plain" preloaded="true"/>
       <Field id="sv4#page13#enu3#fld15" name="mensaje" type="text" modifiable="true" contentType="text/plain" preloaded="true"/>
       <Link id="sv4#page13#enu3#ln12" name="Enviar correo" to="sv4#mlu1" type="normal" validate="true">
@@ -16,9 +16,22 @@
         <LinkParameter id="sv4#page13#enu3#ln12#par191" name="emailDestino_Mail - To" source="sv4#page13#enu3#fld16" target="sv4#mlu1.to"/>
       </Link>
       <Field id="sv4#page13#enu3#fld16" name="emailDestino" type="string" modifiable="false" attribute="email" preloaded="true"/>
-      <Field id="sv4#page13#enu3#fld17" name="emailOrigen" type="string" modifiable="false" preloaded="true" hidden="false"/>
+      <Field id="sv4#page13#enu3#fld17" name="emailOrigen" type="string" modifiable="false" preloaded="true" hidden="true"/>
       <Link id="sv4#page13#enu3#ln7" name="Volver atr&#225;s" to="sv4#page9#pwu2" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="163,38,-142,38"/>
     </EntryUnit>
+    <SelectorUnit gr:x="0" gr:y="0" id="sv4#page13#seu2" name="ObtenerEmailAdmin" entity="User" distinctAttributes="email">
+      <Selector id="sv4#page13#seu2#su50" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#page13#seu2#su50#kcond31" name="KeyCondition31" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv4#page13#seu2#ln78" name="Flow78" to="sv4#page13#enu3" type="transport" validate="true">
+        <LinkParameter id="sv4#page13#seu2#ln78#par143" name="email_emailOrigen" source="emailArray" target="sv4#page13#enu3#fld17_slot"/>
+      </Link>
+    </SelectorUnit>
+    <GetUnit gr:x="20" gr:y="120" id="sv4#page13#gtu7" name="GetIDAdmin" contextParameters="UserCtxParam">
+      <Link id="sv4#page13#gtu7#ln76" name="Flow76" to="sv4#page13#seu2" type="transport" validate="true">
+        <LinkParameter id="sv4#page13#gtu7#ln76#par142" name="UserCtxParam.oid_KeyCondition31 [oid]" source="sv4#page13#gtu7.UserCtxParam" target="sv4#page13#seu2#su50#kcond31.userOID"/>
+      </Link>
+    </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -29,9 +42,22 @@
           <layout:Field field="sv4#page13#enu3#fld16"/>
           <layout:Field field="sv4#page13#enu3#fld14"/>
           <layout:Field field="sv4#page13#enu3#fld15"/>
-          <layout:Field field="sv4#page13#enu3#fld17"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

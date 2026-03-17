@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="345" gr:y="-65" id="sv4#page9" name="Gestionar Usuarios" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="345" gr:y="-50" id="sv4#page9" name="Gestionar Usuarios" landmark="true">
   <ContentUnits>
     <PowerIndexUnit gr:x="5" gr:y="120" id="sv4#page9#pwu2" name="Lista de Usuarios Activos" sortable="true" checkable="false" useCountQuery="false" entity="User" displayAttributes="userName email User#att33 User#att34 User#att35 User#att37 User#att32 User#att36" linkOrder="sv4#page9#pwu2#ln5 sv4#page9#pwu2#ln13 sv4#page9#pwu2#ln16">
       <Link id="sv4#page9#pwu2#ln5" name="Editar Usuario" to="sv4#page10#enu2" type="normal" validate="true" gr:bendpoints="-61,120,14,-104">
