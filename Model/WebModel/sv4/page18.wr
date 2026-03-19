@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="280" gr:y="815" id="sv4#page18" name="Gestionar Pistas" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="230" gr:y="870" id="sv4#page18" name="Gestionar Pistas" landmark="true">
   <ContentUnits>
-    <PowerIndexUnit gr:x="0" gr:y="0" id="sv4#page18#pwu5" name="Lista de Pistas" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att39 ent4#att19 ent4#att38" linkOrder="sv4#page18#pwu5#ln33 sv4#page18#pwu5#ln37">
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv4#page18#pwu5" name="Lista de Pistas" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att39 ent4#att19" linkOrder="sv4#page18#pwu5#ln33 sv4#page18#pwu5#ln37">
       <Link id="sv4#page18#pwu5#ln33" name="Actualizar Pista" to="sv4#page19#enu1" type="normal" validate="true" gr:bendpoints="151,35,-174,44">
         <LinkParameter id="sv4#page18#pwu5#ln33#par66" name="capacidad_Capacidad" source="data[].ent4#att18" target="sv4#page19#enu1#fld6_slot"/>
         <LinkParameter id="sv4#page18#pwu5#ln33#par67" name="deporte_asociado_Deporte asociado" source="data[].ent4#att15" target="sv4#page19#enu1#fld2_slot"/>
@@ -36,7 +36,6 @@
           <layout:Attribute attribute="ent4#att18"/>
           <layout:Attribute attribute="ent4#att39"/>
           <layout:Attribute attribute="ent4#att19"/>
-          <layout:Attribute attribute="ent4#att38"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

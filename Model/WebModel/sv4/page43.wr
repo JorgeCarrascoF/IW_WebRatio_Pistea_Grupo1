@@ -1,8 +1,8 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="2425" gr:y="50" id="sv4#page43" name="Confirmaci&#243;n de &#233;xito">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="2560" gr:y="-25" id="sv4#page43" name="Confirmaci&#243;n de &#233;xito">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page43#mssu13" name="&#201;xito al ascender usuario" linkOrder="sv4#page43#mssu13#ln69">
       <Message xml:space="preserve">Usuario ascendido a gerente exitosamente.</Message>
-      <Link id="sv4#page43#mssu13#ln69" name="Continuar moderando" to="sv4#page41" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-128,-3,117,-23"/>
+      <Link id="sv4#page43#mssu13#ln69" name="Continuar moderando" to="sv4#page41" automaticCoupling="true" type="normal" validate="true"/>
     </MultiMessageUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">

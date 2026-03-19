@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="635" gr:y="-100" id="sv4#page16" name="Confirmar Baja Usuario">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="595" gr:y="-335" id="sv4#page16" name="Confirmar Baja Usuario">
   <ContentUnits>
     <DataUnit gr:x="0" gr:y="0" id="sv4#page16#dau2" name="Usuario a borrar" entity="User" displayAttributes="userName email" linkOrder="sv4#page16#dau2#ln18 sv4#page16#dau2#ln3">
       <Selector id="sv4#page16#dau2#su8" defaultPolicy="fill" booleanOperator="and">
@@ -10,11 +10,27 @@
         <LinkParameter id="sv4#page16#dau2#ln3#par10" name="false_es_activo" sourceValue="false" target="sv4#mfu2.User#att1"/>
         <LinkParameter id="sv4#page16#dau2#ln3#par11" name="oid_KeyCondition4 [oid]" source="data.userOID" target="sv4#mfu2#su6#kcond4.userOID"/>
       </Link>
+      <Link id="sv4#page16#dau2#ln112" name="Flow112" to="sv4#page16#scu8" type="transport" validate="true">
+        <LinkParameter id="sv4#page16#dau2#ln112#par224" name="foto_perfil_imageUrl" source="data.User#att36" target="sv4#page16#scu8.imageUrl"/>
+      </Link>
     </DataUnit>
+    <ScriptUnit gr:x="130" gr:y="20" id="sv4#page16#scu8" name="Foto de Perfil">
+      <ScriptInput id="sv4#page16#scu8#sci10" name="imageUrl"/>
+      <ScriptUnitText xml:space="preserve">#input String imageUrl
+
+
+return "&lt;img style=\"width: 52px\" src=" + imageUrl + " /&gt;"</ScriptUnitText>
+    </ScriptUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
-      <layout:Cell colspan="12">
+      <layout:Cell colspan="4">
+        <layout:Unit unitId="sv4#page16#scu8"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell colspan="8">
         <layout:Unit unitId="sv4#page16#dau2">
           <layout:Attribute attribute="userName"/>
           <layout:Attribute attribute="email"/>
@@ -22,10 +38,6 @@
           <layout:Link link="sv4#page16#dau2#ln3"/>
         </layout:Unit>
       </layout:Cell>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

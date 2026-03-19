@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1485" gr:y="-270" id="sv4#page34" name="Confirmar Eliminar Torneo">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1470" gr:y="-345" id="sv4#page34" name="Confirmar Eliminar Torneo">
   <ContentUnits>
     <DataUnit gr:x="0" gr:y="0" id="sv4#page34#dau3" name="Torneo a borrar" entity="ent3" linkOrder="sv4#page34#dau3#ln54 sv4#page34#dau3#ln56" displayAttributes="ent3#att27 ent3#att28">
       <Selector id="sv4#page34#dau3#su24" defaultPolicy="fill" booleanOperator="and">

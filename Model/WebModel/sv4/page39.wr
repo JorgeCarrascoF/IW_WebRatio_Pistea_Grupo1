@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1680" gr:y="1010" id="sv4#page39" name="Confirmar Eliminar Reserva">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1760" gr:y="1120" id="sv4#page39" name="Confirmar Eliminar Reserva">
   <ContentUnits>
     <DataUnit gr:x="0" gr:y="0" id="sv4#page39#dau7" name="Reserva a eliminar" entity="ent2" displayAttributes="rel7#role14.userName rel10#role19.ent4#att14 ent2#att12 ent2#att26 ent2#att13" linkOrder="sv4#page39#dau7#ln62 sv4#page39#dau7#ln64">
       <Selector id="sv4#page39#dau7#su27" defaultPolicy="fill" booleanOperator="and">

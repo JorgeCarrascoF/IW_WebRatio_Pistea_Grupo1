@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="975" gr:y="740" id="sv4#page23" name="Gestionar Incidencias" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="985" gr:y="865" id="sv4#page23" name="Gestionar Incidencias" landmark="true">
   <ContentUnits>
     <PowerIndexUnit gr:x="0" gr:y="0" id="sv4#page23#pwu6" name="Lista de incidencias" sortable="true" checkable="false" useCountQuery="false" entity="ent5" displayAttributes="ent5#att9 ent5#att8 ent5#att10 ent5#att11" linkOrder="sv4#page23#pwu6#ln43 sv4#page23#pwu6#ln47 sv4#page23#pwu6#ln41">
       <Link id="sv4#page23#pwu6#ln43" name="Actualizar Incidencia" to="sv4#page25#enu4" type="normal" validate="true" gr:bendpoints="158,-4,-137,161">
@@ -11,7 +11,7 @@
         <LinkParameter id="sv4#page23#pwu6#ln43#par50" name="estado_incidencia_Estado incidencia (0 - Pendiente, 1 - En proceso, 2 - Resuelta)" source="data[].ent5#att11" target="sv4#page25#enu4#fld18_slot"/>
         <LinkParameter id="sv4#page23#pwu6#ln43#par51" name="nivel_gravedad_Nivel gravedad (1 - baja, 2 - media, 3 - alta)" source="data[].ent5#att10" target="sv4#page25#enu4#fld20_slot"/>
       </Link>
-      <Link id="sv4#page23#pwu6#ln47" name="Eliminar incidencia" to="sv4#page27#dau6" type="normal" validate="true" gr:bendpoints="-163,166,223,-120">
+      <Link id="sv4#page23#pwu6#ln47" name="Eliminar incidencia" to="sv4#page27#dau6" type="normal" validate="true" gr:bendpoints="-82,148,368,-148">
         <LinkParameter id="sv4#page23#pwu6#ln47#par107" name="oid_KeyCondition14 [oid]" source="data[].ent5#att5" target="sv4#page27#dau6#su20#kcond14.ent5#att5"/>
       </Link>
       <Link id="sv4#page23#pwu6#ln41" name="Ver detalle" to="sv4#page24#dau9" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-44,-117,-48,123"/>

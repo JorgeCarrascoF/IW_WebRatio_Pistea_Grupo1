@@ -1,9 +1,9 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="2990" gr:y="-245" id="sv4#page50" name="Cerrar Sesi&#243;n" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="3215" gr:y="-305" id="sv4#page50" name="Cerrar Sesi&#243;n" landmark="true">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page50#mssu18" name="Confirmaci&#243;n" linkOrder="sv4#page50#mssu18#ln90 sv4#page50#mssu18#ln91">
       <Message xml:space="preserve">&#191;Est&#225;s seguro de que quieres salir?</Message>
-      <Link id="sv4#page50#mssu18#ln90" name="Cerrar sesi&#243;n" to="sv4#lou1" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-22,104,-122,-40"/>
-      <Link id="sv4#page50#mssu18#ln91" name="Volver atr&#225;s" to="sv4#page3" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv4#page50#mssu18#ln90" name="Cerrar sesi&#243;n" to="sv4#lou1" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv4#page50#mssu18#ln91" name="Volver atr&#225;s" to="sv4#page3" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="78,171,40,-311"/>
     </MultiMessageUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">

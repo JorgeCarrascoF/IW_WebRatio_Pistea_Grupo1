@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="580" gr:y="805" id="sv4#page19" name="Editar Pista">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="630" gr:y="860" id="sv4#page19" name="Editar Pista">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv4#page19#enu1" name="Formulario Editar Pista" entity="ent4" linkOrder="sv4#page19#enu1#ln34 sv4#page19#enu1#ln36">
       <Field id="sv4#page19#enu1#fld1" name="Nombre pista" type="string" modifiable="true" preloaded="true" attribute="ent4#att14"/>

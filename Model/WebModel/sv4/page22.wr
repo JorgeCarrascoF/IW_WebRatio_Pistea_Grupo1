@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="205" gr:y="1040" id="sv4#page22" name="Confirmaci&#243;n de &#233;xito">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="215" gr:y="1140" id="sv4#page22" name="Confirmaci&#243;n de &#233;xito">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page22#mssu5" name="&#201;xito al borrar pista" linkOrder="sv4#page22#mssu5#ln40">
       <Message xml:space="preserve">Pista eliminada exitosamente.</Message>

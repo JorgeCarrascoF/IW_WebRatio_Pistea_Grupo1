@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1180" gr:y="-270" id="sv4#page32" name="Editar Torneo">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1200" gr:y="-345" id="sv4#page32" name="Editar Torneo">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv4#page32#enu5" name="Formulario Editar Torneo" entity="ent3" linkOrder="sv4#page32#enu5#ln32 sv4#page32#enu5#ln44">
       <Field id="sv4#page32#enu5#fld21" name="Nombre torneo" type="string" modifiable="true" attribute="ent3#att27" preloaded="true"/>

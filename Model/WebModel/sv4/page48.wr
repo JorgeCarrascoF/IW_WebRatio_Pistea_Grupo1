@@ -1,7 +1,7 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="2680" gr:y="40" id="sv4#page48" name="Confirmaci&#243;n de &#233;xito">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="2925" gr:y="35" id="sv4#page48" name="Confirmaci&#243;n de &#233;xito">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page48#mssu17" name="&#201;xito al degradar gerente" linkOrder="sv4#page48#mssu17#ln85">
-      <Link id="sv4#page48#mssu17#ln85" name="Continuar moderando" to="sv4#page41" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-164,77,360,57;-372,76,152,56"/>
+      <Link id="sv4#page48#mssu17#ln85" name="Continuar moderando" to="sv4#page41" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-249,40,436,6"/>
       <Message xml:space="preserve">Gerente degradado a cliente exitosamente.</Message>
     </MultiMessageUnit>
   </ContentUnits>

@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1815" gr:y="-280" id="sv4#page31" name="Confirmar Ascender Admin">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1750" gr:y="-345" id="sv4#page31" name="Confirmar Ascender Admin">
   <ContentUnits>
     <DataUnit gr:x="0" gr:y="0" id="sv4#page31#dau5" name="Usuario a ascender" entity="User" linkOrder="sv4#page31#dau5#ln22 sv4#page31#dau5#ln23" displayAttributes="userName email">
       <Selector id="sv4#page31#dau5#su18" defaultPolicy="fill" booleanOperator="and">
@@ -10,11 +10,27 @@
         <LinkParameter id="sv4#page31#dau5#ln23#par116" name="oid_PASSING" source="data.userOID" passing="true"/>
         <LinkParameter id="sv4#page31#dau5#ln23#par130" name="oid_RoleCondition5 [oid]" source="data.userOID" target="sv4#dlu7#su36#rcond5.userOID"/>
       </Link>
+      <Link id="sv4#page31#dau5#ln108" name="Flow108" to="sv4#page31#scu7" type="transport" validate="true">
+        <LinkParameter id="sv4#page31#dau5#ln108#par192" name="foto_perfil_imageUrl" source="data.User#att36" target="sv4#page31#scu7.imageUrl"/>
+      </Link>
     </DataUnit>
+    <ScriptUnit gr:x="165" gr:y="20" id="sv4#page31#scu7" name="Foto de Perfil">
+      <ScriptInput id="sv4#page31#scu7#sci8" name="imageUrl"/>
+      <ScriptUnitText xml:space="preserve">#input String imageUrl
+
+
+return "&lt;img style=\"width: 52px\" src=" + imageUrl + " /&gt;"</ScriptUnitText>
+    </ScriptUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
-      <layout:Cell colspan="12">
+      <layout:Cell colspan="4">
+        <layout:Unit unitId="sv4#page31#scu7"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell colspan="8">
         <layout:Unit unitId="sv4#page31#dau5">
           <layout:Link link="sv4#page31#dau5#ln22"/>
           <layout:Link link="sv4#page31#dau5#ln23"/>
@@ -22,6 +38,16 @@
           <layout:Attribute attribute="email"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

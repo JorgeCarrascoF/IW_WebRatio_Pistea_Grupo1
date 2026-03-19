@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1660" gr:y="665" id="sv4#page36" name="Gestionar Reservas" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1650" gr:y="765" id="sv4#page36" name="Gestionar Reservas" landmark="true">
   <ContentUnits>
     <PowerIndexUnit gr:x="0" gr:y="0" id="sv4#page36#pwu7" name="Lista de reservas" sortable="true" checkable="false" useCountQuery="false" entity="ent2" displayAttributes="rel7#role14.userName rel10#role19.ent4#att14 ent2#att12 ent2#att26 ent2#att13" linkOrder="sv4#page36#pwu7#ln57 sv4#page36#pwu7#ln61">
       <Link id="sv4#page36#pwu7#ln57" name="Actualizar estado reserva" to="sv4#page38#enu6" type="normal" validate="true">

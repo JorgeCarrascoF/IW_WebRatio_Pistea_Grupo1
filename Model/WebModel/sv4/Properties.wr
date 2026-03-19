@@ -1,54 +1,54 @@
 <SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4" name="admin" protected="true" homePage="sv4#page3" landmarks="sv4#page9 sv4#page18 sv4#page23 sv4#page29 sv4#page36 sv4#page52 sv4#page41 sv4#page50">
   <OperationUnits>
-    <ModifyUnit gr:x="290" gr:y="500" id="sv4#mfu1" name="Editar Usuario" entity="User">
+    <ModifyUnit gr:x="555" gr:y="575" id="sv4#mfu1" name="Editar Usuario" entity="User">
       <Selector id="sv4#mfu1#su4" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#mfu1#su4#kcond2" name="KeyCondition2" predicate="in" implied="false"/>
       </Selector>
       <OKLink id="sv4#mfu1#oln2" name="OKEditarUsuario" to="sv4#page12" automaticCoupling="true"/>
     </ModifyUnit>
-    <MailUnit gr:x="125" gr:y="410" id="sv4#mlu1" name="Enviar Contacto" format="plainText">
+    <MailUnit gr:x="95" gr:y="435" id="sv4#mlu1" name="Enviar Contacto" format="plainText">
       <SubjectTemplate xml:space="preserve">{asunto}</SubjectTemplate>
       <BodyTemplate xml:space="preserve">{mensaje}</BodyTemplate>
     </MailUnit>
-    <ModifyUnit gr:x="655" gr:y="110" id="sv4#mfu2" name="Eliminar Usuario" entity="User">
+    <ModifyUnit gr:x="715" gr:y="20" id="sv4#mfu2" name="Eliminar Usuario" entity="User">
       <Selector id="sv4#mfu2#su6" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#mfu2#su6#kcond4" name="KeyCondition4" predicate="in" implied="false"/>
         <AttributesCondition id="sv4#mfu2#su6#acond3" name="AttCondition3" predicate="eq" booleanOperator="or" implied="false" attributes="User#att1" value="true"/>
       </Selector>
-      <OKLink id="sv4#mfu2#oln1" name="OKBorradoUsuario" to="sv4#page11#mssu2" automaticCoupling="true" gr:bendpoints="-62,126,102,-48"/>
+      <OKLink id="sv4#mfu2#oln1" name="OKBorradoUsuario" to="sv4#page11#mssu2" automaticCoupling="true"/>
     </ModifyUnit>
-    <ModifyUnit gr:x="115" gr:y="-235" id="sv4#mfu3" name="Reactivar Usuario" entity="User">
+    <ModifyUnit gr:x="-85" gr:y="-305" id="sv4#mfu3" name="Reactivar Usuario" entity="User">
       <Selector id="sv4#mfu3#su11" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#mfu3#su11#kcond7" name="KeyCondition7" predicate="in" implied="false"/>
         <AttributesCondition id="sv4#mfu3#su11#acond6" name="AttCondition6" predicate="eq" booleanOperator="or" implied="false" attributes="User#att1" value="false"/>
       </Selector>
       <OKLink id="sv4#mfu3#oln3" name="OKReactivarUsuario" to="sv4#page15" automaticCoupling="true"/>
     </ModifyUnit>
-    <ModifyUnit gr:x="735" gr:y="650" id="sv4#mfu4" name="Editar Pista" entity="ent4">
+    <ModifyUnit gr:x="795" gr:y="710" id="sv4#mfu4" name="Editar Pista" entity="ent4">
       <Selector id="sv4#mfu4#su14" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#mfu4#su14#kcond8" name="KeyCondition8" predicate="in" implied="false"/>
       </Selector>
       <OKLink id="sv4#mfu4#oln4" name="OKEditarPista" to="sv4#page20" automaticCoupling="true"/>
     </ModifyUnit>
-    <DeleteUnit gr:x="-30" gr:y="905" id="sv4#dlu1" name="Eliminar Pista" entity="ent4">
+    <DeleteUnit gr:x="-90" gr:y="905" id="sv4#dlu1" name="Eliminar Pista" entity="ent4">
       <Selector id="sv4#dlu1#su16" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#dlu1#su16#kcond10" name="KeyCondition10" predicate="in" implied="false"/>
       </Selector>
-      <OKLink id="sv4#dlu1#oln5" name="OKPistaEliminada" to="sv4#page22#mssu5" automaticCoupling="true" gr:bendpoints="2,156,-148,-4"/>
+      <OKLink id="sv4#dlu1#oln5" name="OKPistaEliminada" to="sv4#page22#mssu5" automaticCoupling="true" gr:bendpoints="6,257,-332,5"/>
     </DeleteUnit>
-    <ModifyUnit gr:x="1350" gr:y="780" id="sv4#mfu6" name="Editar Incidencia" entity="ent5" bulk="true">
+    <ModifyUnit gr:x="1375" gr:y="885" id="sv4#mfu6" name="Editar Incidencia" entity="ent5" bulk="true">
       <Selector id="sv4#mfu6#su19" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#mfu6#su19#kcond13" name="KeyCondition13" predicate="in" implied="false"/>
       </Selector>
       <OKLink id="sv4#mfu6#oln6" name="OKActualizarIncidencia" to="sv4#page26" automaticCoupling="true"/>
     </ModifyUnit>
-    <DeleteUnit gr:x="885" gr:y="1055" id="sv4#dlu2" name="Eliminar Incidencia" entity="ent5">
+    <DeleteUnit gr:x="875" gr:y="1135" id="sv4#dlu2" name="Eliminar Incidencia" entity="ent5">
       <Selector id="sv4#dlu2#su21" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#dlu2#su21#kcond15" name="KeyCondition15" predicate="in" implied="false"/>
       </Selector>
       <OKLink id="sv4#dlu2#oln7" name="OKEliminarIncidencia" to="sv4#page28#mssu7" automaticCoupling="true"/>
     </DeleteUnit>
-    <DisconnectUnit gr:x="990" gr:y="325" id="sv4#dcnu1" name="Eliminar Participante" relationship="rel4#role8">
+    <DisconnectUnit gr:x="1000" gr:y="360" id="sv4#dcnu1" name="Eliminar Participante" relationship="rel4#role8">
       <SourceSelector id="sv4#dcnu1#su13" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#dcnu1#su13#kcond9" name="KeyCondition9" predicate="in" implied="false"/>
       </SourceSelector>
@@ -57,13 +57,13 @@
       </TargetSelector>
       <OKLink id="sv4#dcnu1#oln8" name="OKEliminarParticipante" to="sv4#page17#mssu14" automaticCoupling="true"/>
     </DisconnectUnit>
-    <ModifyUnit gr:x="945" gr:y="-245" id="sv4#mfu5" name="Editar Torneo" entity="ent3">
+    <ModifyUnit gr:x="955" gr:y="-320" id="sv4#mfu5" name="Editar Torneo" entity="ent3">
       <Selector id="sv4#mfu5#su23" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#mfu5#su23#kcond17" name="KeyCondition17" predicate="in" implied="false"/>
       </Selector>
       <OKLink id="sv4#mfu5#oln9" name="OKEditarTorneo" to="sv4#page33#mssu9" automaticCoupling="true"/>
     </ModifyUnit>
-    <DeleteUnit gr:x="1545" gr:y="-10" id="sv4#dlu4" name="Eliminar Torneo" entity="ent3">
+    <DeleteUnit gr:x="1545" gr:y="-45" id="sv4#dlu4" name="Eliminar Torneo" entity="ent3">
       <Selector id="sv4#dlu4#su25" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#dlu4#su25#kcond19" name="KeyCondition19" predicate="in" implied="false"/>
       </Selector>
@@ -75,34 +75,34 @@
       </Selector>
       <OKLink id="sv4#mfu7#oln11" name="OKActualizarEstado" to="sv4#page37#mssu11" automaticCoupling="true"/>
     </ModifyUnit>
-    <DeleteUnit gr:x="2040" gr:y="1030" id="sv4#dlu5" name="Eliminar Reserva" entity="ent2">
+    <DeleteUnit gr:x="2045" gr:y="975" id="sv4#dlu5" name="Eliminar Reserva" entity="ent2">
       <Selector id="sv4#dlu5#su28" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#dlu5#su28#kcond22" name="KeyCondition22" predicate="in" implied="false"/>
       </Selector>
       <OKLink id="sv4#dlu5#oln12" name="OKEliminarReserva" to="sv4#page40#mssu12" automaticCoupling="true"/>
     </DeleteUnit>
-    <ModifyUnit gr:x="2435" gr:y="-100" id="sv4#mfu8" name="Cambiar Gerente" entity="User">
+    <ModifyUnit gr:x="2800" gr:y="-160" id="sv4#mfu8" name="Cambiar Gerente" entity="User">
       <Selector id="sv4#mfu8#su32" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#mfu8#su32#kcond23" name="KeyCondition23" predicate="in" implied="false"/>
         <AttributesCondition id="sv4#mfu8#su32#acond16" name="AttCondition16" predicate="eq" booleanOperator="or" implied="false" attributes="User#att1" value="true"/>
       </Selector>
       <OKLink id="sv4#mfu8#oln24" name="OKFlow24" to="sv4#page43#mssu13"/>
     </ModifyUnit>
-    <ModifyUnit gr:x="2855" gr:y="205" id="sv4#mfu9" name="Cambiar Cliente" entity="User">
+    <ModifyUnit gr:x="3020" gr:y="215" id="sv4#mfu9" name="Cambiar Cliente" entity="User">
       <Selector id="sv4#mfu9#su33" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#mfu9#su33#kcond24" name="KeyCondition24" predicate="in" implied="false"/>
         <AttributesCondition id="sv4#mfu9#su33#acond17" name="AttCondition17" predicate="eq" booleanOperator="or" implied="false" attributes="User#att1" value="true"/>
       </Selector>
       <OKLink id="sv4#mfu9#oln27" name="OKFlow27" to="sv4#page48#mssu17" automaticCoupling="true"/>
     </ModifyUnit>
-    <ModifyUnit gr:x="2675" gr:y="560" id="sv4#mfu10" name="Cambiar Admin" entity="User">
+    <ModifyUnit gr:x="2745" gr:y="730" id="sv4#mfu10" name="Cambiar Admin" entity="User">
       <Selector id="sv4#mfu10#su34" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#mfu10#su34#kcond25" name="KeyCondition25" predicate="in" implied="false"/>
         <AttributesCondition id="sv4#mfu10#su34#acond18" name="AttCondition18" predicate="eq" booleanOperator="or" implied="false" attributes="User#att1" value="true"/>
       </Selector>
       <OKLink id="sv4#mfu10#oln21" name="OKFlow21" to="sv4#page46#mssu16" automaticCoupling="true"/>
     </ModifyUnit>
-    <DeleteUnit gr:x="2435" gr:y="-240" id="sv4#dlu3" name="Borrar Reservas " entity="ent2">
+    <DeleteUnit gr:x="2680" gr:y="-310" id="sv4#dlu3" name="Borrar Reservas " entity="ent2">
       <Selector id="sv4#dlu3#su1" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#dlu3#su1#rcond3" name="RoleCondition3" predicate="in" implied="false" role="rel7#role13"/>
       </Selector>
@@ -111,7 +111,7 @@
         <LinkParameter id="sv4#dlu3#oln14#par58" name="oid_PASSING" sourceLinkParameter="sv4#page42#dau8#ln67#par36" passing="true"/>
       </OKLink>
     </DeleteUnit>
-    <DeleteUnit gr:x="2695" gr:y="-240" id="sv4#dlu6" name="Borrar Valoraciones" entity="ent6">
+    <DeleteUnit gr:x="2990" gr:y="-310" id="sv4#dlu6" name="Borrar Valoraciones" entity="ent6">
       <Selector id="sv4#dlu6#su12" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#dlu6#su12#rcond4" name="RoleCondition4" predicate="in" implied="false" role="rel8#role15"/>
       </Selector>
@@ -120,7 +120,7 @@
         <LinkParameter id="sv4#dlu6#oln16#par115" name="oid_PASSING_userOid" sourceLinkParameter="sv4#dlu3#oln14#par58" target="sv4#scu1.userOid"/>
       </OKLink>
     </DeleteUnit>
-    <ScriptUnit gr:x="2695" gr:y="-75" id="sv4#scu1" name="Borrar Favoritos">
+    <ScriptUnit gr:x="3020" gr:y="-135" id="sv4#scu1" name="Borrar Favoritos">
       <ScriptUnitText xml:space="preserve">#input Integer userOid
 #output String resultCode
 
@@ -197,7 +197,7 @@ try {
       </Selector>
       <OKLink id="sv4#mfu11#oln19" name="OKFlow19" to="sv4#page44#mssu8" automaticCoupling="true"/>
     </ModifyUnit>
-    <DeleteUnit gr:x="2440" gr:y="600" id="sv4#dlu9" name="Borrar Pistas" entity="ent4">
+    <DeleteUnit gr:x="2510" gr:y="790" id="sv4#dlu9" name="Borrar Pistas" entity="ent4">
       <Selector id="sv4#dlu9#su44" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#dlu9#su44#rcond10" name="RoleCondition10" predicate="in" implied="false" role="rel14#role27"/>
       </Selector>
@@ -206,7 +206,7 @@ try {
         <LinkParameter id="sv4#dlu9#oln20#par163" name="oid_PASSING_KeyCondition25 [oid]" sourceLinkParameter="sv4#dlu10#oln22#par162" target="sv4#mfu10#su34#kcond25.userOID"/>
       </OKLink>
     </DeleteUnit>
-    <DeleteUnit gr:x="2315" gr:y="800" id="sv4#dlu10" name="Borrar Torneos" entity="ent3">
+    <DeleteUnit gr:x="2275" gr:y="860" id="sv4#dlu10" name="Borrar Torneos" entity="ent3">
       <Selector id="sv4#dlu10#su45" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#dlu10#su45#rcond11" name="RoleCondition11" predicate="in" implied="false" role="rel13#role25"/>
       </Selector>
@@ -215,7 +215,7 @@ try {
         <LinkParameter id="sv4#dlu10#oln22#par162" name="oid_PASSING" sourceLinkParameter="sv4#page45#dau12#ln77#par158" passing="true"/>
       </OKLink>
     </DeleteUnit>
-    <DeleteUnit gr:x="2870" gr:y="565" id="sv4#dlu11" name="Borrar Torneos" entity="ent3">
+    <DeleteUnit gr:x="2995" gr:y="600" id="sv4#dlu11" name="Borrar Torneos" entity="ent3">
       <Selector id="sv4#dlu11#su47" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#dlu11#su47#rcond12" name="RoleCondition12" predicate="in" implied="false" role="rel13#role25"/>
       </Selector>
@@ -225,23 +225,23 @@ try {
         <LinkParameter id="sv4#dlu11#oln23#par176" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv4#page47#dau13#ln82#par175" passing="true"/>
       </OKLink>
     </DeleteUnit>
-    <DeleteUnit gr:x="3115" gr:y="605" id="sv4#dlu12" name="Borrar Pistas" entity="ent4">
+    <DeleteUnit gr:x="3295" gr:y="600" id="sv4#dlu12" name="Borrar Pistas" entity="ent4">
       <Selector id="sv4#dlu12#su48" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#dlu12#su48#rcond13" name="RoleCondition13" predicate="in" implied="false" role="rel14#role27"/>
       </Selector>
-      <OKLink id="sv4#dlu12#oln30" name="OKFlow30" to="sv4#scu3" gr:bendpoints="-148,-80,97,110">
+      <OKLink id="sv4#dlu12#oln30" name="OKFlow30" to="sv4#scu3">
         <LinkParameter id="sv4#dlu12#oln30#par152" name="oid_PASSING_userOid" sourceLinkParameter="sv4#dlu11#oln23#par169" target="sv4#scu3.userOid"/>
         <LinkParameter id="sv4#dlu12#oln30#par172" name="UserCtxParam.oid_PASSING_adminOid" sourceLinkParameter="sv4#dlu11#oln23#par176" target="sv4#scu3.adminOid"/>
       </OKLink>
     </DeleteUnit>
-    <LogoutUnit gr:x="2885" gr:y="-75" id="sv4#lou1" name="Cerrar Sesi&#243;n" siteView="sv1"/>
-    <DeleteUnit gr:x="2650" gr:y="1030" id="sv4#dlu13" name="Eliminar Valoraci&#243;n" entity="ent6">
+    <LogoutUnit gr:x="3205" gr:y="-70" id="sv4#lou1" name="Cerrar Sesi&#243;n" siteView="sv1"/>
+    <DeleteUnit gr:x="2690" gr:y="1155" id="sv4#dlu13" name="Eliminar Valoraci&#243;n" entity="ent6">
       <Selector id="sv4#dlu13#su42" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#dlu13#su42#kcond28" name="KeyCondition28" predicate="in" implied="false"/>
       </Selector>
       <OKLink id="sv4#dlu13#oln28" name="OKFlow28" to="sv4#page55#mssu20"/>
     </DeleteUnit>
-    <ScriptUnit gr:x="2845" gr:y="400" id="sv4#scu3" name="Reasignar Incidencia">
+    <ScriptUnit gr:x="3010" gr:y="410" id="sv4#scu3" name="Reasignar Incidencia">
       <OKLink id="sv4#scu3#oln29" name="OKFlow26" to="sv4#mfu9">
         <LinkParameter id="sv4#scu3#oln29#par149" name="3_Group.oid(defaultGroup)" target="sv4#mfu9.User2DefaultGroup.groupOID" sourceValue="3"/>
         <LinkParameter id="sv4#scu3#oln29#par155" name="userOidOut_KeyCondition24 [oid]" source="result(userOidOut)" target="sv4#mfu9#su33#kcond24.userOID"/>

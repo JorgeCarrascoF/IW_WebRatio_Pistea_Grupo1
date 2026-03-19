@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="280" gr:y="650" id="sv4#page20" name="Confirmar Editar Pista">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="285" gr:y="670" id="sv4#page20" name="Confirmar Editar Pista">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page20#mssu4" name="&#201;xito al editar pista" linkOrder="sv4#page20#mssu4#ln35">
       <Message xml:space="preserve">Pista editada exitosamente.</Message>
