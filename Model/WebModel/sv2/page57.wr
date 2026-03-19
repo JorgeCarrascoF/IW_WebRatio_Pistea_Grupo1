@@ -1,0 +1,48 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="150" gr:y="655" id="sv2#page57" name="Incidencias" landmark="false">
+  <ContentUnits>
+    <EntryUnit gr:x="205" gr:y="0" id="sv2#page57#enu12" name="Escribir incidencia" entity="ent5" linkOrder="sv2#page57#enu12#ln98" fieldOrder="sv2#page57#enu12#fld55 sv2#page57#enu12#fld52 sv2#page57#enu12#fld56 sv2#page57#enu12#fld57">
+      <Field id="sv2#page57#enu12#fld52" name="descripcion" type="string" modifiable="true" attribute="ent5#att8"/>
+      <Field id="sv2#page57#enu12#fld55" name="titulo" type="string" modifiable="true" attribute="ent5#att9"/>
+      <Field id="sv2#page57#enu12#fld56" name="nivel_gravedad" type="integer" modifiable="true" attribute="ent5#att10"/>
+      <Field id="sv2#page57#enu12#fld57" name="estado_incidencia" type="integer" modifiable="true" attribute="ent5#att11"/>
+      <Link id="sv2#page57#enu12#ln98" name="Guardar" to="sv2#cru3" type="normal" validate="true">
+        <LinkParameter id="sv2#page57#enu12#ln98#par182" name="descripcion_descripcion" source="sv2#page57#enu12#fld52" target="sv2#cru3.ent5#att8"/>
+        <LinkParameter id="sv2#page57#enu12#ln98#par183" name="estado_incidencia_estado_incidencia" source="sv2#page57#enu12#fld57" target="sv2#cru3.ent5#att11"/>
+        <LinkParameter id="sv2#page57#enu12#ln98#par184" name="Incidencia Object_Incidencia Object" source="entityBean" target="sv2#cru3.entityBeans"/>
+        <LinkParameter id="sv2#page57#enu12#ln98#par198" name="nivel_gravedad_nivel_gravedad" source="sv2#page57#enu12#fld56" target="sv2#cru3.ent5#att10"/>
+        <LinkParameter id="sv2#page57#enu12#ln98#par203" name="Key [oid]_oid" source="key.ent5#att5" target="sv2#cru3.ent5#att5"/>
+        <LinkParameter id="sv2#page57#enu12#ln98#par204" name="titulo_titulo" source="sv2#page57#enu12#fld55" target="sv2#cru3.ent5#att9"/>
+        <LinkParameter id="sv2#page57#enu12#ln98#par252" name="UserCtxParam.oid_PASSING_User.oid(IncidenciaToUser)" sourceLinkParameter="sv2#page57#gtu13#ln114#par243" target="sv2#cru3.rel3#role6.userOID"/>
+      </Link>
+    </EntryUnit>
+    <GetUnit id="sv2#page57#gtu13" name="Obtener ID" gr:x="0" gr:y="5" contextParameters="UserCtxParam">
+      <Link id="sv2#page57#gtu13#ln114" name="Obtener" to="sv2#page57#enu12" type="transport" validate="true">
+        <LinkParameter id="sv2#page57#gtu13#ln114#par243" name="UserCtxParam.oid_PASSING" source="sv2#page57#gtu13.UserCtxParam" passing="true"/>
+      </Link>
+    </GetUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page57#enu12">
+          <layout:Field field="sv2#page57#enu12#fld55"/>
+          <layout:Field field="sv2#page57#enu12#fld52"/>
+          <layout:Field field="sv2#page57#enu12#fld56"/>
+          <layout:Field field="sv2#page57#enu12#fld57"/>
+          <layout:Link link="sv2#page57#enu12#ln98"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

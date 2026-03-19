@@ -1,0 +1,34 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1700" gr:y="145" id="sv2#page61" name="Torneo Correcto">
+  <ContentUnits>
+    <IndexUnit gr:x="0" gr:y="0" id="sv2#page61#inu11" name="Listado de torneos" entity="ent3" displayAttributes="ent3#att22 ent3#att23 ent3#att27 ent3#att31" linkOrder="sv2#page61#inu11#ln105">
+      <Selector id="sv2#page61#inu11#su64" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#page61#inu11#su64#kcond39" name="KeyCondition" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#page61#inu11#ln105" name="Detalles" to="sv2#page65#dau16" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-217,47,588,207;-816,47,-1,207"/>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page61#inu11">
+          <layout:Attribute attribute="ent3#att22"/>
+          <layout:Attribute attribute="ent3#att23"/>
+          <layout:Attribute attribute="ent3#att27"/>
+          <layout:Attribute attribute="ent3#att31"/>
+          <layout:Link link="sv2#page61#inu11#ln105"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

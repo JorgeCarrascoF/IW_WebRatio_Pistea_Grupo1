@@ -1,6 +1,87 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="215" gr:y="145" id="sv2#page2" name="Page 2">
-  <ContentUnits/>
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-455" gr:y="-20" id="sv2#page2" name="Pistas detalle">
+  <ContentUnits>
+    <DataUnit gr:x="210" gr:y="0" id="sv2#page2#dau14" name="Detalles Pista" entity="ent4" displayAttributes="ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att19 ent4#att39 ent4#att38" linkOrder="sv2#page2#dau14#ln97 sv2#page2#dau14#ln118">
+      <Selector id="sv2#page2#dau14#su5" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#page2#dau14#su5#kcond30" name="KeyCondition" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#page2#dau14#ln97" name="Reservar" to="sv2#cru2" type="normal" validate="true" gr:bendpoints="124,158,-1,-182">
+        <LinkParameter id="sv2#page2#dau14#ln97#par178" name="0_estado_reserva" sourceValue="0" target="sv2#cru2.ent2#att13"/>
+        <LinkParameter id="sv2#page2#dau14#ln97#par179" name="hora_apertura_hora_inicio" source="data.ent4#att16" target="sv2#cru2.ent2#att12"/>
+        <LinkParameter id="sv2#page2#dau14#ln97#par180" name="oid_Pista.oid(ReservaToPista)" source="data.ent4#att4" target="sv2#cru2.rel10#role19.ent4#att4"/>
+        <LinkParameter id="sv2#page2#dau14#ln97#par181" name="10_precio" sourceValue="10" target="sv2#cru2.ent2#att26"/>
+        <LinkParameter id="sv2#page2#dau14#ln97#par200" name="PistaToUser_2.oid_User.oid(ReservaToUser)" target="sv2#cru2.rel7#role14.userOID" sourceLinkParameter="sv2#page2#gtu9#ln115#par238"/>
+      </Link>
+      <Link id="sv2#page2#dau14#ln101" name="Valoraciones" to="sv2#page2#seu2" type="transport" validate="true" automaticCoupling="true"/>
+      <Link id="sv2#page2#dau14#ln118" name="A&#241;adir fav" to="sv2#cnu2" type="normal" validate="true" gr:bendpoints="163,77,248,-233;162,240,247,-70">
+        <LinkParameter id="sv2#page2#dau14#ln118#par239" name="UserCtxParam.oid_PASSING_KeyCondition46 [oid] [User] [Source]" sourceLinkParameter="sv2#page2#gtu9#ln115#par238" target="sv2#cnu2#su67#kcond46.userOID"/>
+        <LinkParameter id="sv2#page2#dau14#ln118#par240" name="oid_KeyCondition47 [oid] [Pista] [Target]" source="data.ent4#att4" target="sv2#cnu2#su68#kcond47.ent4#att4"/>
+      </Link>
+    </DataUnit>
+    <IndexUnit id="sv2#page2#inu7" name="Listado de valoraciones" gr:x="0" gr:y="140" entity="ent6" displayAttributes="ent6#att21 ent6#att20 ent6#att24">
+      <Selector id="sv2#page2#inu7#su56" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#page2#inu7#su56#kcond36" name="KeyCondition" predicate="in" implied="false"/>
+      </Selector>
+    </IndexUnit>
+    <SelectorUnit gr:x="15" gr:y="0" id="sv2#page2#seu2" name="Filtro valoraciones" entity="ent6">
+      <Selector id="sv2#page2#seu2#su59" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#page2#seu2#su59#rcond8" name="RoleCondition" predicate="in" implied="false" role="rel12#role24"/>
+      </Selector>
+      <Link id="sv2#page2#seu2#ln102" name="Filtrar" to="sv2#page2#inu7" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <GetUnit gr:x="210" gr:y="160" id="sv2#page2#gtu9" name="Obtener ID" contextParameters="UserCtxParam">
+      <Link id="sv2#page2#gtu9#ln115" name="Flow115" to="sv2#page2#dau14" type="transport" validate="true" gr:bendpoints="-73,-69,-73,81">
+        <LinkParameter id="sv2#page2#gtu9#ln115#par238" name="UserCtxParam.oid_PASSING" source="sv2#page2#gtu9.UserCtxParam" passing="true"/>
+      </Link>
+    </GetUnit>
+  </ContentUnits>
   <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page2#dau14">
+          <layout:Attribute attribute="ent4#att14"/>
+          <layout:Attribute attribute="ent4#att15"/>
+          <layout:Attribute attribute="ent4#att16"/>
+          <layout:Attribute attribute="ent4#att17"/>
+          <layout:Attribute attribute="ent4#att18"/>
+          <layout:Attribute attribute="ent4#att19"/>
+          <layout:Attribute attribute="ent4#att39"/>
+          <layout:Attribute attribute="ent4#att38"/>
+          <layout:Link link="sv2#page2#dau14#ln97"/>
+          <layout:Link link="sv2#page2#dau14#ln118"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page2#inu7">
+          <layout:Attribute attribute="ent6#att21"/>
+          <layout:Attribute attribute="ent6#att20"/>
+          <layout:Attribute attribute="ent6#att24"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12"/>
       <layout:Cell/>

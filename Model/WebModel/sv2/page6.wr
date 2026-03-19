@@ -1,0 +1,70 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1205" gr:y="-10" id="sv2#page6" name="Torneos" landmark="true">
+  <ContentUnits>
+    <EntryUnit gr:x="165" gr:y="0" id="sv2#page6#enu10" name="Buscar torneos" entity="ent3" linkOrder="sv2#page6#enu10#ln103">
+      <Link id="sv2#page6#enu10#ln103" name="Buscar" to="sv2#inn3" type="normal" validate="true">
+        <LinkParameter id="sv2#page6#enu10#ln103#par187" name="Nombre_Input" source="sv2#page6#enu10#fld44" target="sv2#inn3.isnotnull"/>
+      </Link>
+      <Field id="sv2#page6#enu10#fld44" name="Nombre" type="string" modifiable="true" attribute="ent3#att27"/>
+    </EntryUnit>
+    <IndexUnit id="sv2#page6#inu12" name="Listado de torneos" gr:x="0" gr:y="0" entity="ent3" displayAttributes="ent3#att22 ent3#att23 ent3#att27 ent3#att31" linkOrder="sv2#page6#inu12#ln104">
+      <Link id="sv2#page6#inu12#ln104" name="Detalles" to="sv2#page65#dau16" automaticCoupling="true" type="normal" validate="true"/>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page6#enu10">
+          <layout:Link link="sv2#page6#enu10#ln103"/>
+          <layout:Field field="sv2#page6#enu10#fld44"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page6#inu12">
+          <layout:Attribute attribute="ent3#att22"/>
+          <layout:Attribute attribute="ent3#att23"/>
+          <layout:Attribute attribute="ent3#att27"/>
+          <layout:Attribute attribute="ent3#att31"/>
+          <layout:Link link="sv2#page6#inu12#ln104"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

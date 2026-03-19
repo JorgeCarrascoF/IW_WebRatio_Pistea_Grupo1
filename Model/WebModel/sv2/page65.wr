@@ -1,0 +1,59 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="895" gr:y="-15" id="sv2#page65" name="Torneo detalle">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv2#page65#dau16" name="Detalles Torneo" entity="ent3" displayAttributes="ent3#att22 ent3#att23 ent3#att27 ent3#att28 ent3#att29 ent3#att30 ent3#att31" linkOrder="sv2#page65#dau16#ln128">
+      <Selector id="sv2#page65#dau16#su65" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#page65#dau16#su65#kcond40" name="KeyCondition" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#page65#dau16#ln128" name="Inscribirse" to="sv2#cnu1" type="normal" validate="true" gr:bendpoints="-157,110,-2,-200">
+        <LinkParameter id="sv2#page65#dau16#ln128#par201" name="UserCtxParam.oid_PASSING_KeyCondition33 [oid] [User] [Source]" sourceLinkParameter="sv2#page65#gtu4#ln94#par199" target="sv2#cnu1#su54#kcond33.userOID"/>
+        <LinkParameter id="sv2#page65#dau16#ln128#par202" name="oid_KeyCondition38 [oid] [Torneo] [Target]" source="data.ent3#att3" target="sv2#cnu1#su55#kcond38.ent3#att3"/>
+      </Link>
+    </DataUnit>
+    <GetUnit gr:x="135" gr:y="115" id="sv2#page65#gtu4" name="Obtener ID" contextParameters="UserCtxParam">
+      <Link id="sv2#page65#gtu4#ln94" name="Obtener" to="sv2#page65#dau16" type="transport" validate="true" gr:bendpoints="5,-79,135,26">
+        <LinkParameter id="sv2#page65#gtu4#ln94#par199" name="UserCtxParam.oid_PASSING" source="sv2#page65#gtu4.UserCtxParam" passing="true"/>
+      </Link>
+    </GetUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page65#dau16">
+          <layout:Attribute attribute="ent3#att22"/>
+          <layout:Attribute attribute="ent3#att23"/>
+          <layout:Attribute attribute="ent3#att27"/>
+          <layout:Attribute attribute="ent3#att28"/>
+          <layout:Attribute attribute="ent3#att29"/>
+          <layout:Attribute attribute="ent3#att30"/>
+          <layout:Attribute attribute="ent3#att31"/>
+          <layout:Link link="sv2#page65#dau16#ln128"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

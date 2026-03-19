@@ -1,0 +1,36 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="490" gr:y="140" id="sv2#page63" name="Pista Correcto">
+  <ContentUnits>
+    <IndexUnit id="sv2#page63#inu8" name="Listado de pistas" gr:x="0" gr:y="0" entity="ent4" displayAttributes="ent4#att14 ent4#att15 ent4#att16 ent4#att18 ent4#att19 ent4#att39" linkOrder="sv2#page63#inu8#ln75">
+      <Selector id="sv2#page63#inu8#su63" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#page63#inu8#su63#kcond35" name="KeyCondition" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#page63#inu8#ln75" name="Detalles" to="sv2#page2#dau14" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-184,73,561,233;-542,72,203,232;-542,-65,203,95;-746,-65,-1,95"/>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page63#inu8">
+          <layout:Attribute attribute="ent4#att14"/>
+          <layout:Attribute attribute="ent4#att15"/>
+          <layout:Attribute attribute="ent4#att16"/>
+          <layout:Attribute attribute="ent4#att18"/>
+          <layout:Attribute attribute="ent4#att19"/>
+          <layout:Attribute attribute="ent4#att39"/>
+          <layout:Link link="sv2#page63#inu8#ln75"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

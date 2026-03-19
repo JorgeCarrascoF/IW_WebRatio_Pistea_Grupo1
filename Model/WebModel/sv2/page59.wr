@@ -1,0 +1,11 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="555" gr:y="485" id="sv2#page59" name="Home">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv2#page59#mssu22" name="Bienvenido/a!">
+      <Message xml:space="preserve">Bienvenido a Pistea, la plataforma dise&#241;ada para facilitar la reserva y gesti&#243;n de instalaciones deportivas. Desde aqu&#237; podr&#225;s consultar la disponibilidad de pistas, realizar reservas de forma r&#225;pida y gestionar toda tu actividad deportiva en un &#250;nico lugar.
+
+Explora las instalaciones disponibles, encuentra la pista y el horario que mejor se adapten a ti y reserva en pocos pasos. Adem&#225;s, podr&#225;s consultar tus reservas, valorar las instalaciones despu&#233;s de utilizarlas y reportar cualquier incidencia para ayudar a mantener los espacios deportivos en las mejores condiciones.
+
+Si eres responsable de instalaciones o administrador del sistema, tambi&#233;n encontrar&#225;s herramientas para gestionar pistas, torneos, reservas e incidencias de forma eficiente.
+
+Empieza ahora y disfruta de una forma m&#225;s sencilla de organizar tu actividad deportiva con Pistea.
+</Message>    </MultiMessageUnit>  </ContentUnits>  <layout:Grid containerType="grid">    <layout:Row>      <layout:Cell colspan="12">        <layout:Unit unitId="sv2#page59#mssu22"/>      </layout:Cell>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>      <layout:Cell/>    </layout:Row>  </layout:Grid></Page>

@@ -1,0 +1,113 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1710" gr:y="530" id="sv2#page67" name="Perfil" landmark="true">
+  <ContentUnits>
+    <DataUnit gr:x="140" gr:y="0" id="sv2#page67#dau17" name="Detalles Usuario" entity="User" displayAttributes="userName password email User#att32 User#att33 User#att34 User#att35 User#att36 User#att37">
+      <Selector id="sv2#page67#dau17#su74" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#page67#dau17#su74#kcond48" name="KeyCondition" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+    <EntryUnit gr:x="0" gr:y="0" id="sv2#page67#enu11" name="Editar usuario" entity="User" linkOrder="sv2#page67#enu11#ln121">
+      <Link id="sv2#page67#enu11#ln109" name="Actualizar" to="sv2#mfu13" type="transport" validate="true" gr:bendpoints="0,150,175,0">
+        <LinkParameter id="sv2#page67#enu11#ln109#par212" name="descripcion_usuario_descripcion_usuario" source="sv2#page67#enu11#fld49" target="sv2#mfu13.User#att32"/>
+        <LinkParameter id="sv2#page67#enu11#ln109#par213" name="edad_edad" source="sv2#page67#enu11#fld50" target="sv2#mfu13.User#att33"/>
+        <LinkParameter id="sv2#page67#enu11#ln109#par214" name="email_email" source="sv2#page67#enu11#fld48" target="sv2#mfu13.email"/>
+        <LinkParameter id="sv2#page67#enu11#ln109#par216" name="es_hombre_es_hombre" source="sv2#page67#enu11#fld51" target="sv2#mfu13.User#att34"/>
+        <LinkParameter id="sv2#page67#enu11#ln109#par217" name="fecha_alta_fecha_alta" source="sv2#page67#enu11#fld52" target="sv2#mfu13.User#att35"/>
+        <LinkParameter id="sv2#page67#enu11#ln109#par218" name="foto_perfil_foto_perfil" source="sv2#page67#enu11#fld53" target="sv2#mfu13.User#att36"/>
+        <LinkParameter id="sv2#page67#enu11#ln109#par220" name="password_password" source="sv2#page67#enu11#fld46" target="sv2#mfu13.password"/>
+        <LinkParameter id="sv2#page67#enu11#ln109#par221" name="telefono_telefono" source="sv2#page67#enu11#fld54" target="sv2#mfu13.User#att37"/>
+        <LinkParameter id="sv2#page67#enu11#ln109#par222" name="username_username" source="sv2#page67#enu11#fld45" target="sv2#mfu13.userName"/>
+      </Link>
+      <Field id="sv2#page67#enu11#fld45" name="username" type="string" modifiable="true" attribute="userName"/>
+      <Field id="sv2#page67#enu11#fld46" name="password" type="password" modifiable="true" attribute="password"/>
+      <Field id="sv2#page67#enu11#fld48" name="email" type="string" modifiable="true" attribute="email"/>
+      <Field id="sv2#page67#enu11#fld49" name="descripcion_usuario" type="string" modifiable="true" attribute="User#att32"/>
+      <Field id="sv2#page67#enu11#fld50" name="edad" type="integer" modifiable="true" attribute="User#att33"/>
+      <Field id="sv2#page67#enu11#fld51" name="es_hombre" type="boolean" modifiable="true" attribute="User#att34"/>
+      <Field id="sv2#page67#enu11#fld53" name="foto_perfil" type="string" modifiable="true" attribute="User#att36"/>
+      <Field id="sv2#page67#enu11#fld54" name="telefono" type="string" modifiable="true" attribute="User#att37"/>
+      <Link id="sv2#page67#enu11#ln121" name="Actualizar" to="sv2#inn4" type="normal" validate="true">
+        <LinkParameter id="sv2#page67#enu11#ln121#par224" name="Key [oid]_Input" source="key.userOID" target="sv2#inn4.isnotnull"/>
+        <LinkParameter id="sv2#page67#enu11#ln121#par226" name="descripcion_usuario_PASSING" source="sv2#page67#enu11#fld49" passing="true"/>
+        <LinkParameter id="sv2#page67#enu11#ln121#par227" name="edad_PASSING" source="sv2#page67#enu11#fld50" passing="true"/>
+        <LinkParameter id="sv2#page67#enu11#ln121#par228" name="email_PASSING" source="sv2#page67#enu11#fld48" passing="true"/>
+        <LinkParameter id="sv2#page67#enu11#ln121#par229" name="es_hombre_PASSING" source="sv2#page67#enu11#fld51" passing="true"/>
+        <LinkParameter id="sv2#page67#enu11#ln121#par230" name="foto_perfil_PASSING" source="sv2#page67#enu11#fld53" passing="true"/>
+        <LinkParameter id="sv2#page67#enu11#ln121#par231" name="password_PASSING" source="sv2#page67#enu11#fld46" passing="true"/>
+        <LinkParameter id="sv2#page67#enu11#ln121#par232" name="telefono_PASSING" source="sv2#page67#enu11#fld54" passing="true"/>
+        <LinkParameter id="sv2#page67#enu11#ln121#par233" name="username_PASSING" source="sv2#page67#enu11#fld45" passing="true"/>
+      </Link>
+    </EntryUnit>
+    <GetUnit gr:x="145" gr:y="145" id="sv2#page67#gtu5" name="Obtener ID" contextParameters="UserCtxParam">
+      <Link id="sv2#page67#gtu5#ln116" name="Obtener" to="sv2#page67#dau17" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv2#page67#gtu5#ln117" name="Editar" to="sv2#page67#enu11" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page67#dau17">
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="password"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Attribute attribute="User#att32"/>
+          <layout:Attribute attribute="User#att33"/>
+          <layout:Attribute attribute="User#att34"/>
+          <layout:Attribute attribute="User#att35"/>
+          <layout:Attribute attribute="User#att36"/>
+          <layout:Attribute attribute="User#att37"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page67#enu11">
+          <layout:Field field="sv2#page67#enu11#fld45"/>
+          <layout:Field field="sv2#page67#enu11#fld46"/>
+          <layout:Field field="sv2#page67#enu11#fld48"/>
+          <layout:Field field="sv2#page67#enu11#fld49"/>
+          <layout:Field field="sv2#page67#enu11#fld50"/>
+          <layout:Field field="sv2#page67#enu11#fld51"/>
+          <layout:Field field="sv2#page67#enu11#fld53"/>
+          <layout:Field field="sv2#page67#enu11#fld54"/>
+          <layout:Link link="sv2#page67#enu11#ln121"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -1,0 +1,68 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-365" gr:y="675" id="sv2#page68" name="Detalles favoritos">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv2#page68#dau19" name="Detalles Favoritos" entity="ent4" linkOrder="sv2#page68#dau19#ln124 sv2#page68#dau19#ln126" displayAttributes="ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att19 ent4#att39 ent4#att38">
+      <Selector id="sv2#page68#dau19#su69" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#page68#dau19#su69#kcond53" name="KeyCondition" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#page68#dau19#ln124" name="Eliminar Fav" to="sv2#dcnu3" type="normal" validate="true">
+        <LinkParameter id="sv2#page68#dau19#ln124#par245" name="UserCtxParam.oid_PASSING_KeyCondition51 [oid] [User] [Source]" sourceLinkParameter="sv2#page68#gtu11#ln120#par244" target="sv2#dcnu3#su70#kcond51.userOID"/>
+        <LinkParameter id="sv2#page68#dau19#ln124#par246" name="oid_KeyCondition52 [oid] [Pista] [Target]" source="data.ent4#att4" target="sv2#dcnu3#su71#kcond52.ent4#att4"/>
+      </Link>
+      <Link id="sv2#page68#dau19#ln126" name="Reservar" to="sv2#cru2" type="normal" validate="true" gr:bendpoints="125,-3,-110,352;126,-358,-109,-3">
+        <LinkParameter id="sv2#page68#dau19#ln126#par247" name="0_estado_reserva" sourceValue="0" target="sv2#cru2.ent2#att13"/>
+        <LinkParameter id="sv2#page68#dau19#ln126#par248" name="hora_apertura_hora_inicio" source="data.ent4#att16" target="sv2#cru2.ent2#att12"/>
+        <LinkParameter id="sv2#page68#dau19#ln126#par249" name="oid_Pista.oid(ReservaToPista)" source="data.ent4#att4" target="sv2#cru2.rel10#role19.ent4#att4"/>
+        <LinkParameter id="sv2#page68#dau19#ln126#par250" name="10_precio" sourceValue="10" target="sv2#cru2.ent2#att26"/>
+        <LinkParameter id="sv2#page68#dau19#ln126#par251" name="UserCtxParam.oid_PASSING_User.oid(ReservaToUser)" sourceLinkParameter="sv2#page68#gtu11#ln120#par244" target="sv2#cru2.rel7#role14.userOID"/>
+      </Link>
+    </DataUnit>
+    <GetUnit gr:x="10" gr:y="160" id="sv2#page68#gtu11" name="Obtener ID" contextParameters="UserCtxParam">
+      <Link id="sv2#page68#gtu11#ln120" name="Obtener" to="sv2#page68#dau19" type="transport" validate="true">
+        <LinkParameter id="sv2#page68#gtu11#ln120#par244" name="UserCtxParam.oid_PASSING" source="sv2#page68#gtu11.UserCtxParam" passing="true"/>
+      </Link>
+    </GetUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page68#dau19">
+          <layout:Attribute attribute="ent4#att14"/>
+          <layout:Attribute attribute="ent4#att15"/>
+          <layout:Attribute attribute="ent4#att16"/>
+          <layout:Attribute attribute="ent4#att17"/>
+          <layout:Attribute attribute="ent4#att18"/>
+          <layout:Attribute attribute="ent4#att19"/>
+          <layout:Attribute attribute="ent4#att39"/>
+          <layout:Attribute attribute="ent4#att38"/>
+          <layout:Link link="sv2#page68#dau19#ln124"/>
+          <layout:Link link="sv2#page68#dau19#ln126"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

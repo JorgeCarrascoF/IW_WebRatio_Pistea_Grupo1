@@ -1,3 +1,112 @@
-<SiteView id="sv2" name="cliente" protected="true" homePage="sv2#page2">
-  <OperationUnits/>
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2" name="cliente" protected="true" homePage="sv2#page59" landmarks="sv2#page56 sv2#page5 sv2#page6 sv2#page66 sv2#page67 sv2#page7 sv2#page58 sv2#lou2">
+  <OperationUnits>
+    <IsNotNullUnit gr:x="400" gr:y="35" id="sv2#inn1" name="Existe pista?" emptyStringAsNull="true">
+      <OKLink id="sv2#inn1#oln34" name="OK Pista" to="sv2#seu10">
+        <LinkParameter id="sv2#inn1#oln34#par281" name="Input Value_Deporte" target="sv2#seu10#su60#acond38" source="inputValue"/>
+      </OKLink>
+      <KOLink id="sv2#inn1#kln7" name="KO Pista" to="sv2#page64#mssu28" gr:bendpoints="-1,139,239,-1">
+        <LinkParameter id="sv2#inn1#kln7#par285" name="Error: La pista que ha buscado no existe. Por favor, intentelo de nuevo.Error: La pista que ha buscado no existe. Por favor, intentelo de nuevo._Shown Messages" sourceValue="Error: La pista que ha buscado no existe. Por favor, intentelo de nuevo.Error: La pista que ha buscado no existe. Por favor, intentelo de nuevo." target="sv2#page64#mssu28.shownMessages"/>
+      </KOLink>
+    </IsNotNullUnit>
+    <SelectorUnit id="sv2#seu10" name="Filtro pistas" gr:x="655" gr:y="5" entity="ent4">
+      <Selector id="sv2#seu10#su60" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv2#seu10#su60#acond38" name="Deporte" predicate="eq" booleanOperator="or" implied="false" attributes="ent4#att15"/>
+        <AttributesCondition id="sv2#seu10#su60#acond44" name="Disponibilidad" predicate="eq" booleanOperator="or" implied="false" ignoreCase="false" attributes="ent4#att19" value="True"/>
+      </Selector>
+      <OKLink id="sv2#seu10#oln42" name="Filtrar" to="sv2#page63#inu8" automaticCoupling="true" gr:bendpoints="-1,160,164,0"/>
+    </SelectorUnit>
+    <DeleteUnit gr:x="-115" gr:y="480" id="sv2#dlu14" name="Eliminar reserva" entity="ent2">
+      <Selector id="sv2#dlu14#su50" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#dlu14#su50#kcond31" name="KeyCondition" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#dlu14#oln39" name="OK Eliminar Reserva" to="sv2#page56" automaticCoupling="true" gr:bendpoints="115,-66,-250,-56"/>
+    </DeleteUnit>
+    <CreateUnit gr:x="-105" gr:y="360" id="sv2#cru2" name="A&#241;adir reserva" entity="ent2">
+      <OKLink id="sv2#cru2#oln32" name="OK A&#241;adir Reserva" to="sv2#page56#inu3" gr:bendpoints="267,-1,2,-126" automaticCoupling="true"/>
+    </CreateUnit>
+    <IsNotNullUnit gr:x="1610" gr:y="40" id="sv2#inn3" name="Existe torneo?">
+      <OKLink id="sv2#inn3#oln30" name="OK Torneo" to="sv2#seu3">
+        <LinkParameter id="sv2#inn3#oln30#par196" name="Input Value_Nombre" source="inputValue" target="sv2#seu3#su62#acond25"/>
+      </OKLink>
+      <KOLink id="sv2#inn3#kln2" name="KO Torneo" to="sv2#page62#mssu23" gr:bendpoints="-1,139,249,-1">
+        <LinkParameter id="sv2#inn3#kln2#par197" name="Error: El torneo que ha buscado no existe. Por favor, intentelo de nuevo.Error: La pista que ha buscado no existe. Por favor, intentelo de nuevo._Shown Messages" sourceValue="Error: El torneo que ha buscado no existe. Por favor, intentelo de nuevo.Error: La pista que ha buscado no existe. Por favor, intentelo de nuevo." target="sv2#page62#mssu23.shownMessages"/>
+      </KOLink>
+    </IsNotNullUnit>
+    <SelectorUnit gr:x="1875" gr:y="10" id="sv2#seu3" name="Filtro torneos" entity="ent3">
+      <Selector id="sv2#seu3#su62" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv2#seu3#su62#acond25" name="Nombre" predicate="contains" booleanOperator="or" implied="false" attributes="ent3#att27" ignoreCase="true"/>
+        <AttributesCondition id="sv2#seu3#su62#acond26" name="Disponibilidad" predicate="gt" booleanOperator="or" implied="false" attributes="ent3#att22" value="0"/>
+      </Selector>
+      <OKLink id="sv2#seu3#oln31" name="OKFlow31" to="sv2#page61#inu11" automaticCoupling="true" gr:bendpoints="0,159,225,-1"/>
+    </SelectorUnit>
+    <ModifyUnit gr:x="1540" gr:y="710" id="sv2#mfu13" name="Actualizar usuario" entity="User">
+      <Selector id="sv2#mfu13#su75" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#mfu13#su75#kcond49" name="KeyCondition" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#mfu13#oln35" name="OK Usuario" to="sv2#page67" automaticCoupling="true" gr:bendpoints="-1,-91,-251,-1"/>
+    </ModifyUnit>
+    <LogoutUnit gr:x="585" gr:y="355" id="sv2#lou2" name="Logout" siteView="sv1" landmark="true"/>
+    <IsNotNullUnit gr:x="1540" gr:y="580" id="sv2#inn4" name="Es valido?">
+      <OKLink id="sv2#inn4#oln38" name="OK Usuario" to="sv2#mfu13" gr:bendpoints="-90,-1,-115,-151;-90,149,-115,-1">
+        <LinkParameter id="sv2#inn4#oln38#par242" name="Input Value_KeyCondition49 [oid]" source="inputValue" target="sv2#mfu13#su75#kcond49.userOID"/>
+      </OKLink>
+      <KOLink id="sv2#inn4#kln3" name="KO Usuario" to="sv2#page70#mssu24" gr:bendpoints="0,-65,200,0">
+        <LinkParameter id="sv2#inn4#kln3#par225" name="Error: Los datos de usuario introducidos no son validos. Por favor, intentelo de nuevo._Shown Messages" sourceValue="Error: Los datos de usuario introducidos no son validos. Por favor, intentelo de nuevo." target="sv2#page70#mssu24.shownMessages"/>
+      </KOLink>
+    </IsNotNullUnit>
+    <ConnectUnit gr:x="745" gr:y="320" id="sv2#cnu1" name="Conectar Torneo" relationship="rel4#role7">
+      <SourceSelector id="sv2#cnu1#su54" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#cnu1#su54#kcond33" name="KeyCondition" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv2#cnu1#su55" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#cnu1#su55#kcond38" name="KeyCondition" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv2#cnu1#oln33" name="OK Inscripcion" to="sv2#page66" automaticCoupling="true" gr:bendpoints="194,0,-1,-180"/>
+    </ConnectUnit>
+    <DisconnectUnit gr:x="1065" gr:y="710" id="sv2#dcnu2" name="Desconectar Torneo" relationship="rel4#role7">
+      <SourceSelector id="sv2#dcnu2#su58" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#dcnu2#su58#kcond44" name="KeyCondition" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv2#dcnu2#su61" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#dcnu2#su61#kcond45" name="KeyCondition" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv2#dcnu2#oln36" name="OK Desinscripcion" to="sv2#page66" automaticCoupling="true" gr:bendpoints="-1,-108,129,102"/>
+    </DisconnectUnit>
+    <ConnectUnit gr:x="-330" gr:y="315" id="sv2#cnu2" name="Conectar Pista" relationship="rel2#role4">
+      <SourceSelector id="sv2#cnu2#su67" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#cnu2#su67#kcond46" name="KeyCondition" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv2#cnu2#su68" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#cnu2#su68#kcond47" name="KeyCondition" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv2#cnu2#oln37" name="Ok A&#241;adir Fav" to="sv2#page7" automaticCoupling="true" gr:bendpoints="-120,0,0,-185"/>
+    </ConnectUnit>
+    <DisconnectUnit gr:x="-625" gr:y="700" id="sv2#dcnu3" name="Desconectar Pista" relationship="rel2#role4">
+      <SourceSelector id="sv2#dcnu3#su70" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#dcnu3#su70#kcond51" name="KeyCondition" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv2#dcnu3#su71" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#dcnu3#su71#kcond52" name="KeyCondition" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv2#dcnu3#oln40" name="OK Eliminar Fav" to="sv2#page7" automaticCoupling="true" gr:bendpoints="136,-59,-39,141"/>
+    </DisconnectUnit>
+    <ConnectUnit gr:x="-110" gr:y="675" id="sv2#cnu3" name="Conectar Incidencia" relationship="rel11#role22">
+      <SourceSelector id="sv2#cnu3#su72" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#cnu3#su72#kcond32" name="KeyCondition32" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv2#cnu3#su76" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#cnu3#su76#kcond50" name="KeyCondition50" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv2#cnu3#oln41" name="OK Incidencia" to="sv2#page57#enu12" automaticCoupling="true" gr:bendpoints="141,-105,-334,-105;476,-106,1,-106"/>
+    </ConnectUnit>
+    <CreateUnit gr:x="635" gr:y="690" id="sv2#cru3" name="A&#241;adir incidencia" entity="ent5">
+      <OKLink id="sv2#cru3#oln43" name="OKFlow43" to="sv2#page58" automaticCoupling="true" gr:bendpoints="-116,63,-1,-112"/>
+    </CreateUnit>
+    <DeleteUnit gr:x="-110" gr:y="870" id="sv2#dlu15" name="Eliminar incidencia" entity="ent5">
+      <Selector id="sv2#dlu15#su79" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#dlu15#su79#kcond55" name="KeyCondition55" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#dlu15#oln44" name="OK Borrar incidencia" to="sv2#page69" automaticCoupling="true" gr:bendpoints="125,-64,-145,-54"/>
+    </DeleteUnit>
+  </OperationUnits>
 </SiteView>
