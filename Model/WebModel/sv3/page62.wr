@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-215" gr:y="425" id="sv3#page62" name="Editar pista">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-245" gr:y="510" id="sv3#page62" name="Editar pista">
   <ContentUnits>
-    <EntryUnit gr:x="0" gr:y="0" id="sv3#page62#enu9" name="Form9" entity="ent4" linkOrder="sv3#page62#enu9#ln111" fieldOrder="sv3#page62#enu9#fld47 sv3#page62#enu9#fld48 sv3#page62#enu9#fld49 sv3#page62#enu9#fld50 sv3#page62#enu9#fld51 sv3#page62#enu9#fld52 sv3#page62#enu9#fld53 sv3#page62#enu9#fld54">
+    <EntryUnit gr:x="0" gr:y="0" id="sv3#page62#enu9" name="Editar pista" entity="ent4" linkOrder="sv3#page62#enu9#ln111" fieldOrder="sv3#page62#enu9#fld47 sv3#page62#enu9#fld48 sv3#page62#enu9#fld49 sv3#page62#enu9#fld50 sv3#page62#enu9#fld51 sv3#page62#enu9#fld52 sv3#page62#enu9#fld53 sv3#page62#enu9#fld54">
       <Field id="sv3#page62#enu9#fld47" name="nombre_pista" type="string" modifiable="true" preloaded="true" attribute="ent4#att14"/>
       <Field id="sv3#page62#enu9#fld48" name="deporte_asociado" type="string" modifiable="true" preloaded="true" attribute="ent4#att15"/>
       <Field id="sv3#page62#enu9#fld49" name="hora_apertura" type="timestamp" modifiable="true" preloaded="true" attribute="ent4#att16"/>

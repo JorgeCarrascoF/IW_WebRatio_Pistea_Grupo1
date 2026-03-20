@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="330" gr:y="300" id="sv3#page6" name="Mis pistas" landmark="true" linkOrder="sv3#page6#ln94">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="300" gr:y="385" id="sv3#page6" name="Mis pistas" landmark="true" linkOrder="sv3#page6#ln94">
   <ContentUnits>
-    <IndexUnit gr:x="0" gr:y="115" id="sv3#page6#inu1" name="Pistas" entity="ent4" linkOrder="sv3#page6#inu1#ln27" displayAttributes="ent4#att4 ent4#att14 ent4#att15 ent4#att19">
+    <IndexUnit gr:x="0" gr:y="115" id="sv3#page6#inu1" name="Pistas" entity="ent4" linkOrder="sv3#page6#inu1#ln27" displayAttributes="ent4#att4 ent4#att14 ent4#att15 ent4#att19 ent4#att16 ent4#att17 ent4#att18 ent4#att39">
       <Link id="sv3#page6#inu1#ln27" name="Ver pista" to="sv3#page8#dau14" automaticCoupling="true" type="normal" validate="true"/>
       <Selector id="sv3#page6#inu1#su56" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#page6#inu1#su56#rcond15" name="RoleCondition15" predicate="in" implied="false" role="rel14#role27"/>
@@ -19,6 +19,10 @@
           <layout:Attribute attribute="ent4#att14"/>
           <layout:Attribute attribute="ent4#att15"/>
           <layout:Attribute attribute="ent4#att19"/>
+          <layout:Attribute attribute="ent4#att16"/>
+          <layout:Attribute attribute="ent4#att17"/>
+          <layout:Attribute attribute="ent4#att18"/>
+          <layout:Attribute attribute="ent4#att39"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

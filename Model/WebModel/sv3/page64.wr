@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="825" gr:y="515" id="sv3#page64" name="Error cancelar reserva" linkOrder="sv3#page64#ln2">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1245" gr:y="495" id="sv3#page64" name="Error cancelar reserva" linkOrder="sv3#page64#ln2">
   <ContentUnits>
-    <MultiMessageUnit gr:x="0" gr:y="0" id="sv3#page64#mssu29" name="Message29">
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv3#page64#mssu29" name="Error en la cancelaci&#243;n">
       <Message xml:space="preserve">Ha habido un error al intentar cancelar la reserva. Int&#233;ntelo de nuevo m&#225;s tarde.</Message>
     </MultiMessageUnit>
   </ContentUnits>

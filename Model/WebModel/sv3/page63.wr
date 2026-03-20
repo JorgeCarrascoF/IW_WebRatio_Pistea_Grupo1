@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="715" gr:y="-95" id="sv3#page63" name="Editar torneo">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="475" gr:y="-155" id="sv3#page63" name="Editar torneo">
   <ContentUnits>
-    <EntryUnit gr:x="20" gr:y="10" id="sv3#page63#enu13" name="Form13" entity="ent3" linkOrder="sv3#page63#enu13#ln114">
+    <EntryUnit gr:x="20" gr:y="10" id="sv3#page63#enu13" name="Editar torneo" entity="ent3" linkOrder="sv3#page63#enu13#ln114">
       <Field id="sv3#page63#enu13#fld79" name="oid" type="integer" modifiable="false" preloaded="true" attribute="ent3#att3" hidden="true"/>
       <Field id="sv3#page63#enu13#fld80" name="numero_plazas" type="integer" modifiable="true" preloaded="true" attribute="ent3#att22"/>
       <Field id="sv3#page63#enu13#fld81" name="fecha_inicio" type="timestamp" modifiable="true" preloaded="true" attribute="ent3#att23"/>

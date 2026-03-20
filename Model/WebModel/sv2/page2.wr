@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-455" gr:y="-20" id="sv2#page2" name="Pistas detalle">
   <ContentUnits>
-    <DataUnit gr:x="210" gr:y="0" id="sv2#page2#dau14" name="Detalles Pista" entity="ent4" displayAttributes="ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att19 ent4#att39 ent4#att38" linkOrder="sv2#page2#dau14#ln97 sv2#page2#dau14#ln118">
+    <DataUnit gr:x="210" gr:y="0" id="sv2#page2#dau14" name="Detalles Pista" entity="ent4" displayAttributes="ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att19 ent4#att39" linkOrder="sv2#page2#dau14#ln97 sv2#page2#dau14#ln118">
       <Selector id="sv2#page2#dau14#su5" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#page2#dau14#su5#kcond30" name="KeyCondition" predicate="in" implied="false"/>
       </Selector>
@@ -16,6 +16,9 @@
         <LinkParameter id="sv2#page2#dau14#ln118#par239" name="UserCtxParam.oid_PASSING_KeyCondition46 [oid] [User] [Source]" sourceLinkParameter="sv2#page2#gtu9#ln115#par238" target="sv2#cnu2#su67#kcond46.userOID"/>
         <LinkParameter id="sv2#page2#dau14#ln118#par240" name="oid_KeyCondition47 [oid] [Pista] [Target]" source="data.ent4#att4" target="sv2#cnu2#su68#kcond47.ent4#att4"/>
       </Link>
+      <Link id="sv2#page2#dau14#ln84" name="Flow84" to="sv2#page2#scu4" type="transport" validate="true">
+        <LinkParameter id="sv2#page2#dau14#ln84#par171" name="foto_pista_imageUrl" source="data.ent4#att38" target="sv2#page2#scu4.imageUrl"/>
+      </Link>
     </DataUnit>
     <IndexUnit id="sv2#page2#inu7" name="Listado de valoraciones" gr:x="0" gr:y="140" entity="ent6" displayAttributes="ent6#att21 ent6#att20 ent6#att24">
       <Selector id="sv2#page2#inu7#su56" defaultPolicy="fill" booleanOperator="and">
@@ -28,16 +31,40 @@
       </Selector>
       <Link id="sv2#page2#seu2#ln102" name="Filtrar" to="sv2#page2#inu7" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <GetUnit gr:x="210" gr:y="160" id="sv2#page2#gtu9" name="Obtener ID" contextParameters="UserCtxParam">
+    <GetUnit gr:x="170" gr:y="145" id="sv2#page2#gtu9" name="Obtener ID" contextParameters="UserCtxParam">
       <Link id="sv2#page2#gtu9#ln115" name="Flow115" to="sv2#page2#dau14" type="transport" validate="true" gr:bendpoints="-73,-69,-73,81">
         <LinkParameter id="sv2#page2#gtu9#ln115#par238" name="UserCtxParam.oid_PASSING" source="sv2#page2#gtu9.UserCtxParam" passing="true"/>
       </Link>
     </GetUnit>
+    <ScriptUnit gr:x="280" gr:y="175" id="sv2#page2#scu4" name="Imagen de la pista">
+      <ScriptUnitText xml:space="preserve">#input String imageUrl
+
+
+return "&lt;img src=" + imageUrl + " /&gt;"</ScriptUnitText>
+    </ScriptUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page2#scu4"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#page2#dau14">
+          <layout:Link link="sv2#page2#dau14#ln97"/>
+          <layout:Link link="sv2#page2#dau14#ln118"/>
           <layout:Attribute attribute="ent4#att14"/>
           <layout:Attribute attribute="ent4#att15"/>
           <layout:Attribute attribute="ent4#att16"/>
@@ -45,9 +72,6 @@
           <layout:Attribute attribute="ent4#att18"/>
           <layout:Attribute attribute="ent4#att19"/>
           <layout:Attribute attribute="ent4#att39"/>
-          <layout:Attribute attribute="ent4#att38"/>
-          <layout:Link link="sv2#page2#dau14#ln97"/>
-          <layout:Link link="sv2#page2#dau14#ln118"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

@@ -1,9 +1,12 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1710" gr:y="530" id="sv2#page67" name="Perfil" landmark="true">
   <ContentUnits>
-    <DataUnit gr:x="140" gr:y="0" id="sv2#page67#dau17" name="Detalles Usuario" entity="User" displayAttributes="userName password email User#att32 User#att33 User#att34 User#att35 User#att36 User#att37">
+    <DataUnit gr:x="140" gr:y="0" id="sv2#page67#dau17" name="Detalles Usuario" entity="User" displayAttributes="userName password email User#att32 User#att33 User#att34 User#att35 User#att37">
       <Selector id="sv2#page67#dau17#su74" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#page67#dau17#su74#kcond48" name="KeyCondition" predicate="in" implied="false"/>
       </Selector>
+      <Link id="sv2#page67#dau17#ln88" name="Flow88" to="sv2#page67#scu5" type="transport" validate="true">
+        <LinkParameter id="sv2#page67#dau17#ln88#par177" name="foto_perfil_imageUrl" source="data.User#att36" target="sv2#page67#scu5.imageUrl"/>
+      </Link>
     </DataUnit>
     <EntryUnit gr:x="0" gr:y="0" id="sv2#page67#enu11" name="Editar usuario" entity="User" linkOrder="sv2#page67#enu11#ln121">
       <Link id="sv2#page67#enu11#ln109" name="Actualizar" to="sv2#mfu13" type="transport" validate="true" gr:bendpoints="0,150,175,0">
@@ -41,10 +44,36 @@
       <Link id="sv2#page67#gtu5#ln116" name="Obtener" to="sv2#page67#dau17" automaticCoupling="true" type="transport" validate="true"/>
       <Link id="sv2#page67#gtu5#ln117" name="Editar" to="sv2#page67#enu11" automaticCoupling="true" type="transport" validate="true"/>
     </GetUnit>
+    <ScriptUnit gr:x="30" gr:y="185" id="sv2#page67#scu5" name="Foto de perfil">
+      <ScriptUnitText xml:space="preserve">#input String imageUrl
+
+
+return "&lt;img style=\"width: 250px \" src=" + imageUrl + " /&gt;"</ScriptUnitText>
+    </ScriptUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
-      <layout:Cell colspan="12">
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="4">
+        <layout:Unit unitId="sv2#page67#scu5"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell colspan="8">
         <layout:Unit unitId="sv2#page67#dau17">
           <layout:Attribute attribute="userName"/>
           <layout:Attribute attribute="password"/>
@@ -53,14 +82,9 @@
           <layout:Attribute attribute="User#att33"/>
           <layout:Attribute attribute="User#att34"/>
           <layout:Attribute attribute="User#att35"/>
-          <layout:Attribute attribute="User#att36"/>
           <layout:Attribute attribute="User#att37"/>
         </layout:Unit>
       </layout:Cell>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -83,6 +107,20 @@
           <layout:Link link="sv2#page67#enu11#ln121"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

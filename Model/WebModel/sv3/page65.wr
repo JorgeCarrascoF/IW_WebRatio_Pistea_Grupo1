@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1000" gr:y="190" id="sv3#page65" name="Ver reserva" linkOrder="sv3#page65#ln129">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1375" gr:y="150" id="sv3#page65" name="Ver reserva" linkOrder="sv3#page65#ln129">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="0" id="sv3#page65#dau17" name="Details17" entity="ent2">
+    <DataUnit gr:x="0" gr:y="0" id="sv3#page65#dau17" name="Detalle de la reserva" entity="ent2" displayAttributes="ent2#att12 ent2#att13 ent2#att26 ent2#att7 rel7#role14.userName rel7#role14.email rel7#role14.User#att37">
       <Selector id="sv3#page65#dau17#su61" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#page65#dau17#su61#kcond39" name="KeyCondition39" predicate="in" implied="false"/>
       </Selector>
@@ -13,7 +13,15 @@
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv3#page65#dau17"/>
+        <layout:Unit unitId="sv3#page65#dau17">
+          <layout:Attribute attribute="ent2#att12"/>
+          <layout:Attribute attribute="ent2#att13"/>
+          <layout:Attribute attribute="ent2#att26"/>
+          <layout:Attribute attribute="ent2#att7"/>
+          <layout:Attribute attribute="rel7#role14.userName"/>
+          <layout:Attribute attribute="rel7#role14.email"/>
+          <layout:Attribute attribute="rel7#role14.User#att37"/>
+        </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>

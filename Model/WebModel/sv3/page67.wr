@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1180" gr:y="210" id="sv3#page67" name="Cancelar reserva" linkOrder="sv3#page67#ln130 sv3#page67#ln131">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1555" gr:y="170" id="sv3#page67" name="Cancelar reserva" linkOrder="sv3#page67#ln130 sv3#page67#ln131">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv3#page67#mssu27" name="Confirmar">
       <Message xml:space="preserve">&#191;Seguro que quieres cancelar esta reserva?</Message>

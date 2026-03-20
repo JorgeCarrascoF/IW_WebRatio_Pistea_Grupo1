@@ -1,6 +1,8 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="140" gr:y="140" id="sv2#page64" name="Pista Incorrecto">
   <ContentUnits>
-    <MultiMessageUnit gr:x="0" gr:y="0" id="sv2#page64#mssu28" name="Mensaje Error"/>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv2#page64#mssu28" name="Mensaje Error">
+      <Message xml:space="preserve">No existe ninguna pista para el deporte que has buscado.</Message>
+    </MultiMessageUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>

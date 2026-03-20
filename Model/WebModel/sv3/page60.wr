@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-80" gr:y="650" id="sv3#page60" name="Confirmaci&#243;n borrar pista" linkOrder="sv3#page60#ln105">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-90" gr:y="785" id="sv3#page60" name="Confirmaci&#243;n borrar pista" linkOrder="sv3#page60#ln105">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv3#page60#mssu25" name="Confirmaci&#243;n" linkOrder="sv3#page60#mssu25#ln103">
       <Message xml:space="preserve">&#191;Seguro que quiere borrar esta pista?</Message>

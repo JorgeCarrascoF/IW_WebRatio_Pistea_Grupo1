@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="515" gr:y="190" id="sv3#page7" name="Gestionar reservas" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="885" gr:y="155" id="sv3#page7" name="Gestionar reservas" landmark="true">
   <ContentUnits>
     <IndexUnit gr:x="240" gr:y="0" id="sv3#page7#inu3" name="Reservas de mis pistas" entity="ent2" displayAttributes="ent2#att2 ent2#att7 ent2#att12 ent2#att13 ent2#att26" linkOrder="sv3#page7#inu3#ln127 sv3#page7#inu3#ln138 sv3#page7#inu3#ln1">
       <Selector id="sv3#page7#inu3#su55" defaultPolicy="fill" booleanOperator="and">

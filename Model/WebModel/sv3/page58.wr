@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="510" gr:y="370" id="sv3#page58" name="Subir pista">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="475" gr:y="460" id="sv3#page58" name="Subir pista">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv3#page58#enu8" name="Subir pista" entity="ent4" linkOrder="sv3#page58#enu8#ln96">
       <Field id="sv3#page58#enu8#fld39" name="nombre_pista" type="string" modifiable="true" attribute="ent4#att14"/>
@@ -22,6 +22,9 @@
         <LinkParameter id="sv3#page58#enu8#ln96#par179" name="ubicacion_ubicacion" source="sv3#page58#enu8#fld45" target="sv3#cru2.ent4#att39"/>
       </Link>
     </EntryUnit>
+    <GetUnit gr:x="120" gr:y="0" id="sv3#page58#gtu1" name="Get1" contextParameters="UserCtxParam">
+      <Link id="sv3#page58#gtu1#ln93" name="Flow93" to="sv3#cru2" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -38,6 +41,20 @@
           <layout:Link link="sv3#page58#enu8#ln96"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

@@ -8,9 +8,9 @@
         <LinkParameter id="sv2#inn1#kln7#par285" name="Error: La pista que ha buscado no existe. Por favor, intentelo de nuevo.Error: La pista que ha buscado no existe. Por favor, intentelo de nuevo._Shown Messages" sourceValue="Error: La pista que ha buscado no existe. Por favor, intentelo de nuevo.Error: La pista que ha buscado no existe. Por favor, intentelo de nuevo." target="sv2#page64#mssu28.shownMessages"/>
       </KOLink>
     </IsNotNullUnit>
-    <SelectorUnit id="sv2#seu10" name="Filtro pistas" gr:x="655" gr:y="5" entity="ent4">
+    <SelectorUnit id="sv2#seu10" name="Filtro pistas" gr:x="575" gr:y="15" entity="ent4">
       <Selector id="sv2#seu10#su60" defaultPolicy="fill" booleanOperator="and">
-        <AttributesCondition id="sv2#seu10#su60#acond38" name="Deporte" predicate="eq" booleanOperator="or" implied="false" attributes="ent4#att15"/>
+        <AttributesCondition id="sv2#seu10#su60#acond38" name="Deporte" predicate="eq" booleanOperator="or" implied="false" attributes="ent4#att15" ignoreCase="true"/>
         <AttributesCondition id="sv2#seu10#su60#acond44" name="Disponibilidad" predicate="eq" booleanOperator="or" implied="false" ignoreCase="false" attributes="ent4#att19" value="True"/>
       </Selector>
       <OKLink id="sv2#seu10#oln42" name="Filtrar" to="sv2#page63#inu8" automaticCoupling="true" gr:bendpoints="-1,160,164,0"/>

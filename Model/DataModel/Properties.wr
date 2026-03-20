@@ -190,7 +190,8 @@
       <db:JoinColumn attribute="userOID" name="oid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db1" name="PisteaDB" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/Pistea" username="admin" cryptedPassword="true" password="YWRtaW4=" schema="public"/>
+  <db:Database id="db1" name="PisteaDB" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/Pistea" username="admin" cryptedPassword="true" password="YWRtaW4=" schema="public">
+  </db:Database>
   <Relationship id="rel2" name="guarda_como_fav" sourceEntity="ent4" targetEntity="User" gr:bendpoints="295,-167,-25,238" db:database="db1" db:table="guarda_como_fav">
     <RelationshipRole1 id="rel2#role3" name="PistaToUser" maxCard="N">
       <db:JoinColumn attribute="ent4#att4" name="pista_oid"/>

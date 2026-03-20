@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-220" gr:y="240" id="sv3#page4" name="HomeGerente" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-485" gr:y="175" id="sv3#page4" name="Inicio" landmark="true" protected="false">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="20" id="sv3#page4#mssu22" name="Mensaje de bienvenida">
       <Message xml:space="preserve">Bienvenido, $$Username$$.</Message>
