@@ -1,10 +1,10 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-455" gr:y="-20" id="sv2#page2" name="Pistas detalle">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-625" gr:y="-20" id="sv2#page2" name="Pistas detalle">
   <ContentUnits>
-    <DataUnit gr:x="210" gr:y="0" id="sv2#page2#dau14" name="Detalles Pista" entity="ent4" displayAttributes="ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att19 ent4#att39" linkOrder="sv2#page2#dau14#ln97 sv2#page2#dau14#ln118">
+    <DataUnit gr:x="370" gr:y="0" id="sv2#page2#dau14" name="Detalles Pista" entity="ent4" displayAttributes="ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att19 ent4#att39" linkOrder="sv2#page2#dau14#ln97 sv2#page2#dau14#ln118">
       <Selector id="sv2#page2#dau14#su5" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#page2#dau14#su5#kcond30" name="KeyCondition" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv2#page2#dau14#ln97" name="Reservar" to="sv2#cru2" type="normal" validate="true" gr:bendpoints="124,158,-1,-182">
+      <Link id="sv2#page2#dau14#ln97" name="Reservar" to="sv2#cru2" type="normal" validate="true" gr:bendpoints="132,158,-2,-182">
         <LinkParameter id="sv2#page2#dau14#ln97#par178" name="0_estado_reserva" sourceValue="0" target="sv2#cru2.ent2#att13"/>
         <LinkParameter id="sv2#page2#dau14#ln97#par179" name="hora_apertura_hora_inicio" source="data.ent4#att16" target="sv2#cru2.ent2#att12"/>
         <LinkParameter id="sv2#page2#dau14#ln97#par180" name="oid_Pista.oid(ReservaToPista)" source="data.ent4#att4" target="sv2#cru2.rel10#role19.ent4#att4"/>
@@ -12,36 +12,54 @@
         <LinkParameter id="sv2#page2#dau14#ln97#par200" name="PistaToUser_2.oid_User.oid(ReservaToUser)" target="sv2#cru2.rel7#role14.userOID" sourceLinkParameter="sv2#page2#gtu9#ln115#par238"/>
       </Link>
       <Link id="sv2#page2#dau14#ln101" name="Valoraciones" to="sv2#page2#seu2" type="transport" validate="true" automaticCoupling="true"/>
-      <Link id="sv2#page2#dau14#ln118" name="A&#241;adir fav" to="sv2#cnu2" type="normal" validate="true" gr:bendpoints="163,77,248,-233;162,240,247,-70">
+      <Link id="sv2#page2#dau14#ln118" name="Favoritos" to="sv2#cnu2" type="normal" validate="true" gr:bendpoints="163,77,248,-233;165,242,241,-68">
         <LinkParameter id="sv2#page2#dau14#ln118#par239" name="UserCtxParam.oid_PASSING_KeyCondition46 [oid] [User] [Source]" sourceLinkParameter="sv2#page2#gtu9#ln115#par238" target="sv2#cnu2#su67#kcond46.userOID"/>
         <LinkParameter id="sv2#page2#dau14#ln118#par240" name="oid_KeyCondition47 [oid] [Pista] [Target]" source="data.ent4#att4" target="sv2#cnu2#su68#kcond47.ent4#att4"/>
       </Link>
-      <Link id="sv2#page2#dau14#ln84" name="Flow84" to="sv2#page2#scu4" type="transport" validate="true">
+      <Link id="sv2#page2#dau14#ln84" name="Obtener imagen" to="sv2#page2#scu4" type="transport" validate="true" gr:bendpoints="-38,89,-48,-67">
         <LinkParameter id="sv2#page2#dau14#ln84#par171" name="foto_pista_imageUrl" source="data.ent4#att38" target="sv2#page2#scu4.imageUrl"/>
       </Link>
+      <Link id="sv2#page2#dau14#ln140" name="Valorar" to="sv2#page2#enu15" type="transport" validate="true" gr:bendpoints="-178,-104,178,-100">
+        <LinkParameter id="sv2#page2#dau14#ln140#par258" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv2#page2#gtu9#ln115#par238" passing="true"/>
+        <LinkParameter id="sv2#page2#dau14#ln140#par260" name="oid_PASSING" source="data.ent4#att4" passing="true"/>
+      </Link>
     </DataUnit>
-    <IndexUnit id="sv2#page2#inu7" name="Listado de valoraciones" gr:x="0" gr:y="140" entity="ent6" displayAttributes="ent6#att21 ent6#att20 ent6#att24">
+    <IndexUnit id="sv2#page2#inu7" name="Listado de valoraciones" gr:x="0" gr:y="135" entity="ent6" displayAttributes="ent6#att21 ent6#att20 ent6#att24">
       <Selector id="sv2#page2#inu7#su56" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#page2#inu7#su56#kcond36" name="KeyCondition" predicate="in" implied="false"/>
       </Selector>
     </IndexUnit>
-    <SelectorUnit gr:x="15" gr:y="0" id="sv2#page2#seu2" name="Filtro valoraciones" entity="ent6">
+    <SelectorUnit gr:x="175" gr:y="0" id="sv2#page2#seu2" name="Filtro valoraciones" entity="ent6">
       <Selector id="sv2#page2#seu2#su59" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#page2#seu2#su59#rcond8" name="RoleCondition" predicate="in" implied="false" role="rel12#role24"/>
       </Selector>
       <Link id="sv2#page2#seu2#ln102" name="Filtrar" to="sv2#page2#inu7" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <GetUnit gr:x="170" gr:y="145" id="sv2#page2#gtu9" name="Obtener ID" contextParameters="UserCtxParam">
-      <Link id="sv2#page2#gtu9#ln115" name="Flow115" to="sv2#page2#dau14" type="transport" validate="true" gr:bendpoints="-73,-69,-73,81">
+    <GetUnit gr:x="215" gr:y="155" id="sv2#page2#gtu9" name="Obtener ID" contextParameters="UserCtxParam">
+      <Link id="sv2#page2#gtu9#ln115" name="Obtener" to="sv2#page2#dau14" type="transport" validate="true">
         <LinkParameter id="sv2#page2#gtu9#ln115#par238" name="UserCtxParam.oid_PASSING" source="sv2#page2#gtu9.UserCtxParam" passing="true"/>
       </Link>
     </GetUnit>
-    <ScriptUnit gr:x="280" gr:y="175" id="sv2#page2#scu4" name="Imagen de la pista">
+    <ScriptUnit gr:x="365" gr:y="175" id="sv2#page2#scu4" name="Imagen de la pista">
       <ScriptUnitText xml:space="preserve">#input String imageUrl
 
 
 return "&lt;img src=" + imageUrl + " /&gt;"</ScriptUnitText>
     </ScriptUnit>
+    <EntryUnit id="sv2#page2#enu15" name="Escribir valoracion" gr:x="0" gr:y="0" entity="ent6" linkOrder="sv2#page2#enu15#ln9">
+      <Link id="sv2#page2#enu15#ln9" name="Publicar" to="sv2#cru4" type="normal" validate="true">
+        <LinkParameter id="sv2#page2#enu15#ln9#par194" name="descripcion_valoracion_descripcion_valoracion" source="sv2#page2#enu15#fld59" target="sv2#cru4.ent6#att20"/>
+        <LinkParameter id="sv2#page2#enu15#ln9#par236" name="fecha_valoracion_fecha_valoracion" source="sv2#page2#enu15#fld60" target="sv2#cru4.ent6#att24"/>
+        <LinkParameter id="sv2#page2#enu15#ln9#par237" name="Key [oid]_oid" source="key.ent6#att6" target="sv2#cru4.ent6#att6"/>
+        <LinkParameter id="sv2#page2#enu15#ln9#par241" name="puntuacion_puntuacion" source="sv2#page2#enu15#fld58" target="sv2#cru4.ent6#att21"/>
+        <LinkParameter id="sv2#page2#enu15#ln9#par253" name="Valoracion Object_Valoracion Object" source="entityBean" target="sv2#cru4.entityBeans"/>
+        <LinkParameter id="sv2#page2#enu15#ln9#par259" name="UserCtxParam.oid_PASSING_User.oid(ComentarioToUser)" sourceLinkParameter="sv2#page2#dau14#ln140#par258" target="sv2#cru4.rel8#role16.userOID"/>
+        <LinkParameter id="sv2#page2#enu15#ln9#par261" name="oid_PASSING_Pista.oid(ValoracionToPista)" sourceLinkParameter="sv2#page2#dau14#ln140#par260" target="sv2#cru4.rel12#role23.ent4#att4"/>
+      </Link>
+      <Field id="sv2#page2#enu15#fld58" name="puntuacion" type="integer" modifiable="true" attribute="ent6#att21"/>
+      <Field id="sv2#page2#enu15#fld59" name="descripcion_valoracion" type="string" modifiable="true" attribute="ent6#att20"/>
+      <Field id="sv2#page2#enu15#fld60" name="fecha_valoracion" type="timestamp" modifiable="true" attribute="ent6#att24"/>
+    </EntryUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -107,7 +125,14 @@ return "&lt;img src=" + imageUrl + " /&gt;"</ScriptUnitText>
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12"/>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page2#enu15">
+          <layout:Link link="sv2#page2#enu15#ln9"/>
+          <layout:Field field="sv2#page2#enu15#fld58"/>
+          <layout:Field field="sv2#page2#enu15#fld59"/>
+          <layout:Field field="sv2#page2#enu15#fld60"/>
+        </layout:Unit>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

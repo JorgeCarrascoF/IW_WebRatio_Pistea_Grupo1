@@ -1,10 +1,10 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1710" gr:y="530" id="sv2#page67" name="Perfil" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1780" gr:y="400" id="sv2#page67" name="Perfil" landmark="true">
   <ContentUnits>
-    <DataUnit gr:x="140" gr:y="0" id="sv2#page67#dau17" name="Detalles Usuario" entity="User" displayAttributes="userName password email User#att32 User#att33 User#att34 User#att35 User#att37">
+    <DataUnit gr:x="180" gr:y="145" id="sv2#page67#dau17" name="Detalles Usuario" entity="User" displayAttributes="userName password email User#att32 User#att33 User#att34 User#att35 User#att37">
       <Selector id="sv2#page67#dau17#su74" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#page67#dau17#su74#kcond48" name="KeyCondition" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv2#page67#dau17#ln88" name="Flow88" to="sv2#page67#scu5" type="transport" validate="true">
+      <Link id="sv2#page67#dau17#ln88" name="Obtener imagen" to="sv2#page67#scu5" type="transport" validate="true">
         <LinkParameter id="sv2#page67#dau17#ln88#par177" name="foto_perfil_imageUrl" source="data.User#att36" target="sv2#page67#scu5.imageUrl"/>
       </Link>
     </DataUnit>
@@ -40,11 +40,11 @@
         <LinkParameter id="sv2#page67#enu11#ln121#par233" name="username_PASSING" source="sv2#page67#enu11#fld45" passing="true"/>
       </Link>
     </EntryUnit>
-    <GetUnit gr:x="145" gr:y="145" id="sv2#page67#gtu5" name="Obtener ID" contextParameters="UserCtxParam">
+    <GetUnit gr:x="185" gr:y="0" id="sv2#page67#gtu5" name="Obtener ID" contextParameters="UserCtxParam">
       <Link id="sv2#page67#gtu5#ln116" name="Obtener" to="sv2#page67#dau17" automaticCoupling="true" type="transport" validate="true"/>
       <Link id="sv2#page67#gtu5#ln117" name="Editar" to="sv2#page67#enu11" automaticCoupling="true" type="transport" validate="true"/>
     </GetUnit>
-    <ScriptUnit gr:x="30" gr:y="185" id="sv2#page67#scu5" name="Foto de perfil">
+    <ScriptUnit gr:x="0" gr:y="165" id="sv2#page67#scu5" name="Foto de perfil">
       <ScriptUnitText xml:space="preserve">#input String imageUrl
 
 

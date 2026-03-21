@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1205" gr:y="-10" id="sv2#page6" name="Torneos" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1320" gr:y="-10" id="sv2#page6" name="Torneos" landmark="true">
   <ContentUnits>
     <EntryUnit gr:x="165" gr:y="0" id="sv2#page6#enu10" name="Buscar torneos" entity="ent3" linkOrder="sv2#page6#enu10#ln103">
       <Link id="sv2#page6#enu10#ln103" name="Buscar" to="sv2#inn3" type="normal" validate="true">

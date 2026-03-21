@@ -1,30 +1,30 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-425" gr:y="675" id="sv2#page68" name="Detalles favoritos">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-480" gr:y="675" id="sv2#page68" name="Detalles favoritos">
   <ContentUnits>
-    <DataUnit gr:x="55" gr:y="0" id="sv2#page68#dau19" name="Detalles Favoritos" entity="ent4" linkOrder="sv2#page68#dau19#ln124 sv2#page68#dau19#ln126" displayAttributes="ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att19 ent4#att39">
+    <DataUnit gr:x="115" gr:y="0" id="sv2#page68#dau19" name="Detalles Favoritos" entity="ent4" linkOrder="sv2#page68#dau19#ln124 sv2#page68#dau19#ln126" displayAttributes="ent4#att14 ent4#att15 ent4#att16 ent4#att17 ent4#att18 ent4#att19 ent4#att39">
       <Selector id="sv2#page68#dau19#su69" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#page68#dau19#su69#kcond53" name="KeyCondition" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv2#page68#dau19#ln124" name="Eliminar Fav" to="sv2#dcnu3" type="normal" validate="true">
+      <Link id="sv2#page68#dau19#ln124" name="Borrar" to="sv2#dcnu3" type="normal" validate="true">
         <LinkParameter id="sv2#page68#dau19#ln124#par245" name="UserCtxParam.oid_PASSING_KeyCondition51 [oid] [User] [Source]" sourceLinkParameter="sv2#page68#gtu11#ln120#par244" target="sv2#dcnu3#su70#kcond51.userOID"/>
         <LinkParameter id="sv2#page68#dau19#ln124#par246" name="oid_KeyCondition52 [oid] [Pista] [Target]" source="data.ent4#att4" target="sv2#dcnu3#su71#kcond52.ent4#att4"/>
       </Link>
-      <Link id="sv2#page68#dau19#ln126" name="Reservar" to="sv2#cru2" type="normal" validate="true" gr:bendpoints="125,-3,-110,352;126,-358,-109,-3">
+      <Link id="sv2#page68#dau19#ln126" name="Reservar" to="sv2#cru2" type="normal" validate="true" gr:bendpoints="141,-3,-93,353;142,-355,-92,1">
         <LinkParameter id="sv2#page68#dau19#ln126#par247" name="0_estado_reserva" sourceValue="0" target="sv2#cru2.ent2#att13"/>
         <LinkParameter id="sv2#page68#dau19#ln126#par248" name="hora_apertura_hora_inicio" source="data.ent4#att16" target="sv2#cru2.ent2#att12"/>
         <LinkParameter id="sv2#page68#dau19#ln126#par249" name="oid_Pista.oid(ReservaToPista)" source="data.ent4#att4" target="sv2#cru2.rel10#role19.ent4#att4"/>
         <LinkParameter id="sv2#page68#dau19#ln126#par250" name="10_precio" sourceValue="10" target="sv2#cru2.ent2#att26"/>
         <LinkParameter id="sv2#page68#dau19#ln126#par251" name="UserCtxParam.oid_PASSING_User.oid(ReservaToUser)" sourceLinkParameter="sv2#page68#gtu11#ln120#par244" target="sv2#cru2.rel7#role14.userOID"/>
       </Link>
-      <Link id="sv2#page68#dau19#ln136" name="Flow136" to="sv2#page68#scu6" type="transport" validate="true">
+      <Link id="sv2#page68#dau19#ln136" name="Obtener imagen" to="sv2#page68#scu6" type="transport" validate="true">
         <LinkParameter id="sv2#page68#dau19#ln136#par193" name="foto_pista_imageUrl" source="data.ent4#att38" target="sv2#page68#scu6.imageUrl"/>
       </Link>
     </DataUnit>
-    <GetUnit gr:x="0" gr:y="190" id="sv2#page68#gtu11" name="Obtener ID" contextParameters="UserCtxParam">
+    <GetUnit gr:x="0" gr:y="165" id="sv2#page68#gtu11" name="Obtener ID" contextParameters="UserCtxParam">
       <Link id="sv2#page68#gtu11#ln120" name="Obtener" to="sv2#page68#dau19" type="transport" validate="true">
         <LinkParameter id="sv2#page68#gtu11#ln120#par244" name="UserCtxParam.oid_PASSING" source="sv2#page68#gtu11.UserCtxParam" passing="true"/>
       </Link>
     </GetUnit>
-    <ScriptUnit id="sv2#page68#scu6" name="Imagen de la pista" gr:x="100" gr:y="150">
+    <ScriptUnit id="sv2#page68#scu6" name="Imagen de la pista" gr:x="150" gr:y="185">
       <ScriptUnitText xml:space="preserve">#input String imageUrl
 
 

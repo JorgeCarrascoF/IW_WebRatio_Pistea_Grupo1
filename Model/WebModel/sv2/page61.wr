@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1700" gr:y="145" id="sv2#page61" name="Torneo Correcto">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1815" gr:y="145" id="sv2#page61" name="Torneo Correcto">
   <ContentUnits>
     <IndexUnit gr:x="0" gr:y="0" id="sv2#page61#inu11" name="Listado de torneos" entity="ent3" displayAttributes="ent3#att22 ent3#att23 ent3#att27 ent3#att31" linkOrder="sv2#page61#inu11#ln105">
       <Selector id="sv2#page61#inu11#su64" defaultPolicy="fill" booleanOperator="and">

@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1310" gr:y="480" id="sv2#page70" name="Usuario Incorrecto">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1380" gr:y="350" id="sv2#page70" name="Usuario Incorrecto">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv2#page70#mssu24" name="Mensaje Error"/>
   </ContentUnits>
