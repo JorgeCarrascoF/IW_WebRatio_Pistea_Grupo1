@@ -1,11 +1,11 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="130" gr:y="445" id="sv2#page56" name="Mis reservas" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="360" gr:y="455" id="sv2#page56" name="Mis reservas" landmark="true">
   <ContentUnits>
     <IndexUnit gr:x="0" gr:y="0" id="sv2#page56#inu3" name="Listado de reservas" entity="ent2" displayAttributes="ent2#att12 ent2#att13 ent2#att26 ent2#att7" linkOrder="sv2#page56#inu3#ln78 sv2#page56#inu3#ln95">
       <Link id="sv2#page56#inu3#ln78" name="Borrar" to="sv2#dlu14" automaticCoupling="true" type="normal" validate="true"/>
       <Selector id="sv2#page56#inu3#su73" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#page56#inu3#su73#rcond16" name="RoleCondition" predicate="in" implied="false" role="rel7#role13"/>
       </Selector>
-      <Link id="sv2#page56#inu3#ln95" name="Incidencia" to="sv2#cnu3" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-251,88,0,-117"/>
+      <Link id="sv2#page56#inu3#ln95" name="Incidencia" to="sv2#cnu3" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-3,82,437,-112;-442,82,-2,-112"/>
     </IndexUnit>
     <GetUnit gr:x="215" gr:y="10" id="sv2#page56#gtu10" name="Obtener ID" contextParameters="UserCtxParam">
       <Link id="sv2#page56#gtu10#ln119" name="Obtener" to="sv2#page56#inu3" automaticCoupling="true" type="transport" validate="true"/>

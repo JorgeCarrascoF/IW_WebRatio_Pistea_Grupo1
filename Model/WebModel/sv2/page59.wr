@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="555" gr:y="485" id="sv2#page59" name="Home">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1785" gr:y="790" id="sv2#page59" name="Home">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv2#page59#mssu22" name="Bienvenido/a!">
       <Message xml:space="preserve">Bienvenido a Pistea, la plataforma dise&#241;ada para facilitar la reserva y gesti&#243;n de instalaciones deportivas. Desde aqu&#237; podr&#225;s consultar la disponibilidad de pistas, realizar reservas de forma r&#225;pida y gestionar toda tu actividad deportiva en un &#250;nico lugar.

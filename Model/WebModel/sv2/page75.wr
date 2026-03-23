@@ -1,0 +1,47 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-10" gr:y="320" id="sv2#page75" name="Reservar pista">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv2#page75#enu16" name="Reservar pista" entity="ent2" linkOrder="sv2#page75#enu16#ln167">
+      <Field id="sv2#page75#enu16#fld61" name="hora_inicio" type="timestamp" modifiable="true" attribute="ent2#att12"/>
+      <Link id="sv2#page75#enu16#ln167" name="Aceptar" to="sv2#scu15" type="normal" validate="true">
+        <LinkParameter id="sv2#page75#enu16#ln167#par299" name="hora_inicio_horaInicio" source="sv2#page75#enu16#fld61" target="sv2#scu15.horaInicio"/>
+        <LinkParameter id="sv2#page75#enu16#ln167#par300" name="oid_PASSING_pistaOid" sourceLinkParameter="sv2#page2#dau14#ln154#par290" target="sv2#scu15.pistaOid"/>
+        <LinkParameter id="sv2#page75#enu16#ln167#par301" name="UserCtxParam.oid_PASSING_userOid" sourceLinkParameter="sv2#page2#dau14#ln154#par293" target="sv2#scu15.userOid"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page75#enu16">
+          <layout:Field field="sv2#page75#enu16#fld61"/>
+          <layout:Link link="sv2#page75#enu16#ln167"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -15,15 +15,12 @@
       </Selector>
       <OKLink id="sv2#seu10#oln42" name="Filtrar" to="sv2#page63#inu8" automaticCoupling="true" gr:bendpoints="0,178,166,-2"/>
     </SelectorUnit>
-    <DeleteUnit gr:x="-110" gr:y="480" id="sv2#dlu14" name="Eliminar reserva" entity="ent2">
+    <DeleteUnit gr:x="570" gr:y="335" id="sv2#dlu14" name="Eliminar reserva" entity="ent2">
       <Selector id="sv2#dlu14#su50" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#dlu14#su50#kcond31" name="KeyCondition" predicate="in" implied="false"/>
       </Selector>
-      <OKLink id="sv2#dlu14#oln39" name="OK Eliminar Reserva" to="sv2#page56" automaticCoupling="true" gr:bendpoints="115,-66,-250,-56"/>
+      <OKLink id="sv2#dlu14#oln39" name="OK Eliminar Reserva" to="sv2#page56" automaticCoupling="true" gr:bendpoints="-89,0,1,-145"/>
     </DeleteUnit>
-    <CreateUnit gr:x="-105" gr:y="360" id="sv2#cru2" name="A&#241;adir reserva" entity="ent2">
-      <OKLink id="sv2#cru2#oln32" name="OK A&#241;adir reserva" to="sv2#page56#inu3" gr:bendpoints="267,-1,2,-126" automaticCoupling="true"/>
-    </CreateUnit>
     <IsNotNullUnit gr:x="1725" gr:y="40" id="sv2#inn3" name="Existe torneo?">
       <OKLink id="sv2#inn3#oln30" name="OK Torneo" to="sv2#seu3">
         <LinkParameter id="sv2#inn3#oln30#par196" name="Input Value_Nombre" source="inputValue" target="sv2#seu3#su62#acond25"/>
@@ -45,7 +42,7 @@
       </Selector>
       <OKLink id="sv2#mfu13#oln35" name="OK Actualizar usuario" to="sv2#page67" automaticCoupling="true" gr:bendpoints="-3,-83,-272,-3"/>
     </ModifyUnit>
-    <LogoutUnit gr:x="555" gr:y="355" id="sv2#lou2" name="Cerrar sesion" siteView="sv1" landmark="true"/>
+    <LogoutUnit gr:x="1995" gr:y="805" id="sv2#lou2" name="Cerrar sesion" siteView="sv1" landmark="true"/>
     <IsNotNullUnit gr:x="1610" gr:y="450" id="sv2#inn4" name="Es valido?">
       <OKLink id="sv2#inn4#oln38" name="OK Usuario" to="sv2#mfu13" gr:bendpoints="-90,-1,-115,-151;-90,149,-115,-1">
         <LinkParameter id="sv2#inn4#oln38#par242" name="Input Value_KeyCondition49 [oid]" source="inputValue" target="sv2#mfu13#su75#kcond49.userOID"/>
@@ -81,23 +78,23 @@
       </TargetSelector>
       <OKLink id="sv2#cnu2#oln37" name="Ok A&#241;adir Fav" to="sv2#page7" automaticCoupling="true" gr:bendpoints="-120,-4,0,-190"/>
     </ConnectUnit>
-    <DisconnectUnit gr:x="-660" gr:y="700" id="sv2#dcnu3" name="Desconectar Pista" relationship="rel2#role4">
+    <DisconnectUnit gr:x="-75" gr:y="835" id="sv2#dcnu3" name="Desconectar Pista" relationship="rel2#role4">
       <SourceSelector id="sv2#dcnu3#su70" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#dcnu3#su70#kcond51" name="KeyCondition" predicate="in" implied="false"/>
       </SourceSelector>
       <TargetSelector id="sv2#dcnu3#su71" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#dcnu3#su71#kcond52" name="KeyCondition" predicate="in" implied="false"/>
       </TargetSelector>
-      <OKLink id="sv2#dcnu3#oln40" name="OK Eliminar Fav" to="sv2#page7" automaticCoupling="true"/>
+      <OKLink id="sv2#dcnu3#oln40" name="OK Eliminar Fav" to="sv2#page7" automaticCoupling="true" gr:bendpoints="-114,-96,262,238;-114,-252,262,82"/>
     </DisconnectUnit>
-    <ConnectUnit gr:x="-110" gr:y="675" id="sv2#cnu3" name="Conectar Incidencia" relationship="rel11#role22">
+    <ConnectUnit gr:x="-80" gr:y="675" id="sv2#cnu3" name="Conectar Incidencia" relationship="rel11#role22">
       <SourceSelector id="sv2#cnu3#su72" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#cnu3#su72#kcond32" name="KeyCondition" predicate="in" implied="false"/>
       </SourceSelector>
       <TargetSelector id="sv2#cnu3#su76" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#cnu3#su76#kcond50" name="KeyCondition" predicate="in" implied="false"/>
       </TargetSelector>
-      <OKLink id="sv2#cnu3#oln41" name="OK Escribir incidencia" to="sv2#page57#enu12" automaticCoupling="true" gr:bendpoints="141,-105,-334,-105;476,-106,1,-106"/>
+      <OKLink id="sv2#cnu3#oln41" name="OK Escribir incidencia" to="sv2#page57#enu12" automaticCoupling="true" gr:bendpoints="122,-92,-322,-92;444,-92,0,-92"/>
     </ConnectUnit>
     <CreateUnit gr:x="635" gr:y="690" id="sv2#cru3" name="A&#241;adir incidencia" entity="ent5">
       <OKLink id="sv2#cru3#oln43" name="OK A&#241;adir incidencia" to="sv2#page58" automaticCoupling="true" gr:bendpoints="-116,63,-1,-112"/>
@@ -117,5 +114,130 @@
       </Selector>
       <OKLink id="sv2#dlu17#oln45" name="OK Eliminar valoracion" to="sv2#page71" automaticCoupling="true" gr:bendpoints="-52,-122,188,108"/>
     </DeleteUnit>
+    <ScriptUnit gr:x="205" gr:y="370" id="sv2#scu15" name="Script reserva">
+      <ScriptUnitText xml:space="preserve">#input Integer pistaOid
+#input Timestamp horaInicio
+#input Integer userOid
+#output String resultCode
+
+def dbId = "db1"
+def session = getDBSession(dbId)
+
+try {
+    def queryPista = session.createSQLQuery(
+        "SELECT COUNT(*) FROM pista WHERE oid = CAST(:pistaOid AS integer) " +
+        "AND es_disponible = true " +
+        "AND hora_apertura &lt;= :horaInicio " +
+        "AND hora_cierre &gt;= :horaInicio"
+    )
+    queryPista.setInteger("pistaOid", pistaOid as Integer)
+    queryPista.setTimestamp("horaInicio", horaInicio)
+    def pistaCount = queryPista.uniqueResult()
+
+    if (pistaCount == 0) {
+        return ["resultCode": "pista_no_disponible"]
+    }
+
+    def queryReserva = session.createSQLQuery(
+        "SELECT COUNT(*) FROM reserva WHERE pista_oid = CAST(:pistaOid AS integer) " +
+        "AND hora_inicio = :horaInicio " +
+        "AND estado_reserva != 2"
+    )
+    queryReserva.setInteger("pistaOid", pistaOid as Integer)
+    queryReserva.setTimestamp("horaInicio", horaInicio)
+    def reservaCount = queryReserva.uniqueResult()
+
+    if (reservaCount &gt; 0) {
+        return ["resultCode": "reserva_existente"]
+    }
+
+    def queryMaxOid = session.createSQLQuery(
+        "SELECT COALESCE(MAX(oid), 0) + 1 FROM reserva"
+    )
+    def nuevoOid = queryMaxOid.uniqueResult()
+
+    def queryCrear = session.createSQLQuery(
+        "INSERT INTO reserva (oid, hora_inicio, estado_reserva, precio, pista_oid, user_oid) " +
+        "VALUES (CAST(:nuevoOid AS integer), :horaInicio, 1, :precio, CAST(:pistaOid AS integer), CAST(:userOid AS integer))"
+    )
+    queryCrear.setInteger("nuevoOid", nuevoOid as Integer)
+    queryCrear.setTimestamp("horaInicio", horaInicio)
+    queryCrear.setDouble("precio", 10.0)
+    queryCrear.setInteger("pistaOid", pistaOid as Integer)
+    queryCrear.setInteger("userOid", userOid as Integer)
+    queryCrear.executeUpdate()
+
+    return ["resultCode": "success"]
+
+} catch (Exception e) {
+    log.error("Error al crear reserva: " + e.getMessage())
+    return ["resultCode": "error"]
+}</ScriptUnitText>
+      <OKLink id="sv2#scu15#oln54" name="OK Reserva" to="sv2#page56" automaticCoupling="true"/>
+    </ScriptUnit>
+    <ScriptUnit id="sv2#scu16" name="Script reserva" gr:x="155" gr:y="520">
+      <ScriptUnitText xml:space="preserve">#input Integer pistaOid
+#input Timestamp horaInicio
+#input Integer userOid
+#output String resultCode
+
+def dbId = "db1"
+def session = getDBSession(dbId)
+
+try {
+    def queryPista = session.createSQLQuery(
+        "SELECT COUNT(*) FROM pista WHERE oid = CAST(:pistaOid AS integer) " +
+        "AND es_disponible = true " +
+        "AND hora_apertura &lt;= :horaInicio " +
+        "AND hora_cierre &gt;= :horaInicio"
+    )
+    queryPista.setInteger("pistaOid", pistaOid as Integer)
+    queryPista.setTimestamp("horaInicio", horaInicio)
+    def pistaCount = queryPista.uniqueResult()
+
+    if (pistaCount == 0) {
+        return ["resultCode": "pista_no_disponible"]
+    }
+
+    def queryReserva = session.createSQLQuery(
+        "SELECT COUNT(*) FROM reserva WHERE pista_oid = CAST(:pistaOid AS integer) " +
+        "AND hora_inicio = :horaInicio " +
+        "AND estado_reserva != 2"
+    )
+    queryReserva.setInteger("pistaOid", pistaOid as Integer)
+    queryReserva.setTimestamp("horaInicio", horaInicio)
+    def reservaCount = queryReserva.uniqueResult()
+
+    if (reservaCount &gt; 0) {
+        return ["resultCode": "reserva_existente"]
+    }
+
+    def queryMaxOid = session.createSQLQuery(
+        "SELECT COALESCE(MAX(oid), 0) + 1 FROM reserva"
+    )
+    def nuevoOid = queryMaxOid.uniqueResult()
+
+    def queryCrear = session.createSQLQuery(
+        "INSERT INTO reserva (oid, hora_inicio, estado_reserva, precio, pista_oid, user_oid) " +
+        "VALUES (CAST(:nuevoOid AS integer), :horaInicio, 1, :precio, CAST(:pistaOid AS integer), CAST(:userOid AS integer))"
+    )
+    queryCrear.setInteger("nuevoOid", nuevoOid as Integer)
+    queryCrear.setTimestamp("horaInicio", horaInicio)
+    queryCrear.setDouble("precio", 10.0)
+    queryCrear.setInteger("pistaOid", pistaOid as Integer)
+    queryCrear.setInteger("userOid", userOid as Integer)
+    queryCrear.executeUpdate()
+
+    return ["resultCode": "success"]
+
+} catch (Exception e) {
+    log.error("Error al crear reserva: " + e.getMessage())
+    return ["resultCode": "error"]
+}</ScriptUnitText>
+      <OKLink id="sv2#scu16#oln59" name="OK Reserva" to="sv2#page56" automaticCoupling="true"/>
+    </ScriptUnit>
+    <CreateUnit id="sv2#cru5" name="A&#241;adir valoracion" gr:x="-730" gr:y="525" entity="ent6">
+      <OKLink id="sv2#cru5#oln60" name="OK A&#241;adir valoracion" to="sv2#page68" automaticCoupling="true"/>
+    </CreateUnit>
   </OperationUnits>
 </SiteView>
