@@ -10,7 +10,7 @@
       <Field id="sv3#page62#enu9#fld53" name="ubicacion" type="string" modifiable="true" preloaded="true" attribute="ent4#att39"/>
       <Field id="sv3#page62#enu9#fld54" name="foto_pista" type="string" modifiable="true" preloaded="true" attribute="ent4#att38"/>
       <Field id="sv3#page62#enu9#fld55" name="oid" type="integer" modifiable="false" attribute="ent4#att4" preloaded="true" hidden="true"/>
-      <Link id="sv3#page62#enu9#ln111" name="Flow111" to="sv3#mfu13" type="normal" validate="true">
+      <Link id="sv3#page62#enu9#ln111" name="Guardar cambios" to="sv3#mfu13" type="normal" validate="true">
         <LinkParameter id="sv3#page62#enu9#ln111#par204" name="capacidad_capacidad" source="sv3#page62#enu9#fld51" target="sv3#mfu13.ent4#att18"/>
         <LinkParameter id="sv3#page62#enu9#ln111#par205" name="deporte_asociado_deporte_asociado" source="sv3#page62#enu9#fld48" target="sv3#mfu13.ent4#att15"/>
         <LinkParameter id="sv3#page62#enu9#ln111#par206" name="es_disponible_es_disponible" source="sv3#page62#enu9#fld52" target="sv3#mfu13.ent4#att19"/>
